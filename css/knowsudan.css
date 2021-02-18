@@ -8,6 +8,7 @@ body{
   margin:0px 60px 0px 60px;
   background-image: url('../images/field.jpg');
   background-size: 1980px 1080px;
+  background-repeat: no-repeat;
 }
 h1{ margin:0px;
 	margin-left: 10px;
