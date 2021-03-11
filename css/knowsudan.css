@@ -274,7 +274,7 @@ body{
 }
 #icon-h1{
 	float: left;
-	width:800px;
+	width:52%;
 }
 h1{ 
 	padding-bottom: 8px;
@@ -282,7 +282,6 @@ h1{
 	margin:0px;
 	margin-left: 5px;
 	display: inline-block;
-	width: 45%;
     color: #2d2c2c;
     font-weight: 100;
     font-size: 250%;
@@ -309,7 +308,7 @@ h1{
 	width: 43%;
 	float: right;
 	margin: 0px;
-	margin-top: 28px;
+	margin-top: 23px;
 	margin-left: 18px;
 
 }
