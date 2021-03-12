@@ -55,124 +55,85 @@ h1{
 	margin: auto;
 	width:320px;
 }
+
+
+/* HAM ICON STARTS */
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 0px;
+  margin-right: 10px;
+  float: right;
+  position: relative;
+  bottom: 24px;
+  user-select: none;
+
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* HAM ICON END */
+
+
 #head-nav{
-	padding-top: 0px;
-	line-height: 2em;
-	text-align: right;
-	visibility: hidden;
-	width: 40%;
-	float: right;
-	margin: 0px;
-	margin-top: 28px;
-	margin-left: 18px;
-
-}
-.main-ul li{
-	position: relative;
-	display: inline;
-}
-.dest-container{
-	position: relative;
-	margin-right: 10px;
-	padding: 0px 0px 8px 0px;
-}
-.exp-container{
-	position: relative;
-	padding: 0px 0px 8px 0px;
-	margin-left: 18px;
-}
-.exp-container a{
-	position: relative;
-	right:18px;
-}
-.destinations-ul{
-	position: absolute;
 	display: none;
-	background-color:  transparent;
-	border-width: 1px;
-	box-shadow: 0px 10px 15px #0a1516c9;
-	right: 2px;
-	top: 25px;
-	width: 75%;
-	text-align: center;
-	border-radius: 10px;
-	padding-bottom: 0px;
-	padding-left: 30px;
-}
-.experiences-ul{
-	position: absolute;
-	display: none;
-	background-color:  transparent;
-	border-width: 1px;
-	box-shadow: 0px 10px 15px #0a1516c9;
-	right: 2px;
-	top: 25px;
-	width: 75%;
-	text-align: center;
-	border-radius: 10px;
-	text-decoration: none;
-	padding-bottom: 0px;
-	padding-left: 30px;
-}
-.experiences-ul li a {
-	position: relative;
-	width:143px;
-	right: 30px;
-	display: inline-block;
-	color: rgba(45, 44, 44,0.7);
-	text-decoration: none;
-
-}
-.destinations-ul li a{
-	position: relative;
-	width:118px;
-	right: 30px;
-	display: inline-block;
-	color: rgba(45, 44, 44,0.7);
-	text-decoration: none;	
-}
-.dest-container:hover ul, .exp-container:hover ul{
-    display: block;
-}
-.dest-container:hover #a1, .exp-container:hover #a2{
-    border-style: solid;
-    border-width: 0px 0px 0px 0px;
-   	padding-bottom: 1px;
-   	border-color: rgba(45, 44, 44,0.4);
-}
-.main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
-{
-    border-style: solid;
-    background-color: rgba(45, 44, 44,0.85);
-    border-width: 0px 0px 0px 0px;
-	border-color: rgba(0,0,0,0.8);
-	color: #ffffff;
 }
 
-.main-ul> .dest-container>.destinations-ul>li:first-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:first-child>a:hover{
-	background-color: rgba(45, 44, 44,0.85);
-	color: #ffffff;
-	border-style: solid;
-	border-radius: 10px 10px 0px 0px;
-}
-
-.main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
-	background-color: rgba(45, 44, 44,0.85);
-	color: #ffffff;
-	border-style: solid;
-	border-radius: 0px 0px 10px 10px;
-}
-.heada{
-	margin-top: 10px;
-	color: #2d2c2c;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-decoration: none;
-	font-size: 120%;
-}
-#a2{
-	margin-left:40px;
-}
 
 section{
 display: block;
@@ -187,7 +148,7 @@ margin-top:120px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
-  width: 50%;
+  width: 45%;
 }
 .btn{
 	font-size: 100%;
@@ -239,6 +200,18 @@ footer{
 	padding-left: 0px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -302,6 +275,9 @@ h1{
 	position: relative;
 	top:19px;
 }
+  .header .menu-icon, .header .menu-btn  {
+    display: none;
+  }
 #head-nav{
 	padding-top: 0px;
 	line-height: 2em;
@@ -320,7 +296,7 @@ h1{
 .dest-container{
 	position: relative;
 	margin-right: 10px;
-	padding: 0px 0px 8px 0px;
+	padding: 0px 0px 8px 0px; 
 }
 .exp-container{
 	position: relative;
@@ -344,6 +320,7 @@ h1{
 	border-radius: 10px;
 	padding-bottom: 0px;
 	padding-left: 30px;
+
 }
 .experiences-ul{
 	position: absolute;
@@ -426,14 +403,14 @@ clear:both;
 width: 50%;
 margin:auto;
 text-align: center;
-margin-top:250px;
+margin-top:220px;
 }
 #begins{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
-  width: 330px;
+  margin-top: 250px;
+  width: 380px;
 }
 .btn{
 	font-size: 100%;
@@ -455,7 +432,7 @@ margin-top:250px;
 }
 footer{
     text-align:center;
-    margin-top:200px;}
+    margin-top:250px;}
 
 .foota{
 	color: #ffffff;
