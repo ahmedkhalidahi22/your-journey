@@ -31,10 +31,9 @@ h1{
 	margin:0em;
 	margin-left: 0em;
 	display: inline-block;
-	width: 100%;
     color: #2d2c2c;
     font-weight: 100;
-    font-size: 230%;
+    font-size: 225%;
     font-variant-caps: all-small-caps;
     letter-spacing: 0.5px;
     border-radius: 6px;
@@ -56,7 +55,7 @@ h1{
 }
 #icon-h1{
 	margin: auto;
-	width:330px;
+	width:320px;
 }
 #head-nav{
 	padding-top: 0px;
