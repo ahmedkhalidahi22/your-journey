@@ -31,7 +31,7 @@ h1{
 	display: inline-block;
     color: #2d2c2c;
     font-weight: 100;
-    font-size: 190%;
+    font-size: 180%;
     font-variant-caps: all-small-caps;
     letter-spacing: 0.5px;
     border-radius: 6px;
@@ -46,9 +46,9 @@ h1{
 	display: inline-block;
 	margin-left: auto;
   	margin-right: auto;
-	width: 33px;
+	width: 30px;
 	position: relative;
-	top:2.6em;
+	top:2.4em;
 	left:1.2em;
 }
 #icon-h1{
@@ -148,7 +148,7 @@ margin-top:120px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
-  width: 45%;
+  width: 40%;
 }
 .btn{
 	font-size: 100%;
