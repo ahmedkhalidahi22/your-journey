@@ -21,6 +21,7 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 h1{ 
 	padding-bottom: 8px;
