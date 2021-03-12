@@ -46,7 +46,7 @@ h1{
 	display: inline-block;
 	margin-left: auto;
   	margin-right: auto;
-	width: 700px;
+	width: 30px;
 	position: relative;
 	top:2.4em;
 	left:1.2em;
@@ -228,7 +228,89 @@ footer{
 
 html { 
   background: url(../images/field.jpg) no-repeat center center fixed; 
- 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+body{
+  margin:0px 42px 0px 60px;
+  /*background-image: url('../images/field.jpg');
+  background-size: 1980px 1080px;
+  transition: background 4s;*/
+}
+#icon-h1{
+	float: left;
+	width:52%;
+}
+h1{ 
+	padding-bottom: 8px;
+	padding-left: 5px;
+	margin:0px;
+	margin-left: 5px;
+	display: inline-block;
+    color: #2d2c2c;
+    font-weight: 100;
+    font-size: 250%;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    }
+ h1>a{
+  	text-decoration: none;
+  	color: #2d2c2c;
+  }
+#icon1{
+	margin-top: 10px;
+	display: inline-block;
+	clear: left;
+	width: 50px;
+	position: relative;
+	top:19px;
+}
+  .header .menu-icon, .header .menu-btn  {
+    display: none;
+  }
+#head-nav{
+	padding-top: 0px;
+	line-height: 2em;
+	text-align: right;
+	width: 43%;
+	float: right;
+	margin: 0px;
+	margin-top: 23px;
+	margin-left: 18px;
+
+}
+.main-ul li{
+	position: relative;
+	display: inline;
+}
+.dest-container{
+	position: relative;
+	margin-right: 10px;
+	padding: 0px 0px 8px 0px; 
+}
+.exp-container{
+	position: relative;
+	padding: 0px 0px 8px 0px;
+	margin-left: 18px;
+}
+.exp-container a{
+	position: relative;
+	right:18px;
+}
+.destinations-ul{
+	position: absolute;
+	display: none;
+	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
 	right: 3px;
