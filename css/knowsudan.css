@@ -53,6 +53,7 @@ h1{
 }
 #icon-h1{
 	margin: auto;
+	float:left;
 	width:320px;
 }
 
@@ -66,6 +67,7 @@ h1{
   padding: 0px 0px;
   margin-right: 10px;
   float: right;
+  clear:both;
   position: relative;
   bottom: 24px;
   user-select: none;
