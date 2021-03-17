@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<TITLE>your journey</TITLE>
 	<link rel="stylesheet" href="css/knowsudan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 </HEAD>
 <body>
@@ -13,10 +14,15 @@
 			<img id="icon1" src="images/icon1.png">
 			<h1><a href="#">Your next journey</a></h1>
 		</div>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+  		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 		<nav id="head-nav">
 			<ul class="main-ul">
   				<li class="dest-container">
-  					<a id="a1" class="heada" href="assin1.html">Destinations</a>
+  					<a onclick="myFunction()" id="a1" class="heada" href="assin1.html">
+					<i id="fa-l1" class="fa fa-angle-left" ></i>
+					<i id="fa-d1" class="fa fa-angle-down" ></i>
+  					Destinations</a>
   					<ul class="destinations-ul">
   						<li><a href="">Japan</a></li>
   						<li><a href="">Thailand</a></li>
@@ -26,7 +32,11 @@
   					</ul>
   				</li>
   				<li class="exp-container">
-  					<a id="a2" class="heada" href="assin1.html">Experiences</a>
+  					<a id="a2" class="heada" href="assin1.html">
+  					<i id="fa-l2" class="fa fa-angle-left" ></i>
+  					<i id="fa-d2" class="fa fa-angle-down" ></i>
+
+  					Experiences</a>
   					<ul class="experiences-ul">
   					 	<li><a href="">Boat-trips</a></li>
   						<li><a href="">Mountain biking</a></li>
@@ -38,8 +48,7 @@
   				</li>
 			</ul>	
 		</nav>
-		<input class="menu-btn" type="checkbox" id="menu-btn" />
-  		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
 	</header>
 	<div id="img">
 		<img id="begins" src="images/beginshere.png">
@@ -47,7 +56,6 @@
 	<section >
 		<button class="btn">EXPLORE</button>
 	</section>
-	
 	
 	<footer>
 		<nav id="bottom-nav">
