@@ -9,7 +9,7 @@ html {
   background-size: cover;
 }
 header{
-	height: 400px;
+	height: 150px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -138,10 +138,10 @@ h1{
 #head-nav{
 	margin-right: 15px;
 	display: none;
-	margin-top: 5px;
+	margin-top: 0px;
 	clear:both;
 	float:right;
-	height: 300px;
+	height: 100px;
 	width:  100%;
 	position: relative;
 	bottom:25px;
@@ -166,11 +166,12 @@ h1{
 	border-width: 1px;
 	border-color: rgba(45, 44, 44,0.5);
 	border-radius: 8px;
-	width: 95px;
+	width: 105px;
 	list-style: none;
     padding-left: 0px;
     padding: 10px;
-    margin:0px;
+    margin-top:0px;
+    
 }
 .main-ul>li {
 
@@ -204,7 +205,7 @@ display: none;
 	list-style: none;
     padding-left: 0px;
 	position: absolute;
-	right: 119px;
+	right: 130px;
 	display: none;
 	background-color:  transparent;
 	border-width: 1px;
@@ -284,18 +285,18 @@ clear:both;
 width: 50%;
 margin:auto;
 text-align: center;
-margin-top:120px;
+margin-top:130px;
 }
 #img{
 	clear:both;
-	padding-bottom: 20px;
-	margin-top: 20px;
+	padding-bottom: 0px;
+	margin-top: 15px;
 }
 #begins{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   width: 40%;
 }
 .btn{
@@ -312,6 +313,7 @@ margin-top:120px;
     transition: 0.5s;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0px;
 }
 .btn:hover{
 	opacity: 1;
