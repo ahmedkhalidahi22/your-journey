@@ -9,7 +9,7 @@ html {
   background-size: cover;
 }
 header{
-	height: 100px;
+	height: 400px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -58,7 +58,6 @@ h1{
 	padding-bottom: 15px;
 }
 
-
 /* HAM ICON STARTS */
 /* menu icon */
 
@@ -70,7 +69,7 @@ h1{
   float: right;
   clear:both;
   position: relative;
-  bottom: 39.5px;
+  bottom: 40px;
   user-select: none;
 
 }
@@ -109,8 +108,8 @@ h1{
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+.header .menu-btn:checked ~ #head-nav{
+  display: block
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -133,10 +132,152 @@ h1{
 /* HAM ICON END */
 
 
+
+
+/* DROPDOWN MENU STARTS*/
 #head-nav{
+	margin-right: 15px;
 	display: none;
+	margin-top: 5px;
+	clear:both;
+	float:right;
+	height: 300px;
+	width:  100%;
+	position: relative;
+	bottom:25px;
+
 }
 
+
+.heada{
+	margin-top: 0px;
+	color: rgba(45, 44, 44,0.85);
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	font-size: 90%;
+}
+.main-ul{
+	clear:both;
+	list-style-type: none;
+	float: right;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(45, 44, 44,0.5);
+	border-radius: 8px;
+	width: 95px;
+	list-style: none;
+    padding-left: 0px;
+    padding: 10px;
+    margin:0px;
+}
+.main-ul>li {
+
+}
+.main-ul>li:last-child{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#fa-l1, #fa-l2{
+color: #333;
+font-size:16px;
+}
+
+#fa-d1, #fa-d2{
+display: none;
+}
+
+#a1:hover , #a2:hover {
+	color: rgba(45, 44, 44,1);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+   	padding-bottom: 1px;
+   	border-color: rgba(45, 44, 44,0.4);
+
+}
+
+
+.destinations-ul{
+	list-style-type: none;
+	list-style: none;
+    padding-left: 0px;
+	position: absolute;
+	right: 119px;
+	display: none;
+	background-color:  transparent;
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	width: 100px;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 10px;
+	
+
+}
+.destinations-ul li{
+	width:100%
+}
+.destinations-ul li a{
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width:100%;
+	color: rgba(45, 44, 44,0.7);
+	text-decoration: none;	
+}
+
+.main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
+{
+    border-style: solid;
+    background-color: rgba(45, 44, 44,0.85);
+    border-width: 0px 0px 0px 0px;
+	border-color: rgba(0,0,0,0.8);
+	color: #ffffff;
+}
+.main-ul> .dest-container>.destinations-ul>li:first-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:first-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 0px 0px 10px 10px;
+}
+.experiences-ul{
+	position: absolute;
+	display: none;
+	background-color:  transparent;
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	right: 4px;
+	top: 25px;
+	width: 75%;
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-bottom: 0px;
+	padding-left: 30px;
+}
+.experiences-ul li a {
+	position: relative;
+	width:143px;
+	right: 30px;
+	display: inline-block;
+	color: rgba(45, 44, 44,0.7);
+	text-decoration: none;
+
+}
+.dest-container:hover ul, .exp-container:hover ul{
+    display: inline-block;
+}
+/* DROPDOWN MENU ENDS*/
 section{
 display: block;
 clear:both;
@@ -295,6 +436,9 @@ h1{
 	margin-top: 23px;
 	margin-left: 18px;
 
+}
+#fa-d1, #fa-d2, #fa-l1, #fa-l2{
+display: none;
 }
 .main-ul li{
 	position: relative;
