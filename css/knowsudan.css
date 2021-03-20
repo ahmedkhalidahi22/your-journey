@@ -212,7 +212,7 @@ display: none;
 	list-style: none;
     padding-left: 0px;
 	position: absolute;
-	right: 104px;
+	right: 109px;
 	display: none;
 	background-color:  transparent;
 	border-width: 1px;
@@ -233,7 +233,7 @@ display: none;
 	text-align: center;
 	display: inline-block;
 	width:100%;
-	color: rgba(45, 44, 44,1);
+	color: rgba(45, 44, 44,0.85);
 	text-decoration: none;	
 }
 
@@ -263,7 +263,7 @@ display: none;
 	list-style: none;
     padding-left: 0px;
 	position: absolute;
-	right: 104px;
+	right: 109px;
 	display: none;
 	background-color:  transparent;
 	border-width: 1px;
@@ -280,7 +280,7 @@ display: none;
 	text-align: center;
 	display: inline-block;
 	width:100%;
-	color: rgba(45, 44, 44,1);
+	color: rgba(45, 44, 44,0.85);
 	text-decoration: none;
 }
 .dest-container:hover ul, .exp-container:hover ul{
