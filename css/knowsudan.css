@@ -14,6 +14,7 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 20px;
+	margin-top: 5px;
 }
 html,body {
     width: 100%;
@@ -163,22 +164,28 @@ h1{
 	float: right;
 	text-align: center;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0px;
 	border-color: rgba(45, 44, 44,0.5);
 	border-radius: 8px;
 	width: 110px;
 	list-style: none;
     padding-left: 0px;
-    padding: 10px;
-    margin-top:0px;
+    padding: 0px;
+    margin-top:10px;
+
     
 }
 .main-ul>li {
-
+text-align: right;
+width: 100%;
 }
 .main-ul>li:last-child{
 	padding-top: 5px;
 	margin-top: 5px;
+	margin-right: 2px;
+}
+.main-ul>li:last-child>a{
+	margin-right: 2px;
 }
 
 #fa-l1, #fa-l2{
@@ -205,7 +212,7 @@ display: none;
 	list-style: none;
     padding-left: 0px;
 	position: absolute;
-	right: 130px;
+	right: 104px;
 	display: none;
 	background-color:  transparent;
 	border-width: 1px;
@@ -226,7 +233,7 @@ display: none;
 	text-align: center;
 	display: inline-block;
 	width:100%;
-	color: rgba(45, 44, 44,0.7);
+	color: rgba(45, 44, 44,1);
 	text-decoration: none;	
 }
 
@@ -252,28 +259,29 @@ display: none;
 	border-radius: 0px 0px 10px 10px;
 }
 .experiences-ul{
+	list-style-type: none;
+	list-style: none;
+    padding-left: 0px;
 	position: absolute;
+	right: 104px;
 	display: none;
 	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
-	right: 4px;
-	top: 25px;
-	width: 75%;
+	width: 100px;
+	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
-	text-decoration: none;
-	padding-bottom: 0px;
-	padding-left: 30px;
+	
 }
 .experiences-ul li a {
+	line-height: 25px;
 	position: relative;
-	width:143px;
-	right: 30px;
+	text-align: center;
 	display: inline-block;
-	color: rgba(45, 44, 44,0.7);
+	width:100%;
+	color: rgba(45, 44, 44,1);
 	text-decoration: none;
-
 }
 .dest-container:hover ul, .exp-container:hover ul{
     display: inline-block;
@@ -285,7 +293,8 @@ clear:both;
 width: 50%;
 margin:auto;
 text-align: center;
-margin-top:130px;
+margin-top:120px;
+
 }
 #img{
 	clear:both;
@@ -296,7 +305,7 @@ margin-top:130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 70px;
   width: 40%;
 }
 .btn{
@@ -322,7 +331,7 @@ margin-top:130px;
 }
 footer{
     text-align:center;
-    margin-top:120px;}
+    margin-top:170px;}
 
 .foota{
 	color: #ffffff;
