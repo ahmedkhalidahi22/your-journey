@@ -27,11 +27,8 @@ header{
 }
 html,body {
     width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 h1{ 
 	padding-bottom: 0px;
@@ -237,7 +234,7 @@ display: none;
 	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
-	background-color: rgba(250,250,250,0.35);
+	background-color: rgba(250,250,250,0.7);
 	top:14px;
 	z-index: 1;
 
@@ -253,7 +250,7 @@ display: none;
 	text-align: center;
 	display: inline-block;
 	width:100%;
-	color: rgba(45, 44, 44,0.85);
+	color: rgba(45, 44, 44,1);
 	text-decoration: none;	
 }
 
@@ -288,7 +285,7 @@ display: none;
 	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
-	background-color: rgba(250,250,250,0.6);
+	background-color: rgba(250,250,250,0.7);
 	width: 113px;
 	margin-top: 0px;
 	text-align: center;
@@ -302,7 +299,7 @@ display: none;
 	text-align: center;
 	display: inline-block;
 	width:100%;
-	color: rgba(45, 44, 44,0.85);
+	color: rgba(45, 44, 44,1);
 	text-decoration: none;
 }
 .dest-container:hover ul, .exp-container:hover ul{
@@ -333,6 +330,7 @@ text-shadow: -2px 4px 3px #333;
 }
 #main-p{
 	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
 #main-p> h2 {
@@ -344,6 +342,120 @@ margin:0px 20px 0px 20px;
 text-align: justify;
 font-size: 1.05em;
 }
+/*info icons*/
+.useful-info-icons {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.useful-info-icons .useful-info-icon {
+    font-size: 90%;
+    line-height: 20px;
+    display: block;
+    margin-left: 40px;
+    text-transform: capitalize;
+
+}
+#first-info{
+margin-left:0px; 
+}
+}
+.useful-info-icons .useful-info-icon img {
+    height: 35px;
+}
+.useful-info-icons .useful-info-icon p {
+    display: inline-block;
+    margin-left: 5px;
+}
+/*info icons ends*/
+h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+/* carousel starts*/
+.carousel{
+	margin-top:15px;
+}
+.carousel-cell{
+	width:100%;
+	text-align: center;
+}
+.carousel-cell> img{
+ width:75%;
+ border-radius: 10px;
+margin: 0px auto;
+}
+.carousel-cell> a{
+	display: block;
+	color: rgba(45, 44, 44,0.85);
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	font-size: 90%;
+	background-color: rgba(45, 44, 44,0.15);
+	width: 70%;
+	margin: 0px auto;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 5px 5px;
+	margin-top: -2px;
+}
+.carousel-p{
+	width: 65%;
+	background-color: rgba(45, 44, 44,0.15);
+	margin: 0px auto;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 5px 5px;
+	padding: 0px 15px 10px 15px;
+}
+.carousel-p> h4{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 105%;
+	width: 20%;
+	margin: 0px auto;
+}
+.carousel-p>p{
+	text-align: justify;
+	font-size: 0.96em;
+}
+.carousel-p>a{
+	display: block;
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	font-size: 100%;
+	width: 30%;
+	margin: 0px auto;
+	background-color: rgba(45, 44, 44,1);
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 3px;
+}
+/* carousel ends*/
+#experiences-sect{
+ border-bottom: 1px solid #fff;
+  box-shadow: 0 5px 6px -6px rgb(0 0 0 / 29%);
+  padding-bottom: 40px;
+}
+#cities-sect{
+	margin-top: 50px;
+}
+#cities-sect>p{
+margin:0px 20px 0px 20px;
+text-align: justify;
+font-size: 1.05em;
+}
+
+
 footer{
     text-align:center;
     margin-top:170px;}
