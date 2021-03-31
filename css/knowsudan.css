@@ -41,7 +41,7 @@ h1{
 	display: inline-block;
     color: #2d2c2c;
     font-weight: bold;
-    font-size: 195%;
+    font-size: 180%;
     font-variant-caps: all-small-caps;
     letter-spacing: 0.5px;
     border-radius: 6px;
@@ -56,9 +56,9 @@ h1{
 	margin-top: 0.5em;
 	margin-left: 15px;
 	display: inline-block;
-	width: 30px;
+	width: 25px;
 	position: relative;
-	top:0.55em;
+	top:0.35em;
 	
 }
 #icon-h1{
@@ -79,7 +79,7 @@ h1{
   float: right;
   clear:both;
   position: relative;
-  bottom: 40px;
+  bottom: 37px;
   user-select: none;
 
 }
@@ -194,7 +194,7 @@ width: 100%;
 	margin-right: 2px;
 }
 .main-ul>li:last-child>a{
-	margin-right: 2px;
+	margin-right: 1px;
 }
 
 #fa-l1, #fa-l2{
