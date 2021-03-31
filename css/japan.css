@@ -7,6 +7,8 @@ html {
   -o-background-size: cover;
   background-size: cover;
    font-family: Helvetica;
+   background-image: url(../images/japan-background2.jpg);
+   
 }
 @font-face {
   font-family: Helvetica;
@@ -24,6 +26,7 @@ header{
 	margin-right: auto;
 	padding-bottom: 20px;
 	margin-top: 0px;
+	background-color: #f2eee5;
 }
 html,body {
     width: 100%;
@@ -173,7 +176,7 @@ h1{
 	border-style: solid;
 	border-width: 0px;
 	border-color: rgba(45, 44, 44,0.5);
-	border-radius: 5px;
+	border-radius: 0px 0px 5px 5px;
 	width: 110px;
 	list-style: none;
     padding-right: 0px;
@@ -181,7 +184,7 @@ h1{
     margin-top:10px;
     display: inline-block;
     margin-right: 5px;
-    background-color: #fff;
+    background-color: #f2eee5;
     padding-bottom: 5px;
 
     
@@ -325,7 +328,7 @@ font-weight: bold;
 letter-spacing: 5px;
 position: absolute;
 width: 100%;
-margin-top: 70px;
+top:13%;
 text-shadow: -2px 4px 3px #333;
 }
 #main-p{
@@ -339,7 +342,7 @@ text-shadow: -2px 4px 3px #333;
 #main-p> p 
 {
 margin:0px 20px 0px 20px;
-text-align: justify;
+text-align: left;
 font-size: 1.05em;
 }
 /*info icons*/
@@ -353,8 +356,8 @@ font-size: 1.05em;
     justify-content: center;
 }
 .useful-info-icons .useful-info-icon {
-    font-size: 90%;
-    line-height: 20px;
+    font-size: 70%;
+    line-height: 15px;
     display: block;
     margin-left: 40px;
     text-transform: capitalize;
@@ -365,13 +368,14 @@ margin-left:0px;
 }
 }
 .useful-info-icons .useful-info-icon img {
-    height: 35px;
+    height: 20px;
 }
 .useful-info-icons .useful-info-icon p {
     display: inline-block;
     margin-left: 5px;
 }
 /*info icons ends*/
+
 h3{
 	text-align: center;
 	font-weight: bold;
@@ -386,7 +390,7 @@ h3{
 	text-align: center;
 }
 .carousel-cell> img{
- width:80%;
+ width:85%;
  border-radius: 10px;
 margin: 0px auto;
 }
@@ -398,7 +402,7 @@ margin: 0px auto;
 	text-decoration: none;
 	font-size: 90%;
 	background-color: rgba(45, 44, 44,0.15);
-	width: 70%;
+	width: 75%;
 	margin: 0px auto;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 5px 5px;
@@ -411,20 +415,30 @@ margin: 0px auto;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 5px 5px;
 	padding: 0px 15px 10px 15px;
+	margin-top: -4px;
 }
 .carousel-p> h4{
 	display: block;
 	color: rgba(45, 44, 44,1);
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: 1.2px;
 	text-decoration: none;
-	font-size: 105%;
-	width: 20%;
+	font-size: 110%;
+	width: 30%;
 	margin: 0px auto;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: rgba(45, 44, 44,0.0);
+	background-color: rgba(243,239,230,0.6);
+	padding-bottom: 5px;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 1px 4px;
+
 }
 .carousel-p>p{
-	text-align: justify;
+	text-align:left;
 	font-size: 0.96em;
+	line-height: 1.3em;
 }
 .carousel-p>a{
 	display: block;
@@ -436,10 +450,17 @@ margin: 0px auto;
 	width: 30%;
 	margin: 0px auto;
 	background-color: rgba(45, 44, 44,1);
-	padding-top: 4px;
-	padding-bottom: 4px;
-	border-radius: 3px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 8px;
+
 }
+#cities-sect>.carousel{
+	margin-top: 30px;
+}
+#cities-sect>.carousel>.flickity-button{
+	top:25%;
+} 
 /* carousel ends*/
 #experiences-sect{
  border-bottom: 1px solid #fff;
@@ -447,18 +468,25 @@ margin: 0px auto;
   padding-bottom: 40px;
 }
 #cities-sect{
-	margin-top: 50px;
+	margin-top: 15px;
+}
+#cities-sect>h3{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 13px;
+
 }
 #cities-sect>p{
 margin:0px 20px 0px 20px;
-text-align: justify;
+text-align: left;
 font-size: 1.05em;
+max-width: 90%;
 }
 
 
 footer{
     text-align:center;
-    margin-top:170px;}
+    margin-top:140px;}
 
 .foota{
 	color: #ffffff;
