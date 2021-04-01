@@ -7,7 +7,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
    font-family: Helvetica;
-   background-image: url(../images/japan-background2.jpg);
+  /*background-image: url(../images/japan-background2.jpg);*/
    
 }
 @font-face {
@@ -17,6 +17,10 @@ html {
 @font-face {
   font-family: HelveticaOb;
   src: url(fonts/Helvetica-Bold.woff);
+}
+@font-face {
+  font-family: arima;
+  src: url(fonts/ArimaMadurai-Bold.ttf);
 }
 
 header{
@@ -333,23 +337,28 @@ text-shadow: -2px 4px 3px #333;
 }
 #main-p{
 	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+
 }
 
 #main-p> h2 {
 	text-align: center;
+	font-family: arima;
+	font-size: 180%;
 }
 #main-p> p 
 {
 margin:0px 20px 0px 20px;
 text-align: left;
 font-size: 1.05em;
+line-height: 25px;
 }
 /*info icons*/
 .useful-info-icons {
     display: flex;
-    margin-top: 10px;
-    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
@@ -378,13 +387,16 @@ margin-left:0px;
 
 h3{
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 145%;
 }
 
 /* carousel starts*/
 .carousel{
-	margin-top:15px;
+	margin-top:35px;
 }
+
 .carousel-cell{
 	width:100%;
 	text-align: center;
@@ -433,13 +445,13 @@ margin: 0px auto;
 	padding-bottom: 5px;
 	border-radius: 0px 0px 5px 5px;
 	box-shadow: 0px 1px 4px;
-	padding-top:3px;
+	padding-top: 2px;
 
 }
 .carousel-p>p{
 	text-align:left;
 	font-size: 0.96em;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 .carousel-p>a{
 	display: block;
@@ -467,14 +479,17 @@ margin: 0px auto;
  border-bottom: 1px solid #fff;
   box-shadow: 0 5px 6px -6px rgb(0 0 0 / 29%);
   padding-bottom: 40px;
+  margin-top: 35px;
 }
 #cities-sect{
-	margin-top: 15px;
+	margin-top: 35px;
 }
 #cities-sect>h3{
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 13px;
+	margin-bottom: 23px;
+	font-family: arima;
+	font-size: 145%;
 
 }
 #cities-sect>p{
@@ -482,6 +497,8 @@ margin:0px 20px 0px 20px;
 text-align: left;
 font-size: 1.05em;
 max-width: 90%;
+line-height: 25px;
+padding-bottom: 15px;
 }
 
 
