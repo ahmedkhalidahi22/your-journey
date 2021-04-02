@@ -7,7 +7,8 @@ html {
   -o-background-size: cover;
   background-size: cover;
    font-family: Helvetica;
-  /*background-image: url(../images/japan-background2.jpg);*/
+  background-image: url(../images/background.jpg);
+  background-size: cover;
    
 }
 @font-face {
@@ -30,7 +31,7 @@ header{
 	margin-right: auto;
 	padding-bottom: 20px;
 	margin-top: 0px;
-	background-color: #f2eee5;
+	background-color: #fff;
 }
 html,body {
     width: 100%;
@@ -188,7 +189,7 @@ h1{
     margin-top:10px;
     display: inline-block;
     margin-right: 5px;
-    background-color: #f2eee5;
+    background-color: #fff;
     padding-bottom: 5px;
 
     
