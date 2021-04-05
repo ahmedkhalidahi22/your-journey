@@ -501,7 +501,7 @@ margin: 0px auto;
 	letter-spacing: 1.2px;
 	text-decoration: none;
 	font-size: 110%;
-	width: 30%;
+	width: 33%;
 	margin: 0px auto;
 	border-style: solid;
 	border-width: 0px 1px 1px 1px;
@@ -688,7 +688,7 @@ top:50%;
 
 }
 #hotels-sect> .H>.flickity-button{
-	top:39%;
+	top:36%;
 } 
 .DH{
 	position: relative;
@@ -701,8 +701,8 @@ top:50%;
 .DH>.book-h{
 	position: absolute;
 	left: 50%;
-	top: 70%;
-	width: 25%;
+	top: 65%;
+	width: 120px;
 	background-color: transparent;
 	color: #fff;
 	font-weight: 100;
