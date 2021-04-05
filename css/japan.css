@@ -6,7 +6,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   font-family: Helvetica;
   /*background-image: url(../images/japan-background22.jpg);*/
   background-color: #fff;
    
@@ -38,6 +37,10 @@ html,body {
     margin: 0px;
     padding: 0px;
 }
+body{
+font-family: Helvetica;
+margin-top:6px;
+}
 h1{ 
 	padding-bottom: 0px;
 	padding-left: 0em;
@@ -46,11 +49,12 @@ h1{
 	display: inline-block;
     color: #2d2c2c;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 170%;
     font-variant-caps: all-small-caps;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     border-radius: 6px;
     text-align: center;
+
     }
  h1>a{
   	text-decoration: none;
@@ -61,15 +65,15 @@ h1{
 	margin-top: 0.5em;
 	margin-left: 15px;
 	display: inline-block;
-	width: 23px;
+	width: 25px;
 	position: relative;
-	top:0.4em;
+	top:0.35em;
 	
 }
 #icon-h1{
 	margin: auto;
 	float:left;
-	width:250px;
+	width:300px;
 	padding-bottom: 5px;
 	position: relative;
 	bottom: 10px;
@@ -86,7 +90,7 @@ h1{
   float: right;
   clear:both;
   position: relative;
-  bottom: 27px;
+  bottom: 29px;
   user-select: none;
 
 }
@@ -161,7 +165,7 @@ h1{
 	height: 67px;
 	width:  100%;
 	position: absolute;
-	top: 22px;
+	top: 35px;
 }
 
 
@@ -228,6 +232,10 @@ display: none;
    	border-color: rgba(45, 44, 44,0.4);
 
 }
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
 
 
 .destinations-ul{
@@ -240,7 +248,7 @@ display: none;
 	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 10px #0a1516c9;
-	width: 100px;
+	width: 130px;
 	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
@@ -255,7 +263,7 @@ display: none;
 	width:100%
 }
 .destinations-ul li a{
-	line-height: 25px;
+	line-height: 30px;
 	position: relative;
 	text-align: center;
 	display: inline-block;
@@ -296,7 +304,7 @@ display: none;
 	border-width: 1px;
 	box-shadow: 0px 10px 10px #0a1516c9;
 	background-color: rgba(250,250,250,0.85);
-	width: 113px;
+	width: 130px;
 	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
@@ -304,13 +312,19 @@ display: none;
 	
 }
 .experiences-ul li a {
-	line-height: 25px;
+	line-height: 30px;
 	position: relative;
 	text-align: center;
 	display: inline-block;
 	width:100%;
 	color: rgba(45, 44, 44,1);
 	text-decoration: none;
+}
+.experiences-ul li:first-child a{
+	padding-top: 3px;
+}
+.experiences-ul li:last-child a{
+ padding-bottom: 3px;
 }
 .dest-container:hover ul, .exp-container:hover ul{
     display: inline-block;
@@ -323,7 +337,7 @@ display: none;
 	text-align: center;
 	padding: auto;
 	position: relative;
-	z-index: 0;
+	z-index: -1;
 	margin-top: 0px;
 }
 #header-h1-img img{
@@ -401,12 +415,13 @@ h3{
 	font-size: 150%;
 	color: color: #212121;
 	letter-spacing: 1px;
+	margin-top:35px;
 }
 
 /* carousel starts*/
 .carousel{
 	margin-top:35px;
-	padding: 25px 0px 25px 0px;
+	padding: 0px 0px 10px 0px;
 	margin: 0px 5px 0px 5px;
 	border-radius: 10px;
 }
@@ -414,34 +429,70 @@ h3{
 .carousel-cell{
 	width:100%;
 	text-align: center;
+	position: relative;
+	display: block;
+	width: 100%;
+
 }
 .carousel-cell> img{
  width:85%;
  border-radius: 10px;
 margin: 0px auto;
+	display: block;
+
+}
+.carousel-cell> .more-info{
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	width: 140px;
+	background-color: transparent;
+	color: rgba(250,250,250,1);
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color: rgba(250,250,250,0.7);
+	padding:10px 0px 10px 0px; 
+	transform: translate( -50%, -50% );
+	letter-spacing: 0px;
+    transition:all 0.4s;
+}
+.carousel-cell> .more-info:hover{
+	letter-spacing: 3px;
+	background-color: rgba(45, 44, 44,0.7);
+	border-color: rgba(45, 44, 44,0.0);
+
 }
 .carousel-cell> a{
 	display: block;
 	color: rgba(45, 44, 44,1);
 	font-weight: bold;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
 	text-decoration: none;
-	font-size: 90%;
-	background-color: rgba(45, 44, 44,0.2);
+	font-size: 110%;
+	text-transform: capitalize;
 	width: 75%;
 	margin: 0px auto;
+	padding-top: 6px;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 5px 5px;
-	margin-top: -2px;
 }
 .carousel-p{
 	width: 65%;
-	background-color: rgba(45, 44, 44,0.15);
+	background-color: #fff;
 	margin: 0px auto;
 	padding-bottom: 2px;
-	border-radius: 0px 0px 5px 5px;
-	padding: 0px 15px 10px 15px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 0px 15px 12px 15px;
 	margin-top: -4px;
+	background-color:  transparent;
+	border-width: 0px 1px 1px 1px;
+	box-shadow: 0px 5px 15px #868686c9;
+	margin-bottom: 18px;
 }
 .carousel-p> h4{
 	display: block;
@@ -449,7 +500,7 @@ margin: 0px auto;
 	font-weight: 700;
 	letter-spacing: 1.2px;
 	text-decoration: none;
-	font-size: 125%;
+	font-size: 110%;
 	width: 30%;
 	margin: 0px auto;
 	border-style: solid;
@@ -459,29 +510,37 @@ margin: 0px auto;
 	padding-bottom: 5px;
 	border-radius: 0px 0px 5px 5px;
 	box-shadow: 0px 1px 4px;
-	padding-top: 2px;
-	font-family: arima;
+	padding-top: 7px;
 
 }
 .carousel-p>p{
 	text-align:left;
 	font-size: 0.96em;
-	line-height: 1.4em;
+	line-height: 1.7em;
 }
 .carousel-p>a{
 	display: block;
-	color: #fff;
+	color: rgba(45, 44, 44,1);
 	font-weight: 100;
 	letter-spacing: 0.5px;
 	text-decoration: none;
 	font-size: 100%;
 	width: 30%;
 	margin: 0px auto;
-	background-color: rgba(45, 44, 44,1);
+	background-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(45, 44, 44,0.85);
 	padding-top: 7px;
 	padding-bottom: 7px;
 	border-radius: 8px;
+	transition: all 0.4s;
+	margin-bottom: 10px;
 
+} 
+.carousel-p>a:hover{
+	color: #fff;
+	background-color: rgba(45, 44, 44,0.85);
 }
 #cities-sect>.carousel{
 	margin-top: 30px;
@@ -493,14 +552,20 @@ margin: 0px auto;
 #experiences-sect{
  border-bottom: 1px solid rgba(45, 44, 44,0.00);
   box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: rgba(45, 44, 44,0.1);
   margin-top: 0px;
   padding-top: 1px;
 }
+#experiences-sect>.carousel>.flickity-button{
+	top:44%;
+}
+#experiences-sect>h3{
+	padding-bottom: 5px;
+}
 #cities-sect{
-	margin-top: 35px;
-	padding-bottom: 40px;
+	margin-top: 0px;
+	padding-bottom: 60px;
 	border-bottom: 1px solid #fff;
     box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
 }
@@ -523,7 +588,7 @@ line-height: 25px;
 padding-bottom: 15px;
 }
 .popular-places{
-  padding-top: 5px;
+  padding-top: 1px;
   border-bottom: 1px solid rgba(45, 44, 44,0.00);
   box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
   padding-bottom: 40px;
@@ -531,7 +596,7 @@ padding-bottom: 15px;
   display: block;
 }
 #popular-h3{
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	font-size: 150%;
 }
 .D1, .D4, .D7{
@@ -612,20 +677,93 @@ top:50%;
 }
 .pop-div:hover img {
 	transform: scale(1.025);
+}  
+#hotels-sect{
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    padding-bottom: 60px;
+}
+#hotels-sect>h3{
+	padding-bottom: 10px;
+
+}
+#hotels-sect> .H>.flickity-button{
+	top:39%;
+} 
+.DH{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.DH>img{
+	display: block;
+}
+.DH>.book-h{
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	width: 25%;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #fff;
+	padding:8px 0px 8px 0px; 
+	transform: translate( -50%, -50% );
+    transition: all 0.4s;
+}
+.DH> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+	font-size: 123%;
+	background-color: #fff;
+	width: 70%;
+	margin: 0px auto;
+	padding-bottom: 0px;
+	margin-top: -15px;
+	text-transform: capitalize;
+
+}
+.DH> .book-h:hover{
+	background-color: #fff;
+	color:rgba(45, 44, 44,1);
+}
+#hotels-sect>p{
+text-align: center;
+font-size: 1.05em;
+max-width: 100%;
+margin-top: -10px;
+padding-bottom: 25px;}
+.fa-star{
+	color: #ffa500;
 }
 
 footer{
     text-align:center;
-    margin-top:140px;}
+    margin-top:0px;
+padding-bottom: 20px;
+padding-top: 20px;
+background-color: #2d2c2c;
+
+}
 
 .foota{
-	color: #ffffff;
 	font-weight:bold;
 	padding-left: 15px;
 	text-decoration: none;
 	font-size: 95%;
-	color: #2d2c2c;
+	color: #fff;
 	margin-left: 13px;
+	letter-spacing: 1px;
+	transition: all 0.2s;
 }
 .foota:hover{
 	position: relative;
@@ -633,7 +771,7 @@ footer{
     border-style: solid;
     border-width: 0px 0px 2px 0px;
    	padding-bottom: 1px;
-   	border-color: rgba(45, 44, 44,0.7);
+   	border-color: #fff;
 }
 #a3{
 	margin-right:20px;
