@@ -494,7 +494,6 @@ margin: 0px auto;
 	margin-top: -4px;
 	background-color:  transparent;
 	border-width: 0px 1px 1px 1px;
-	box-shadow: 0px 5px 15px #868686c9;
 	margin-bottom: 18px;
 }
 .carousel-p> h4{
@@ -504,16 +503,6 @@ margin: 0px auto;
 	letter-spacing: 1.2px;
 	text-decoration: none;
 	font-size: 110%;
-	width: 33%;
-	margin: 0px auto;
-	border-style: solid;
-	border-width: 0px 1px 1px 1px;
-	border-color: rgba(45, 44, 44,0.0);
-	background-color: rgba(243,239,230,0.6);
-	padding-bottom: 5px;
-	border-radius: 0px 0px 5px 5px;
-	box-shadow: 0px 1px 4px;
-	padding-top: 7px;
 
 }
 .carousel-p>p{
@@ -524,21 +513,7 @@ margin: 0px auto;
 .carousel-p>a{
 	display: block;
 	color: rgba(45, 44, 44,1);
-	font-weight: 100;
-	letter-spacing: 0.5px;
-	text-decoration: none;
-	font-size: 100%;
-	width: 30%;
-	margin: 0px auto;
-	background-color: #fff;
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgba(45, 44, 44,0.85);
-	padding-top: 7px;
-	padding-bottom: 7px;
-	border-radius: 8px;
-	margin-bottom: 10px;
-	transition: all 0.4s;
+	font-weight: 10
 
 } 
 .carousel-p>a:hover{
