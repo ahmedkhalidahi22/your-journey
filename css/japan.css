@@ -720,9 +720,6 @@ top:50%;
 	transform: translate( -50%, -50% );
     transition: all 0.4s;
 }
-.DH2>.book-h{
-	top: 57%;
-}
 .DH> a{
 	display: block;
 	color: rgba(45, 44, 44,1);
@@ -731,7 +728,7 @@ top:50%;
 	text-decoration: none;
 	font-size: 123%;
 	background-color: #fff;
-	width: 70%;
+	width: 90%;
 	margin: 0px auto;
 	padding-bottom: 0px;
 	margin-top: -15px;
