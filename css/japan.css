@@ -492,9 +492,7 @@ margin: 0px auto;
 	border-radius: 0px 0px 15px 15px;
 	padding: 0px 15px 12px 15px;
 	margin-top: -4px;
-	background-color:  transparent;
 	border-width: 0px 1px 1px 1px;
-	box-shadow: 0px 5px 15px #868686c9;
 	margin-bottom: 18px;
 }
 .carousel-p> h4{
@@ -511,8 +509,6 @@ margin: 0px auto;
 	border-color: rgba(45, 44, 44,0.0);
 	background-color: rgba(243,239,230,0.6);
 	padding-bottom: 5px;
-	border-radius: 0px 0px 5px 5px;
-	box-shadow: 0px 1px 4px;
 	padding-top: 7px;
 
 }
@@ -537,7 +533,6 @@ margin: 0px auto;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	border-radius: 8px;
-	transition: all 0.4s;
 	margin-bottom: 10px;
 
 } 
