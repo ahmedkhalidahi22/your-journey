@@ -10,6 +10,8 @@ html {
   background-color: #fff;
    
 }
+
+
 @font-face {
   font-family: Helvetica;
   src: url(fonts/Helvetica.woff);
@@ -463,8 +465,9 @@ margin: 0px auto;
 }
 .carousel-cell> .more-info:hover{
 	letter-spacing: 3px;
-	background-color: rgba(45, 44, 44,0.7);
+	background-color: rgba(45, 44, 44,0.6);
 	border-color: rgba(45, 44, 44,0.0);
+	border-radius: 5px;
 
 }
 .carousel-cell> a{
@@ -701,7 +704,7 @@ top:50%;
 .DH>.book-h{
 	position: absolute;
 	left: 50%;
-	top: 65%;
+	top: 62%;
 	width: 120px;
 	background-color: transparent;
 	color: #fff;
@@ -716,6 +719,9 @@ top:50%;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
     transition: all 0.4s;
+}
+.DH2>.book-h{
+	top: 57%;
 }
 .DH> a{
 	display: block;
