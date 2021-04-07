@@ -516,10 +516,6 @@ margin: 0px auto;
 	font-weight: 10
 
 } 
-.carousel-p>a:hover{
-	color: #fff;
-	background-color: rgba(45, 44, 44,0.85);
-}
 #cities-sect>.carousel{
 	margin-top: 30px;
 }
