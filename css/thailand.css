@@ -68,7 +68,7 @@ h1{
     border-radius: 6px;
     text-align: center;
     font-family: Helvetica-M;
-font-weight: 100;
+	font-weight: 100;
 
     }
  h1>a{
@@ -370,7 +370,7 @@ display: none;
 #header-h1-img h1{
 font-family: HelveticaOb;
 color: #fff;
-font-size: 5em;
+font-size: 4.7em;
 font-weight: bold;
 letter-spacing: 5px;
 position: absolute;
@@ -513,7 +513,7 @@ margin: 0px auto;
 	border-radius: 0px 0px 5px 5px;
 }
 .carousel-p{
-	width: 79%;
+	width: 76.5%;
 	background-color: #f0f0f0;
 	margin: 0px auto;
 	padding-bottom: 2px;
@@ -529,7 +529,7 @@ margin: 0px auto;
 	letter-spacing: 1.2px;
 	text-decoration: none;
 	font-size: 150%;
-	width: 37%;
+	width: 45%;
 	margin: 0px auto;
 	padding-bottom: 0px;
 	padding-top: 0px;
@@ -695,6 +695,10 @@ padding-bottom: 15px;
 	width: 100%;
 	line-height: 120px;
 } 
+.pop-div> .a5{
+	letter-spacing: 2px;
+	font-size: 95%;
+}
 .pop-div> .a6{
 left: 50%;
 top:50%;	
