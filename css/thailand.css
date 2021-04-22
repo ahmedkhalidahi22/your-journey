@@ -529,7 +529,7 @@ margin: 0px auto;
 	letter-spacing: 1.2px;
 	text-decoration: none;
 	font-size: 150%;
-	width: 45%;
+	width: 100%;
 	margin: 0px auto;
 	padding-bottom: 0px;
 	padding-top: 0px;
@@ -1031,14 +1031,14 @@ display: none;
 	background-color: rgba(45, 44, 44,0.85);
 	color: #ffffff;
 	border-style: solid;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 9px 9px 0px 0px;
 }
 
 .main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
 	background-color: rgba(45, 44, 44,0.85);
 	color: #ffffff;
 	border-style: solid;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 9px 9px;
 }
 .heada{
 	margin-top: 10px;
@@ -1762,7 +1762,7 @@ display: none;
 	top: 35px;
 	width: 72.5%;
 	text-align: center;
-	border-radius: 10px;
+	border-radius:11px;
 	padding-bottom: 0px;
 	padding-left: 30px;
 
@@ -1777,7 +1777,7 @@ display: none;
 	top: 35px;
 	width: 96%;
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 11px;
 	text-decoration: none;
 	padding-bottom: 0px;
 	padding-left: 25px;
