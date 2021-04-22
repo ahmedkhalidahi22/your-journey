@@ -381,7 +381,8 @@ text-shadow: -2px 4px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background22.jpg);
+	background-image: url(../images/japan-background222.jpg);
+	background-size: cover;
 	margin-top: -40px;
 	position: relative;
 	z-index: -2;
