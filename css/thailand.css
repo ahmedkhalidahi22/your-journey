@@ -40,7 +40,7 @@ header{
 	margin-right: auto;
 	padding-bottom: 20px;
 	margin-top: -7px;
-	background-color: #3d3d3d;
+	background-color: #191919;
 	margin-bottom: 10px;
 }
 
@@ -212,7 +212,7 @@ h1{
     padding-bottom: 5px;
     position: relative;
     z-index: 2;
-    background-color: #3d3d3d;
+    background-color: #191919;
 
 
     
@@ -491,6 +491,7 @@ margin: 0px auto;
 	transform: translate( -50%, -50% );
 	letter-spacing: 0px;
     transition:all 0.4s;
+    text-shadow: -2px 2px 3px #222;
 }
 .carousel-cell> .more-info:hover{
 	letter-spacing: 3px;
@@ -741,6 +742,7 @@ top:50%;
 	text-transform: uppercase;
 	border-width: 1px;
 	border-radius: 3px;
+	text-shadow: -2px 2px 3px #222;
 	border-color: #fff;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
@@ -764,6 +766,7 @@ top:50%;
 .DH> .book-h:hover{
 	background-color: #fff;
 	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
 }
 #hotels-sect>p{
 text-align: center;
@@ -780,7 +783,7 @@ footer{
     margin-top:0px;
 padding-bottom: 20px;
 padding-top: 20px;
-background-color: #2d2c2c;
+background-color: #191919;
 
 }
 
@@ -846,7 +849,7 @@ header{
 	padding:0px 12px 0px 20px;
 	padding-bottom: 20px;
 	height: 36px;
-	background-color: rgba(45, 44, 44,0.92);
+	background-color: #191919;
 }
 
 @font-face {
@@ -1194,6 +1197,7 @@ h3{
 	border-color: rgba(250,250,250,0.7);
 	padding:10px 0px 10px 0px; 
 	transform: translate( -50%, -50% );
+	text-shadow: -2px 2px 3px #222;
 	letter-spacing: 0px;
     transition:all 0.4s;
 }
@@ -1533,6 +1537,7 @@ top:50%;
 	border-color: #fff;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
+	text-shadow: -2px 2px 3px #222;
     transition: all 0.4s;
 }
 .DH> a{
@@ -1554,6 +1559,7 @@ top:50%;
 .DH> .book-h:hover{
 	background-color: #fff;
 	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
 }
 #hotels-sect>p{
 text-align: left;
@@ -1572,7 +1578,7 @@ footer{
     margin-top:0px;
 padding-bottom: 20px;
 padding-top: 20px;
-background-color: #2d2c2c;
+background-color: #191919;
 
 }
 
@@ -1666,7 +1672,7 @@ header{
 	padding-bottom: 20px;
 	height: 45px;
 	/*background-image: url(../images/japan-background22.jpg);*/
-	background-color: rgba(45, 44, 44,0.92);
+	background-color: #191919;
 }
 #icon-h1{
 	float: left;
@@ -1979,6 +1985,7 @@ h3{
 	border-style: solid;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	text-shadow: -2px 2px 3px #222;
 	border-width: 1px;
 	border-radius: 0px;
 	border-color: rgba(250,250,250,0.7);
@@ -2323,6 +2330,7 @@ top:50%;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
     transition: all 0.4s;
+    text-shadow: -2px 2px 3px #222;
 }
 .DH> a{
 	display: block;
@@ -2342,6 +2350,7 @@ top:50%;
 .DH> .book-h:hover{
 	background-color: #fff;
 	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
 }
 #hotels-sect>p{
 text-align: left;
@@ -2360,7 +2369,7 @@ footer{
     margin-top:0px;
 padding-bottom: 20px;
 padding-top: 20px;
-background-color: #2d2c2c;
+background-color: #191919;
 
 }
 
