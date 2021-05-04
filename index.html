@@ -9,6 +9,7 @@
 	
 </HEAD>
 <body>
+  <div class="landing-main">
 	<header class="header">
 		<div id="icon-h1">
 			<img id="icon1" src="images/icon1.png">
@@ -19,7 +20,7 @@
 		<nav id="head-nav">
 			<ul class="main-ul">
   				<li class="dest-container">
-  					<a onclick="myFunction()" id="a1" class="heada" href="assin1.html" style="pointer-events: none; cursor: default;" href="page.html">
+  					<a onclick="myFunction()" id="a1" class="heada" href="assin1.html">
 					<i id="fa-l1" class="fa fa-angle-left" ></i>
 					<i id="fa-d1" class="fa fa-angle-down" ></i>
   					Destinations</a>
@@ -27,12 +28,11 @@
   						<li><a href="japan.html">Japan</a></li>
   						<li><a href="">Thailand</a></li>
   						<li><a href="">China</a></li>
-  						<li><a href="">Switzerland</a></li>
-  						<li><a href="">Irland</a></li>
+  						<li><a href="">Italy</a></li>
   					</ul>
   				</li>
   				<li class="exp-container">
-  					<a id="a2" class="heada" href="assin1.html" style="pointer-events: none; cursor: default;" href="page.html">
+  					<a id="a2" class="heada" href="assin1.html">
   					<i id="fa-l2" class="fa fa-angle-left" ></i>
   					<i id="fa-d2" class="fa fa-angle-down" ></i>
 
@@ -41,8 +41,7 @@
   					 	<li><a href="">Boat-trips</a></li>
   						<li><a href="">Mountain biking</a></li>
   						<li><a href="">Diving</a></li>
-  						<li><a href="">Honeymoons</a></li>
-  						<li><a href="">Learning trips</a></li> 		
+  						<li><a href="">Honeymoons</a></li> 		
   					</ul>
 
   				</li>
@@ -50,13 +49,74 @@
 		</nav>
 
 	</header>
-	<div id="img">
-		<img id="begins" src="images/beginshere.png">
+	<div class="landing">
+		<p class="landing-p">Your next spectacular journey</p>
+		<div id="img">
+			<img id="begins" src="images/beginshere.png">
+		</div>
+		<section >
+			<a class="main-btn" href="#MAIN">
+				EXPLORE 
+			</a>
+		</section>
 	</div>
-	<section >
-		<button class="btn">EXPLORE</button>
-	</section>
-	
+</div>
+
+	<main id="MAIN" class="main m1">
+		<h2>Destinations</h2>
+		<p class="main-p p1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis imperdiet proin.
+		</p>
+		<div class="grid g2">
+			<div class="g-div D1"> 
+				<a href="japan.html"><img class="g-image img1" src="images/japan-landing.jpg"></a> 
+       			 <a href="japan.html" class="g-a a1">JAPAN</a>
+			</div>
+
+			<div class="g-div D2">
+				<a href="china.html"><img class="g-image img2" src="images/china-landing.jpg"></a> 
+       			 <a href="china.html" class="g-a a2">CHINA</a>				
+			</div>
+
+			<div class="g-div D3">
+				<a href="thailand.html"><img class="g-image img3" src="images/thailand-landing.jpg"></a>
+       			 <a href="thailand.html" class="g-a a3">THAILAND</a>				
+			</div>
+
+			<div class="g-div D4">
+				<a href="italy.html"><img class="g-image img4" src="images/italy-landing.jpg"></a> 
+       			 <a href="italy.html" class="g-a a4">ITALY</a>				
+			</div>
+		</div>
+	</main>
+
+	<main class="main m2">
+		<h2>Experiences</h2>
+		<p class="main-p p2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis imperdiet proin.
+		</p>
+		<div class="grid g2">
+			<div class="g-div D1"> 
+				<a href="#"><img class="g-image img1" src="images/boat-main.jpg"></a> 
+       			 <a href="#" class="g-a a1">Boat-trips</a>
+			</div>
+
+			<div class="g-div D2">
+				<a href="#"><img class="g-image img2" src="images/mountain-main.jpg"></a> 
+       			 <a href="#" class="g-a a2">Mountain biking</a>				
+			</div>
+
+			<div class="g-div D3">
+				<a href="#"><img class="g-image img3" src="images/diving-main.jpg"></a>
+       			 <a href="#" class="g-a a3">Diving</a>				
+			</div>
+
+			<div class="g-div D4">
+				<a href="#"><img class="g-image img4" src="images/italy-landing.jpg"></a> 
+       			 <a href="#" class="g-a a4">Honeymoons</a>				
+			</div>
+		</div>
+	</main>
 	<footer>
 		<nav id="bottom-nav">
 			<a id="a3" class="foota" href="assin1.html">About us</a>
