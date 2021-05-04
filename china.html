@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <TITLE>China</TITLE>
+  <link rel="stylesheet" href="css/china.css">
+  <link rel="stylesheet" href="css/flickity.css" media="screen">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</HEAD>
+<body>
+  <header class="header">
+    <div id="icon-h1">
+      <img id="icon1" src="images/icon2.png">
+      <h1><a href="#">Your next journey</a></h1>
+    </div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav id="head-nav">
+      <ul class="main-ul">
+          <li class="dest-container">
+            <a onclick="myFunction()" id="a1" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+          <i id="fa-l1" class="fa fa-angle-left" ></i>
+          <i id="fa-d1" class="fa fa-angle-down" ></i>
+            Destinations</a>
+            <ul class="destinations-ul">
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+              <li><a href="china.html">China</a></li>
+              <li><a href="italy.html">Italy</a></li>
+            </ul>
+          </li>
+          <li class="exp-container">
+            <a id="a2" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+            <i id="fa-l2" class="fa fa-angle-left" ></i>
+            <i id="fa-d2" class="fa fa-angle-down" ></i>
+
+            Experiences</a>
+            <ul class="experiences-ul">
+              <li><a href="">Boat-trips</a></li>
+              <li><a href="">Mountain biking</a></li>
+              <li><a href="">Diving</a></li>
+              <li><a href="">Honeymoons</a></li>
+              <li><a href="">Learning trips</a></li>    
+            </ul>
+
+          </li>
+      </ul> 
+    </nav>
+  </header>
+<main>
+    <div id="header-h1-img">
+      <picture>
+        <source media="(max-width: 899px)"
+            srcset="images/china/china-MMM1.jpg">
+        <source media="(min-width: 900px)"
+            srcset="images/china/china-MMM2.jpg">
+         <img src="images/china/china-MMM1.jpg">
+      </picture>            
+        <h1>CHINA</h1>
+
+    </div>
+
+    <div class="welcome"> 
+      <section id="main-p">
+        <h2>Welcome To China</h2>
+        <p>One of the largest countries in the world and boasting the world’s oldest continuous civilization, China’s newly booming economy and the diversity of the country’s offerings have started to draw in more visitors than ever before.</p>
+      </section>
+
+      <section class="useful-info-icons ">
+        <div class="useful-info-icon" id="first-info">
+         <img src="https://touristjourney.com/wp-content/uploads/2020/05/capital_city.svg" alt="Capital City Icon" loading="lazy">
+         <p> Capital City<br> <strong>Beijing</strong></p>
+       </div>
+         <div class="useful-info-icon"> 
+          <img src="https://touristjourney.com/wp-content/uploads/2020/05/currency.svg" alt="Currency Icon" loading="lazy">
+          <p> Currency<br> <strong>yuan</strong></p>
+        </div>
+        <div class="useful-info-icon"> <img src="https://touristjourney.com/wp-content/uploads/2020/05/language.svg" alt="Language Icon" loading="lazy"><p> Language<br> <strong>Mandarin</strong></p></div>
+      </section>
+    </div>
+
+
+<section id="experiences-sect">
+  <h3>Experiences in China</h3> 
+  <!-- Flickity HTML init -->
+  <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
+
+    <!-- images from unsplash.com -->
+    <div class="carousel-cell">
+      <img src="images/china/wall-china.jpg" alt="orange tree" />
+      <a class="more-info" href="">more info</a>
+      <a href="#">Historical Sites</a>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/china/nature-china.jpg" alt="submerged" />
+      <a class="more-info" href="">more info</a>
+      <a href="#">Beautiful Nature</a>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/china/food-china.jpg" alt="One World Trade"/>
+      <a class="more-info" href="">more info</a>
+      <a href="#">Popular Food</a>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/china/zoo-china.jpg" />
+      <a class="more-info" href="">more info</a>
+      <a href="#">parks and Zoos</a>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/china/city-china.jpg" alt="cat nose" />
+      <a class="more-info" href="">more info</a>
+      <a href="#">cities Tours</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="cities-sect">
+  <h3>Cities & Regions of China</h3> 
+  <p></p>
+  <!-- Flickity HTML init -->
+  <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true }'>
+
+    <!-- images from unsplash.com -->
+    <div class="carousel-cell cc">
+      <img src="images/china/beijing.jpg" alt="orange tree" />
+      <div class="carousel-p">
+        <h4>Beijing</h4>
+        <p> Beijing is vast. Several districts contain an assortment of restaurants, historical buildings, accommodation types, political centers and entertainment options. A total of 14 districts cover an area just over 16,000 square kilometers that runs efficiently owing to extensive transport types that cross the capital.</p>
+        <a href="#">Explore</a>
+      </div>
+      
+    </div>
+    <div class="carousel-cell cc">
+      <img src="images/china/shangahi.jpg" alt="submerged" />
+      <div class="carousel-p">
+        <h4>Shanghai</h4>
+        <p>Shanghai is home to the world's second-tallest tower and a host of other neck-craning colossi. But it's not all sky-scraping razzmatazz. Beyond the crisply cool veneer of the modern city typified by Pudong, you can encounter copious architectural styles. </p>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+    <div class="carousel-cell cc">
+      <img src="images/china/Hangzhou.jpg" alt="One World Trade" />
+      <div class="carousel-p">
+        <h4>Hangzhou</h4>
+        <p>Hangzhou is the capital city of the province of Zhejiang and lies at the southernmost end of China's famous Grand Canal. This spectacular UNESCO World Heritage site is the world's longest canal, stretching some 1,776 kilometers and connecting the city to Beijing. Hangzhou is one of the country's most popular tourist destinations </p>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+    <div class="carousel-cell cc">
+      <img src="images/china/xian.jpg" />
+      <div class="carousel-p">
+        <h4>Xi'an</h4>
+        <p>Xi'an is the most selected city on the China city tour list just after Beijing. "Xian" in Chinese literally means "Peace in the West", historically known as "Chang An" ( Perpetual Peace ), an ancient capital city for some of the most important dynasties in Chinese history, including the Zhou, Qin, Han, the Sui, and Tang dynasties.</p>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-places">
+  <h3 id="popular-h3">Popular Places</h3> 
+
+  <div class="grid">
+
+        <div class="pop-div D1">
+          <img class="popular-image img1" src="images/china/china-wall.jpg">
+          <a href="#" class="popular-a a1">Great Wall of China</a>
+        </div>
+
+     <div class="pop-div D2">
+       <img class="popular-image img2" src="images/china/forbidden-city.jpg">
+       <a href="#" class="popular-a a2">Forbidden City</a>
+     </div>
+
+     <div class="pop-div D3">
+       <img class="popular-image img3" src="images/china/temple-of-heaven.jpg">
+       <a href="#" class="popular-a a3">Temple of Heaven</a>
+     </div>
+
+     <div class="pop-div D4">
+       <img class="popular-image img4" src="images/china/the-Bund.jpg">
+       <a href="#" class="popular-a a4">The Bund</a>
+     </div>
+
+     <div class="pop-div D5">
+       <img class="popular-image img5" src="images/china/nanjing-road.jpg">
+       <a href="#" class="popular-a a5">Nanjing Road</a>
+     </div>
+
+     <div class="pop-div D6">
+       <img class="popular-image img6" src="images/china/Summer-Palace.jpg">
+       <a href="#" class="popular-a a6">Summer Palace</a>
+     </div>
+
+      <div class="pop-div D7">
+       <img class="popular-image img7" src="images/china/Shanghai-Museum.jpg">
+       <a href="#" class="popular-a a7">Shanghai Museum</a>
+     </div>
+          <div class="pop-div D8">
+       <img class="popular-image img5" src="images/china/Palace-Museum.jpg">
+       <a href="#" class="popular-a a5">Palace Museum</a>
+     </div>
+
+     <div class="pop-div D9">
+       <img class="popular-image img6" src="images/china/Fenghuang.jpg">
+       <a href="#" class="popular-a a9">Fenghuang</a>
+     </div>
+
+      <div class="pop-div D10">
+       <img class="popular-image img7" src="images/china/mountain-Shidu.jpg">
+       <a href="#" class="popular-a a7">Mountain of Shidu</a>
+     </div>
+  </div>
+ 
+
+</section>
+
+
+<section id="hotels-sect">
+  <h3>Hotels in China</h3> 
+  <p>Experience best services in our top picked hotels in China</p>
+  <!-- Flickity HTML init -->
+  <div class="carousel H js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
+
+    <!-- images from unsplash.com -->
+    <div class="carousel-cell first DH">
+      <img src="images/china/InterContinental.jpeg" alt="orange tree" />
+        <a class="book-h" href="#">book now</a>
+        <a href="#"><h4>InterContinental Hotel</h4></a>
+        <p>shanghai | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>  
+    </div>
+
+    <div class="carousel-cell DH DH2">
+      <img src="images/china/Four-Seasons.jpg" alt="submerged" />
+        <a class="book-h" href="#">book now</a>
+        <a href="#"><h4>Four Seasons Hotel</h4></a>
+        <p>Kamala Beach  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+    </div>
+
+    <div class="carousel-cell DH">
+      <img src="images/china/Westin-Shimei.jpg" alt="One World Trade" />
+        <a class="book-h" href="#">book now</a>
+        <a href="#"><h4>Westin Shimei resort</h4></a>
+        <p>Wanning  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+    </div>
+
+    <div class="carousel-cell DH">
+      <img src="images/china/The-Garden.jpg"/>
+        <a class="book-h" href="#">book now</a>
+        <a href="#"><h4>The Garden</h4></a>
+        <p>Guangzhou  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+    </div>
+
+    <div class="carousel-cell DH">
+      <img src="images/china/Wanda-Vista.jpg"/>
+        <a class="book-h" href="#">book now</a>
+        <a href="#"><h4>Wanda Vista</h4></a>
+        <p>Taiyuan | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+    <footer>
+    <nav id="bottom-nav">
+      <a id="a3" class="foota" href="assin1.html">About us</a>
+      <a id="a4" class="foota" href="assin1.html">Contact us</a>
+    </nav>
+
+
+
+<script src="js/flickity.pkgd.min.js"></script>
+<script type="text/javascript"></script>
+  </footer>
+<script type="text/javascript"></script>
+</body>
+</html>
