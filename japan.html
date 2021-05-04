@@ -13,8 +13,8 @@
 <body>
   <header class="header">
     <div id="icon-h1">
-      <img id="icon1" src="images/icon1.png">
-      <h1><a href="#">Your next journey</a></h1>
+      <img id="icon1" src="images/icon2.png">
+      <h1><a href="index.html">Your next journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -26,11 +26,10 @@
           <i id="fa-d1" class="fa fa-angle-down" ></i>
             Destinations</a>
             <ul class="destinations-ul">
-              <li><a href="">Japan</a></li>
-              <li><a href="">Thailand</a></li>
-              <li><a href="">China</a></li>
-              <li><a href="">Switzerland</a></li>
-              <li><a href="">Irland</a></li>
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+              <li><a href="china.html">China</a></li>
+              <li><a href="italy.html">Italy</a></li>
             </ul>
           </li>
           <li class="exp-container">
@@ -53,12 +52,18 @@
   </header>
 <main>
     <div id="header-h1-img">
-        
-        <img src="images/tokyo.jpg">
+      <picture>
+        <source media="(max-width: 899px)"
+            srcset="images/tokyo.jpg">
+        <source media="(min-width: 900px)"
+            srcset="images/tokyo2.jpg">
+         <img src="images/tokyo.jpg">
+      </picture>            
         <h1>JAPAN</h1>
 
     </div>
 
+<div class="welcome"> 
   <section id="main-p">
     <h2>Welcome To Japan</h2>
     <p>Flanking the eastern coast of the Asian mainland for more than 1,800 miles, Japan – land of contrasts, celebrated culture and electronic wizardry – is the ideal place to explore and celebrate. A trip to Japan means to experience a complete and utterly different culture and to surrender yourself to the unfamiliar. </p>
@@ -75,6 +80,7 @@
     </div>
     <div class="useful-info-icon"> <img src="https://touristjourney.com/wp-content/uploads/2020/05/language.svg" alt="Language Icon" loading="lazy"><p> Language<br> <strong>Japanese</strong></p></div>
 </section>
+</div>
 
 <section id="experiences-sect">
   <h3>Experiences in Japan</h3> 
@@ -118,16 +124,16 @@
   <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
     <!-- images from unsplash.com -->
-    <div class="carousel-cell">
+    <div class="carousel-cell cc">
       <img src="images/tokyo-city.jpg" alt="orange tree" />
       <div class="carousel-p">
         <h4>Tokyo</h4>
-        <p>Japan's buzzing capital, Tokyo is most vistors' top destination when visiting the country. From amazing shopping to to notch dining to ancient traditions, this city is the epicenter of Japan. No matter what type of experience you're looking for, there is a tour of Tokyo fit for your style.</p>
+        <p>Japan's buzzing capital, Tokyo is most vistors' top destination when visiting the country. From amazing shopping to notch dining to ancient traditions, Tokyo is the epicenter of Japan. No matter what type of experience you're looking for, there is a tour of Tokyo fit for your style.</p>
         <a href="#">Explore</a>
       </div>
       
     </div>
-    <div class="carousel-cell">
+    <div class="carousel-cell cc">
       <img src="images/osaka.jpg" alt="submerged" />
       <div class="carousel-p">
         <h4>Osaka</h4>
@@ -135,7 +141,7 @@
         <a href="#">Explore</a>
       </div>
     </div>
-    <div class="carousel-cell">
+    <div class="carousel-cell cc">
       <img src="images/kyoto.jpg" alt="One World Trade" />
       <div class="carousel-p">
         <h4>Kyoto</h4>
@@ -143,7 +149,7 @@
         <a href="#">Explore</a>
       </div>
     </div>
-    <div class="carousel-cell">
+    <div class="carousel-cell cc">
       <img src="images/hakone.jpg" />
       <div class="carousel-p">
         <h4>Hakone</h4>
@@ -156,40 +162,59 @@
 
 <section class="popular-places">
   <h3 id="popular-h3">Popular Places</h3> 
- <div class="pop-div D1">
-   <img class="popular-image img1" src="images/osaka-castle.jpg">
-   <a href="#" class="popular-a a1">Osaka Castle</a>
- </div>
 
- <div class="pop-div D2">
-   <img class="popular-image img2" src="images/miyajima.jpg">
-   <a href="#" class="popular-a a2">Miyajima</a>
- </div>
+  <div class="grid">
 
- <div class="pop-div D3">
-   <img class="popular-image img3" src="images/kanazawa.jpg">
-   <a href="#" class="popular-a a3">Kanazawa</a>
- </div>
+        <div class="pop-div D1">
+          <img class="popular-image img1" src="images/osaka-castle.jpg">
+          <a href="#" class="popular-a a1">Osaka Castle</a>
+        </div>
 
- <div class="pop-div D4">
-   <img class="popular-image img4" src="images/hakuba.jpg">
-   <a href="#" class="popular-a a4">Hakuba</a>
- </div>
+     <div class="pop-div D2">
+       <img class="popular-image img2" src="images/miyajima.jpg">
+       <a href="#" class="popular-a a2">Miyajima</a>
+     </div>
 
- <div class="pop-div D5">
-   <img class="popular-image img5" src="images/fuji.jpg">
-   <a href="#" class="popular-a a5">Mount Fuji</a>
- </div>
+     <div class="pop-div D3">
+       <img class="popular-image img3" src="images/kanazawa.jpg">
+       <a href="#" class="popular-a a3">Kanazawa</a>
+     </div>
 
- <div class="pop-div D6">
-   <img class="popular-image img6" src="images/historic-kayoto.jpg">
-   <a href="#" class="popular-a a6">Historic kyoto</a>
- </div>
+     <div class="pop-div D4">
+       <img class="popular-image img4" src="images/hakuba.jpg">
+       <a href="#" class="popular-a a4">Hakuba</a>
+     </div>
 
-  <div class="pop-div D7">
-   <img class="popular-image img7" src="images/imp-tokyo.jpg">
-   <a href="#" class="popular-a a7">Imperial Tokyo</a>
- </div>
+     <div class="pop-div D5">
+       <img class="popular-image img5" src="images/fuji.jpg">
+       <a href="#" class="popular-a a5">Mount Fuji</a>
+     </div>
+
+     <div class="pop-div D6">
+       <img class="popular-image img6" src="images/historic-kayoto.jpg">
+       <a href="#" class="popular-a a6">Historic kyoto</a>
+     </div>
+
+      <div class="pop-div D7">
+       <img class="popular-image img7" src="images/imp-tokyo.jpg">
+       <a href="#" class="popular-a a7">Imperial Tokyo</a>
+     </div>
+          <div class="pop-div D8">
+       <img class="popular-image img5" src="images/tokyo-tower.jpg">
+       <a href="#" class="popular-a a5">Tokyo Tower</a>
+     </div>
+
+     <div class="pop-div D9">
+       <img class="popular-image img6" src="images/todaiji-temple.jpg">
+       <a href="#" class="popular-a a9">Todaiji Temple</a>
+     </div>
+
+      <div class="pop-div D10">
+       <img class="popular-image img7" src="images/yokohama.jpg">
+       <a href="#" class="popular-a a7">Yokohama</a>
+     </div>
+  </div>
+ 
 
 </section>
 
