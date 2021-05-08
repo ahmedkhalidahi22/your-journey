@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <TITLE>Boat trips</TITLE>
+  <link rel="stylesheet" href="css/boat-trips.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".your-class").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+        });
+  </script>
+
+  <!-- 
+    
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/> -->
+  
+</HEAD>
+<body>
+  <header class="header">
+    <div id="icon-h1">
+      <img id="icon1" src="images/icon2.png">
+      <h1><a href="index.html">Your next journey</a></h1>
+    </div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav id="head-nav">
+      <ul class="main-ul">
+          <li class="dest-container">
+            <a onclick="myFunction()" id="a1" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+          <i id="fa-l1" class="fa fa-angle-left" ></i>
+          <i id="fa-d1" class="fa fa-angle-down" ></i>
+            Destinations</a>
+            <ul class="destinations-ul">
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+              <li><a href="china.html">China</a></li>
+              <li><a href="italy.html">Italy</a></li>
+            </ul>
+          </li>
+          <li class="exp-container">
+            <a id="a2" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+            <i id="fa-l2" class="fa fa-angle-left" ></i>
+            <i id="fa-d2" class="fa fa-angle-down" ></i>
+
+            Experiences</a>
+            <ul class="experiences-ul">
+              <li><a href="">Boat-trips</a></li>
+              <li><a href="">Mountain biking</a></li>
+              <li><a href="">Diving</a></li>
+              <li><a href="">Honeymoons</a></li>  
+            </ul>
+
+          </li>
+      </ul> 
+    </nav>
+  </header>
+<main>
+    <div id="header-h1-img">
+      <picture>
+        <source media="(max-width: 899px)"
+            srcset="images/boat/boat-main.jpg">
+        <source media="(min-width: 900px)"
+            srcset="images/boat/boat-main.jpg">
+         <img src="images/boat/boat-main.jpg">
+      </picture>            
+        <h1>Boat trips</h1>
+
+    </div>
+
+    <div class="welcome"> 
+      <section id="main-p">
+        <p>Experience amazing sailing week! Sail, Party, Explore and Relax! </p>
+      </section>
+    </div>
+
+<section id="first-sec">
+  <h3>Find your course</h3> 
+  <p class="first-sec-p">The Boat Trip is a week of sailing in fleet of up to 20 yachts in the most beautiful places all over the world.</p>
+
+
+  <div class="your-class">
+    <div class="c-div div1">
+      <img class="c-img img1" src="images/boat/japan.jpg">
+      <a href="" class="c-a a1">JAPAN</a>
+    </div>
+
+    <div class="c-div div2">
+      <img class="c-img img2" src="images/boat/china.jpg">
+      <a href="" class="c-a a2">CHINA</a>
+    </div>
+
+    <div class="c-div div3">
+      <img class="c-img img3" src="images/boat/italy.jpg">
+      <a href="" class="c-a a3">ITALY</a>
+    </div>
+
+    <div class="c-div div4">
+      <img class="c-img img4" src="images/boat/thailand.jpg">
+      <a href="" class="c-a a4">THAILAND</a>
+    </div>
+
+    <div class="c-div div5">
+      <img class="c-img img5" src="images/boat/greece.jpg">
+      <a href="" class="c-a a5">GREECE</a>
+    </div>
+
+    <div class="c-div div6">
+      <img class="c-img img6" src="images/boat/croatia.jpg">
+      <a href="" class="c-a a6">CROATIA</a>
+    </div>
+
+      <div class="c-div div7">
+      <img class="c-img img7" src="images/boat/caribbean.jpg">
+      <a href="" class="c-a a7">CARIBBEAN</a>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="second-sec">
+  <h3>Choose your tour</h3> 
+  <p class="second-sec-p">The Boat Trip is a week of sailing in fleet of up to 20 yachts in the most beautiful places all over the world.</p>
+  
+  <div class="card crd1">
+    <img src="images/boat/caribbean.jpg" alt="Avatar" >
+    <div class="container">
+      <h4><b>PRIVATE BOAT TOUR</b></h4>
+      <p id="tour-pp" class="tour-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel orci porta non. Nibh ipsum consequat nisl vel pretium lectus quam.</p>
+      <a id="p1" onclick="myFunction()" class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd2">
+    <img src="images/boat/canal-tour.jpg" alt="Avatar" >
+    <div class="container">
+      <h4><b>COZY AND FUN CANAL TOUR</b></h4>
+      <p class="tour-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel orci porta non. Nibh ipsum consequat nisl vel pretium lectus quam.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd3">
+    <img src="images/boat/brunch-tour.jpg" alt="Avatar" >
+    <div class="container">
+      <h4><b>WEEKEND COMBO BRUNCH TOUR</b></h4>
+      <p class="tour-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel orci porta non. Nibh ipsum consequat nisl vel pretium lectus quam.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd4">
+    <img src="images/boat/dinner-tour.jpg" alt="Avatar" >
+    <div class="container">
+      <h4><b>SPECIAL EVENING DINNER TOUR</b></h4>
+      <p class="tour-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel orci porta non. Nibh ipsum consequat nisl vel pretium lectus quam.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="popular-places">
+</section>
+
+
+
+<section id="hotels-sect">
+</section>
+
+
+</main>
+
+<footer>
+  <nav id="bottom-nav">
+    <a id="a3" class="foota" href="assin1.html">About us</a>
+    <a id="a4" class="foota" href="assin1.html">Contact us</a>
+  </nav>
+
+
+
+
+</footer>
+
+<script type="text/javascript">
+ function myFunction() {
+  var x = document.getElementById("tour-pp");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
+</body>
+</html>
