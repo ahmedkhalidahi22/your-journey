@@ -622,6 +622,8 @@ border:1px solid rgb(108 193 13);}
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
+	box-shadow: 0 0 7px 0 rgb(0 0 0 / 30%);
+	 border-radius: 0px 0px 10px 10px;
 }
 #icn-div1{
 	margin-top: 40px;
