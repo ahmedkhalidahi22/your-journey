@@ -6,6 +6,7 @@
   <TITLE>Boat trips</TITLE>
   <link rel="stylesheet" href="css/boat-trips.css">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -18,8 +19,8 @@
             $(".your-class").slick({
                 dots: true,
                 infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 2});
+                slidesToShow: 1,
+                slidesToScroll: 1});
         });
 
                 $(document).on('ready', function () {
@@ -116,43 +117,38 @@
   <p class="first-sec-p">The Boat Trip is a week of sailing in fleet of up to 20 yachts in the most beautiful places all over the world.</p>
 
 
-  <div class="your-class">
+ <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
+
+    <!-- images from unsplash.com -->
     <div class="c-div div1">
       <img class="c-img img1" src="images/boat/japan.jpg">
       <a href="" class="c-a a1">JAPAN</a>
     </div>
-
     <div class="c-div div2">
       <img class="c-img img2" src="images/boat/china.jpg">
       <a href="" class="c-a a2">CHINA</a>
     </div>
-
     <div class="c-div div3">
       <img class="c-img img3" src="images/boat/italy.jpg">
       <a href="" class="c-a a3">ITALY</a>
     </div>
-
     <div class="c-div div4">
       <img class="c-img img4" src="images/boat/thailand.jpg">
       <a href="" class="c-a a4">THAILAND</a>
     </div>
-
     <div class="c-div div5">
       <img class="c-img img5" src="images/boat/greece.jpg">
       <a href="" class="c-a a5">GREECE</a>
     </div>
-
-    <div class="c-div div6">
+     <div class="c-div div6">
       <img class="c-img img6" src="images/boat/croatia.jpg">
       <a href="" class="c-a a6">CROATIA</a>
     </div>
-
-      <div class="c-div div7">
+          <div class="c-div div7">
       <img class="c-img img7" src="images/boat/caribbean.jpg">
       <a href="" class="c-a a7">CARIBBEAN</a>
-    </div>
+    </div>   
   </div>
-
  <div class="divider"></div> 
 
 </section>
@@ -291,5 +287,8 @@
     x.style.display = "none";
   }
 }</script>
+
+<script src="js/flickity.pkgd.min.js"></script>
+<script type="text/javascript"></script>
 </body>
 </html>
