@@ -456,7 +456,7 @@ h3{
 #first-sec{
 	display: block;
   border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  padding-bottom: 45px;
+  padding-bottom: 65px;
   margin-top: 0px;
   width: 100%;
   margin:auto auto;
@@ -475,6 +475,7 @@ font-size: 1.1em;
 	border-radius: 10px;
 	padding-left: 5.88%;
  	padding-right: 5.88%;
+ 	margin-top: 30px;
 }
 
 
@@ -629,7 +630,7 @@ border:1px solid rgb(108 193 13);}
 .divider {
 	display: block;
 	position: relative;
-	top: 52px;
+	top: 72px;
 	margin: 0px auto;
 	height: 1px;
 	width: 100%;
