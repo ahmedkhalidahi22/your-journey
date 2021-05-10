@@ -485,13 +485,13 @@ font-size: 1.1em;
 	display: block;
 
 
+
 }
 .c-div> .c-img{
  width:85%;
  border-radius: 5px;
  margin: 0px auto;
  display: block;
-
 
 }
 
@@ -501,11 +501,27 @@ font-size: 1.1em;
 	position: absolute;
     color: #fff;
 	font-size: 200%;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 	text-decoration: none;
 	width: 100%;
 	line-height: 20px;
 	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	font-weight: bold;
+	z-index: 2;
+
+}
+.tint{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 85%;
+	z-index: 1;
+	top: 0px;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.4),
+   rgba(0, 0, 0, 0.4)) ;
 	left: 50%;
 	top: 50%;
 	transform: translate( -50%, -50% );
