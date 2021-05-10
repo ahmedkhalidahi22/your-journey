@@ -393,9 +393,9 @@ width: 100%;
 	/*background-image: url(../images/japan-background222.jpg);*/
 	background-size: cover;
 	margin-top: -5px;
-	 padding-top: 30px;
-	 padding-bottom: 25px;
-	 background-color: #0244d2;
+	 padding-top: 40px;
+	 padding-bottom: 45px;
+	 background-color: #0268d2;
 }
 #main-p{
 	margin-top: 0px;
@@ -410,16 +410,16 @@ width: 100%;
 margin:0px 40px 0px 40px;
 text-align: center;
 font-size: 1.1em;
-line-height: 25px;
+line-height: 30px;
 font-weight: bold;
-letter-spacing: 0.5px;
+letter-spacing: 1px;
 }
 .icons{
 	display: block;
 	margin: auto auto;
 	width: 80%;
 	text-align: center;
-	padding: 15px 0px 15px 0px;
+	padding: 25px 0px 15px 0px;
 }
 .icon-1,.icon-2{
 display: inline-block;
@@ -427,11 +427,11 @@ width: 30%;
 }
 .fas{
 	display: inline-block;
-	color: #e4d0cc;
+	color: #fff2f2;
 	width: 57px;
 }
 .icn>p{
-	color:#e4d0cc;
+	color:#fff2f2;
 	font-size: 85%;
 	font-weight: bold;
 	margin: 0px;
