@@ -456,9 +456,9 @@ h3{
 #first-sec{
 	display: block;
   border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  padding-bottom: 15px;
+  padding-bottom: 45px;
   margin-top: 0px;
-  width: 89.5%;
+  width: 100%;
   margin:auto auto;
 }
 #first-sec>h3{
@@ -470,34 +470,56 @@ text-align: center;
 line-height: 1.35em;
 font-size: 1.1em;
 }
-.your-class{
+.carousel{
+	padding: 0px 0px 10px 0px;
+	border-radius: 10px;
+	padding-left: 5.88%;
+ 	padding-right: 5.88%;
 }
+
 
 .c-div{
-	display: relative;
-}
-
-.c-img{
+	width:100%;
+	text-align: center;
+	position: relative;
 	display: block;
-	width:95%;
-	margin:0 auto;
-	border-radius:3px;
+
 
 }
+.c-div> .c-img{
+ width:85%;
+ border-radius: 5px;
+ margin: 0px auto;
+ display: block;
+
+
+}
+
+
 .c-a{
 	font-family:poppins-M;
 	position: absolute;
     color: #fff;
-	font-size: 170%;
+	font-size: 200%;
 	letter-spacing: 2px;
 	text-decoration: none;
-	width: 8.5%;
+	width: 100%;
 	line-height: 20px;
-	top: 45%;
 	text-align: center;
-	margin-left: 10px;
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
 
 }
+
+.flickity-page-dots{
+right: 0px;
+}
+.flickity-page-dots .dot{
+	 width: 1px;
+	 height: 1px;
+}
+
 /* first section ends*/
 
 
@@ -591,7 +613,7 @@ border:1px solid rgb(108 193 13);}
 .divider {
 	display: block;
 	position: relative;
-	top: 22px;
+	top: 52px;
 	margin: 0px auto;
 	height: 1px;
 	width: 100%;
@@ -615,18 +637,19 @@ border:1px solid rgb(108 193 13);}
 }
 .icn-card{
 	display: block;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	margin: 0px auto;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
 	box-shadow: 0 0 7px 0 rgb(0 0 0 / 30%);
 	 border-radius: 0px 0px 10px 10px;
+
 }
 #icn-div1{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .icn-card>i{
