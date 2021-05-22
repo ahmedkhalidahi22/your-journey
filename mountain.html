@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <TITLE>Mountain Biking</TITLE>
+  <link rel="stylesheet" href="css/mountain.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".your-class").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1});
+        });
+
+                $(document).on('ready', function () {
+            $(".cmnt-class").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+              });
+        });
+  </script>
+
+  <!-- 
+    
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/> -->
+  
+</HEAD>
+<body>
+  <header class="header">
+    <div id="icon-h1">
+      <img id="icon1" src="images/icon2.png">
+      <h1><a href="index.html">Your next journey</a></h1>
+    </div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav id="head-nav">
+      <ul class="main-ul">
+          <li class="dest-container">
+            <a onclick="myFunction()" id="a1" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+          <i id="fa-l1" class="fa fa-angle-left" ></i>
+          <i id="fa-d1" class="fa fa-angle-down" ></i>
+            Destinations</a>
+            <ul class="destinations-ul">
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+              <li><a href="china.html">China</a></li>
+              <li><a href="italy.html">Italy</a></li>
+            </ul>
+          </li>
+          <li class="exp-container">
+            <a id="a2" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+            <i id="fa-l2" class="fa fa-angle-left" ></i>
+            <i id="fa-d2" class="fa fa-angle-down" ></i>
+
+            Experiences</a>
+            <ul class="experiences-ul">
+              <li><a href="boat-trips.html">Boat-trips</a></li>
+              <li><a href="mountain.html">Mountain biking</a></li>
+              <li><a href="diving.html">Diving</a></li>
+              <li><a href="honey.html">Honeymoons</a></li>   
+            </ul>
+
+          </li>
+      </ul> 
+    </nav>
+  </header>
+<main>
+    <div id="header-h1-img">
+      <picture>
+        <source media="(max-width: 899px)"
+            srcset="images/mountain/bike-main.jpg">
+        <source media="(min-width: 1151px)"
+            srcset="images/mountain/bike-main2.jpg">       
+        <source media="(min-width: 900px)"
+            srcset="images/mountain/bike-main1.jpg">
+         <img src="images/mountain/bike-main.jpg">
+      </picture>            
+        <h1>MOUNTAIN BIKING</h1>
+
+    </div>
+
+    <div class="welcome"> 
+      <section id="main-p">
+        <p>Mountain biking provides a unique and unforgettable outdoors experience! </p>
+      </section>
+
+      <div class="icons">
+
+        <div class="icn icon-1">
+         <i class="fas fa-bicycle fa-3x"></i>
+         <p>BIKING</p>
+        </div>
+
+        <div class="icn icon-2">
+         <i class="fas fa-hiking fa-3x"></i>
+         <p>HIKING</p>
+        </div>
+
+      </div>
+    </div>
+
+<section id="first-sec">
+  <h3>Find your trip</h3> 
+  <p class="first-sec-p">We have a range of guided mountain bike tours worldwide, if you love mountain biking and travelling, we will have the perfect adventure for you.</p>
+
+
+ <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
+
+    <!-- images from unsplash.com -->
+    <div class="c-div div1">
+      <img class="c-img img1" src="images/mountain/scotland.jpg">
+      <a href="" class="c-a a1">SCOTLAND</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div2">
+      <img class="c-img img2" src="images/mountain/namibia.jpg">
+      <a href="" class="c-a a2">NAMIBIA</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div3">
+      <img class="c-img img3" src="images/mountain/canada.jpg">
+      <a href="" class="c-a a3">CANADA</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div4">
+      <img class="c-img img4" src="images/mountain/morocco.jpg">
+      <a href="" class="c-a a4">MOROCCO</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div5">
+      <img class="c-img img5" src="images/mountain/chile.jpg">
+      <a href="" class="c-a a5">CHILE</a>
+    </div>
+     <div class="c-div div6">
+      <img class="c-img img6" src="images/boat/croatia.jpg">
+      <a href="" class="c-a a6">CROATIA</a>
+      <div class="tint"></div>
+    </div>
+          <div class="c-div div7">
+      <img class="c-img img7" src="images/mountain/zealand.jpg">
+      <a href="" class="c-a a7">NEW ZEALAND</a>
+    </div> 
+
+  
+  </div>
+
+
+ <div class="grid">
+
+    <div class="c-div div1">
+      <img class="c-img img1" src="images/mountain/scotland.jpg">
+      <a href="" class="c-a a1">SCOTLAND</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div2">
+      <img class="c-img img2" src="images/mountain/namibia.jpg">
+      <a href="" class="c-a a2">NAMIBIA</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div3">
+      <img class="c-img img3" src="images/mountain/canada.jpg">
+      <a href="" class="c-a a3">CANADA</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div4">
+      <img class="c-img img4" src="images/mountain/morocco.jpg">
+      <a href="" class="c-a a4">MOROCCO</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div5">
+      <img class="c-img img5" src="images/mountain/chile.jpg">
+      <a href="" class="c-a a5">CHILE</a>
+      <div class="tint"></div>
+    </div>
+     <div class="c-div div6">
+      <img class="c-img img6" src="images/mountain/croatia.jpg">
+      <a href="" class="c-a a6">CROATIA</a>
+      <div class="tint"></div>
+    </div>
+          <div class="c-div div7">
+      <img class="c-img img7" src="images/mountain/zealand.jpg">
+      <a href="" class="c-a a7">NEW ZEALAND</a>
+      <div class="tint"></div>
+    </div> 
+
+
+  </div>
+
+ <div class="divider"></div> 
+
+</section>
+
+
+<section id="second-sec">
+  <h3>Bike tours</h3> 
+  <p class="second-sec-p">From family tours on car-free bike paths to adrenaline-pumping tours of the most beautiful mountains in the country.</p>
+  <div class="cards-cont">
+    
+     <div class="card crd1 crd-left">
+    <img src="images/mountain/one-day.jpg" alt="Avatar" >
+    <div class="container">
+       <h4><b>ONE DAY BIKE TOUR </b></h4>
+      <p id="tour-pp" class="tour-p">One Day Trip full of rolling hills and breathtaking landscape Can Be Full Day Or Half  Day with a Guide From Pienza, or Guided + Van Support For Groups 4 People and more in Siena Province</p>
+      <a id="p1" onclick="myFunction()" class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd2 crd-right">
+    <img src="images/mountain/multi-day.jpg" alt="Avatar" >
+    <div class="container">
+       <h4><b>MULTI-DAY BIKE TOUR</b></h4>
+      <p class="tour-p">Our Bike Tours are designed to accommodate riders from a variety of backgrounds. Some tours are intended specifically for more experienced riders.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd3 crd-left">
+    <img src="images/mountain/road.jpg" alt="Avatar" >
+    <div class="container">
+    <h4><b>ROAD BIKING TOUR</b></h4>
+          <p class="tour-p">Whether you’re an avid cyclist or a recreational rider, the best way to experience a new place is on a bike. That’s because pedaling is much more immersive than driving—you’ll see, hear, and even smell additional things that you may miss</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd4 crd-right">
+    <img src="images/mountain/family.jpg" alt="Avatar" >
+    <div class="container">
+     <h4><b>FAMILY BIKE TOUR</b></h4>
+      <p class="tour-p">When it’s time for your family to take its next vacation, chances are you’re going to be looking for something with a little more excitement and a little less hassle.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+   
+  </div>
+
+<!-- WIDE SCREEN VERSION -->
+
+  <div class="cards-cont-wide">
+    
+     <div class="card crd1 crd-left">
+   <img src="images/mountain/one-day.jpg" alt="Avatar" >
+     </div>
+     <div class="container c1">
+      <h4><b>ONE DAY BIKE TOUR </b></h4>
+      <p id="tour-pp" class="tour-p">One Day Trip full of rolling hills and breathtaking landscape Can Be Full Day Or Half  Day with a Guide From Pienza, or Guided + Van Support For Groups 4 People and more in Siena Province</p>
+      <a id="p1" onclick="myFunction()" class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+
+  <div class="card crd2 crd-right">
+    <img src="images/mountain/multi-day.jpg" alt="Avatar" >
+    
+  </div>
+  <div class="container c2">
+      <h4><b>MULTI-DAY BIKE TOUR</b></h4>
+      <p class="tour-p">Our Bike Tours are designed to accommodate riders from a variety of backgrounds. Some tours are intended specifically for more experienced riders.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+
+  <div class="card crd3 crd-left">
+   <img src="images/mountain/road.jpg" alt="Avatar" >
+  </div>
+    <div class="container c3">
+          <h4><b>ROAD BIKING TOUR</b></h4>
+          <p class="tour-p">Whether you’re an avid cyclist or a recreational rider, the best way to experience a new place is on a bike. That’s because pedaling is much more immersive than driving—you’ll see, hear, and even smell additional things that you may miss</p>
+          <a class="details-a" href="">DETAILS</a>
+          <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  <div class="card crd4 crd-right">
+  <img src="images/mountain/family.jpg" alt="Avatar" >
+  </div>
+  <div class="container c4">
+      <h4><b>FAMILY BIKE TOUR</b></h4>
+      <p class="tour-p">When it’s time for your family to take its next vacation, chances are you’re going to be looking for something with a little more excitement and a little less hassle.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+   
+  </div>
+ <div id="divider2" class="divider D1"></div> 
+</section>
+
+
+
+<section class="third-sec">
+  <h3>SERVICES</h3> 
+  <div class="icon-cards">
+   <div class="first-cards-set"> 
+     <div id="icn-div1" class="icn-card div1">
+      <i class="fas fa-users fa-5x"></i>
+      <a href=""><h4>Special Family Prices</h4></a>
+      <p>Half price for children and under 5’s for free!</p>
+   </div>
+  <div class="icn-card div1">
+      <i class="fas fa-user-shield fa-5x"></i>
+      <a href=""><h4>Well trained guides</h4></a>
+      <p>profissional and well trained guides are always by your side</p>
+   </div> 
+ </div>
+
+  <div class="icn-card div1">
+      <i class="fas fa-utensils fa-5x"></i>
+      <a href=""><h4>Free Drinks & Fresh Fruits</h4></a>
+      <p>1 free drink and a fresh fruit salad offered on every trip. </p>    
+   </div>
+ 
+   <div class="icn-card div1">
+      <i class="fas fa-hard-hat fa-5x"></i>
+      <a href=""><h4>Full Safety Gear</h4></a>
+      <p>Full safety equipment and lifejackets on-board every boat, every trip!</p>
+   </div>
+
+  </div>
+ <div id="divider3" class="divider"></div> 
+</section>
+
+
+
+<section id="fourth-sec">
+  <div class="sep-div">
+    <h4>HEAR FROM THEM</h4>
+    <i class="fas fa-quote-right fa-1x"></i>
+  </div>
+  <div class="cmnt-class">
+    <div class="cmnt-div cmnt1">
+      <p class="cmnt-p ">Enthusiastic, knowledgeable guides, healthy lunches, fine dining, copious brew pubs, spectacular scenery and nearly ubiquitous van support!</p>
+      <span class="cmnt-s1">MARIE G.</span>
+      <span class="cmnt-s2">Norway</span>
+    </div>
+
+    <div class="cmnt-div cmnt2">
+      <p class="cmnt-p ">A great way to experience a unique part of our world by leaving much of the planning and execution to a group of knowledgable, experienced, and helpful guides.</p>
+      <span class="cmnt-s1">PHIL D.</span>
+      <span class="cmnt-s2">Germany</span>
+    </div>
+
+    <div class="cmnt-div cmnt3">
+      <p class="cmnt-p ">It is an amazing way to explore a new place, the routes take to you to best spots, on the best roads, the guides are always there to make sure you are doing OK.</p>
+      <span class="cmnt-s1">NANCY</span>
+      <span class="cmnt-s2">Netherlands</span>
+    </div>
+
+    <div class="cmnt-div cmnt4">
+      <p class="cmnt-p ">Great trip! Beautiful scenery, guides are very supportive and accommodating to the various levels of riders. Everyone is encouraged to ride to their comfort level.</p>
+      <span class="cmnt-s1">LAURA J.</span>
+      <span class="cmnt-s2">Poland</span>
+    </div>
+  </div>
+
+</section>
+</main>
+
+<footer>
+  <nav id="bottom-nav">
+    <a id="a3" class="foota" href="assin1.html">About us</a>
+    <a id="a4" class="foota" href="assin1.html">Contact us</a>
+  </nav>
+
+
+
+
+</footer>
+
+<script type="text/javascript">
+ function myFunction() {
+  var x = document.getElementById("tour-pp");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
+
+<script src="js/flickity.pkgd.min.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
