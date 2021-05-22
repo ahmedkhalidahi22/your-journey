@@ -8,12 +8,101 @@
   <link rel="stylesheet" href="css/flickity.css" media="screen">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function initMap(){
+      map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: 35.74704816478998, lng: 137.8925574671148},
+  zoom: 6,
+  mapId: 'fd207598b19ef58f',
+  MapTypeStyle:[
+      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+      {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }],
+      },
+      {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }],
+      },
+      {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }],
+      },
+    ],
+});
+    }
+  </script>
   
 </HEAD>
 <body>
   <header class="header">
     <div id="icon-h1">
-      <img id="icon1" src="images/icon2.png">
+      <img id="icon1" alt="websites icon" src="images/icon2.png">
       <h1><a href="index.html">Your next journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -39,11 +128,10 @@
 
             Experiences</a>
             <ul class="experiences-ul">
-              <li><a href="">Boat-trips</a></li>
-              <li><a href="">Mountain biking</a></li>
-              <li><a href="">Diving</a></li>
-              <li><a href="">Honeymoons</a></li>
-              <li><a href="">Learning trips</a></li>    
+              <li><a href="boat-trips.html">Boat-trips</a></li>
+              <li><a href="mountain.html">Mountain biking</a></li>
+              <li><a href="diving.html">Diving</a></li>
+              <li><a href="honey.html">Honeymoons</a></li>    
             </ul>
 
           </li>
@@ -57,7 +145,7 @@
             srcset="images/tokyo.jpg">
         <source media="(min-width: 900px)"
             srcset="images/tokyo2.jpg">
-         <img src="images/tokyo.jpg">
+         <img alt="japan's header image" src="images/tokyo.jpg">
       </picture>            
         <h1>JAPAN</h1>
 
@@ -68,6 +156,7 @@
     <h2>Welcome To Japan</h2>
     <p>Flanking the eastern coast of the Asian mainland for more than 1,800 miles, Japan – land of contrasts, celebrated culture and electronic wizardry – is the ideal place to explore and celebrate. A trip to Japan means to experience a complete and utterly different culture and to surrender yourself to the unfamiliar. </p>
   </section>
+
 
   <section class="useful-info-icons ">
     <div class="useful-info-icon" id="first-info">
@@ -89,27 +178,27 @@
 
     <!-- images from unsplash.com -->
     <div class="carousel-cell">
-      <img src="images/temples.jpg" alt="orange tree" />
+      <img src="images/temples.jpg" alt="image of a temple" />
       <a class="more-info" href="">more info</a>
       <a href="#">Temples & shrines</a>
     </div>
     <div class="carousel-cell">
-      <img src="images/japanese-food.jpg" alt="submerged" />
+      <img src="images/japanese-food.jpg" alt="japanese dish image" />
       <a class="more-info" href="">more info</a>
       <a href="#">Japanese food</a>
     </div>
     <div class="carousel-cell">
-      <img src="images/japan-city.jpg" alt="One World Trade"/>
+      <img src="images/japan-city.jpg" alt="tokyo at night"/>
       <a class="more-info" href="">more info</a>
       <a href="#">City life</a>
     </div>
     <div class="carousel-cell">
-      <img src="images/japan-parks.jpg" />
-      <a class="more-info" href="">more info</a>
+      <img src="images/japan-parks.jpg" alt="a park in japan" />
+      <a class="more-info"  href="">more info</a>
       <a href="#">Parks & gardens</a>
     </div>
     <div class="carousel-cell">
-      <img src="images/manga.jpg" alt="cat nose" />
+      <img src="images/manga.jpg" alt="japanese anime character" />
       <a class="more-info" href="">more info</a>
       <a href="#">Manga culture</a>
     </div>
@@ -125,16 +214,19 @@
 
     <!-- images from unsplash.com -->
     <div class="carousel-cell cc">
-      <img src="images/tokyo-city.jpg" alt="orange tree" />
+      <img src="images/tokyo-city.jpg" alt="tokyo city" />
       <div class="carousel-p">
         <h4>Tokyo</h4>
         <p>Japan's buzzing capital, Tokyo is most vistors' top destination when visiting the country. From amazing shopping to notch dining to ancient traditions, Tokyo is the epicenter of Japan. No matter what type of experience you're looking for, there is a tour of Tokyo fit for your style.</p>
+        
+        
+
         <a href="#">Explore</a>
       </div>
-      
+      <div id="map"></div>
     </div>
     <div class="carousel-cell cc">
-      <img src="images/osaka.jpg" alt="submerged" />
+      <img src="images/osaka.jpg" alt="osaka city" />
       <div class="carousel-p">
         <h4>Osaka</h4>
         <p>Osaka is a gem of Japan that all visitors should add to their list. The nation's food capital with friendlier locals and more affordable shopping than other big cities, Osaka is worth checking out on your next visit.</p>
@@ -142,7 +234,7 @@
       </div>
     </div>
     <div class="carousel-cell cc">
-      <img src="images/kyoto.jpg" alt="One World Trade" />
+      <img src="images/kyoto.jpg" alt="kyoto city" />
       <div class="carousel-p">
         <h4>Kyoto</h4>
         <p>Japan's ancient cultural capital is the place to visit for a true Japanese experience. Walking down Kyoto's streets will take you back in time to experience authentic, traditional Japan while also tasting the country's modernity.  Check out our Kyoto tours to see everything this unique city has to offer.</p>
@@ -150,7 +242,7 @@
       </div>
     </div>
     <div class="carousel-cell cc">
-      <img src="images/hakone.jpg" />
+      <img src="images/hakone.jpg" alt="hakone city"/>
       <div class="carousel-p">
         <h4>Hakone</h4>
         <p>Take a break from bustling Tokyo and experience Japan's unique nature with a tour of nearby Hakone. This area is known for its relaxing hot springs and natural beauty, with stunning views of Mt Fuji across Lake Ashinoko.</p>
@@ -166,51 +258,51 @@
   <div class="grid">
 
         <div class="pop-div D1">
-          <img class="popular-image img1" src="images/osaka-castle.jpg">
+          <img class="popular-image img1" alt="Osaka Castle" src="images/osaka-castle.jpg">
           <a href="#" class="popular-a a1">Osaka Castle</a>
         </div>
 
      <div class="pop-div D2">
-       <img class="popular-image img2" src="images/miyajima.jpg">
+       <img class="popular-image img2" alt="Miyajima" src="images/miyajima.jpg">
        <a href="#" class="popular-a a2">Miyajima</a>
      </div>
 
      <div class="pop-div D3">
-       <img class="popular-image img3" src="images/kanazawa.jpg">
+       <img class="popular-image img3" alt="Kanazawa" src="images/kanazawa.jpg">
        <a href="#" class="popular-a a3">Kanazawa</a>
      </div>
 
      <div class="pop-div D4">
-       <img class="popular-image img4" src="images/hakuba.jpg">
+       <img class="popular-image img4" alt="Hakuba" src="images/hakuba.jpg">
        <a href="#" class="popular-a a4">Hakuba</a>
      </div>
 
      <div class="pop-div D5">
-       <img class="popular-image img5" src="images/fuji.jpg">
+       <img class="popular-image img5" alt="Mount Fuji" src="images/fuji.jpg">
        <a href="#" class="popular-a a5">Mount Fuji</a>
      </div>
 
      <div class="pop-div D6">
-       <img class="popular-image img6" src="images/historic-kayoto.jpg">
+       <img class="popular-image img6" alt="Historic kyoto" src="images/historic-kayoto.jpg">
        <a href="#" class="popular-a a6">Historic kyoto</a>
      </div>
 
       <div class="pop-div D7">
-       <img class="popular-image img7" src="images/imp-tokyo.jpg">
+       <img class="popular-image img7" alt="Imperial Tokyo" src="images/imp-tokyo.jpg">
        <a href="#" class="popular-a a7">Imperial Tokyo</a>
      </div>
           <div class="pop-div D8">
-       <img class="popular-image img5" src="images/tokyo-tower.jpg">
+       <img class="popular-image img5" alt="Tokyo Tower" src="images/tokyo-tower.jpg">
        <a href="#" class="popular-a a5">Tokyo Tower</a>
      </div>
 
      <div class="pop-div D9">
-       <img class="popular-image img6" src="images/todaiji-temple.jpg">
+       <img class="popular-image img6" alt="Todaiji Temple" src="images/todaiji-temple.jpg">
        <a href="#" class="popular-a a9">Todaiji Temple</a>
      </div>
 
       <div class="pop-div D10">
-       <img class="popular-image img7" src="images/yokohama.jpg">
+       <img class="popular-image img7" alt="Yokohama" src="images/yokohama.jpg">
        <a href="#" class="popular-a a7">Yokohama</a>
      </div>
   </div>
@@ -227,35 +319,35 @@
 
     <!-- images from unsplash.com -->
     <div class="carousel-cell first DH">
-      <img src="images/aman-h.jpg" alt="orange tree" />
+      <img src="images/aman-h.jpg" alt="hotel room in aman tokyo" />
         <a class="book-h" href="#">book now</a>
         <a href="#"><h4>aman tokyo</h4></a>
         <p>Tokyo | <i class="fas fa-star"></i><i class="fas fa-star"></i></p>  
     </div>
 
     <div class="carousel-cell DH DH2">
-      <img src="images/hyat-h2.jpg" alt="submerged" />
+      <img src="images/hyat-h2.jpg" alt="hotel room in hyatt centric ginza" />
         <a class="book-h" href="#">book now</a>
         <a href="#"><h4>hyatt centric ginza tokyo</h4></a>
         <p>Tokyo | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
     </div>
 
     <div class="carousel-cell DH">
-      <img src="images/noku-h.jpg" alt="One World Trade" />
+      <img src="images/noku-h.jpg" alt="hotel room in noku kyoto" />
         <a class="book-h" href="#">book now</a>
         <a href="#"><h4>noku kyoto</h4></a>
         <p>Kyoto  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
     </div>
 
     <div class="carousel-cell DH">
-      <img src="images/screen-h.jpg"/>
+      <img alt="hotel room in The Screen hotel" src="images/screen-h.jpg"/>
         <a class="book-h" href="#">book now</a>
         <a href="#"><h4>The Screen</h4></a>
         <p>Kyoto  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
     </div>
 
     <div class="carousel-cell DH">
-      <img src="images/hosh-h.jpg"/>
+      <img src="images/hosh-h.jpg" alt="hotel room in Hoshinoya Kyoto" />
         <a class="book-h" href="#">book now</a>
         <a href="#"><h4>Hoshinoya Kyoto</h4></a>
         <p>Kyoto | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -276,8 +368,12 @@
 
 
 <script src="js/flickity.pkgd.min.js"></script>
-<script type="text/javascript"></script>
+<script></script>
   </footer>
-<script type="text/javascript"></script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWh94_onQG_NuFQZ6HGHkfD_krz0FswAM&map_ids= fd207598b19ef58f&callback=initMap">
+</script>
+
 </body>
 </html>
