@@ -1,0 +1,25 @@
+html , body{
+
+	margin:0;
+	padding: 0;
+	background-color: #555;
+}
+@font-face {
+  font-family:poppins-M;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+ div{
+ 	display: block;
+ 	margin: auto auto;
+ 	text-align: center;
+ 	background-color: #d00000;
+ 	margin-top: 400px;
+ 	padding: 10px 0px 10px 0px;
+ }
+
+ h1{
+ 	font-family:poppins-M;
+ 	letter-spacing: 1px;
+ 	font-size: 300%;
+ 	color:#fff;
+ }
