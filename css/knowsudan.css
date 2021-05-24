@@ -314,7 +314,7 @@ display: none;
     display: inline-block;
 }
 /* DROPDOWN MENU ENDS*/
-section{
+.exp-btn{
 display: block;
 clear:both;
 width: 50%;
@@ -374,7 +374,7 @@ margin-top:90px;
 	letter-spacing: 1px;
 	color: #2d2c2c;
 }
-main{
+section{
 	background: #fff;
 	padding-top: 30px;
 	padding-bottom:30px;
@@ -385,7 +385,7 @@ main{
  box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
  margin-bottom: 2px;
 }
-main>h2{
+section>h2{
 	display: block;
 	width: 100%;
 	text-align: center;
@@ -720,7 +720,7 @@ display: none;
 	color: #2d2c2c;;
 }
 
-section{
+.exp-btn{
 display: block;
 clear:both;
 width: 50%;
@@ -753,7 +753,7 @@ margin-top:150px;
 	border-style: solid;
 	border-width: 1px;
 }
-main{
+section{
 	background: #fff;
 	padding-top: 50px;
 	padding-bottom:30px;
@@ -764,7 +764,7 @@ main{
  box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
  margin-bottom: 2px;
 }
-main>h2{
+section>h2{
 	display: block;
 	width: 100%;
 	text-align: center;
@@ -1101,7 +1101,7 @@ display: none;
 	color: #2d2c2c;;
 }
 
-section{
+.exp-btn{
 display: block;
 clear:both;
 width: 50%;
@@ -1134,7 +1134,7 @@ margin-top:150px;
 	border-style: solid;
 	border-width: 1px;
 }
-main{
+section{
 	background: #fff;
 	padding-top: 50px;
 	padding-bottom:30px;
@@ -1145,7 +1145,7 @@ main{
  box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
  margin-bottom: 2px;
 }
-main>h2{
+section>h2{
 	display: block;
 	width: 100%;
 	text-align: center;
