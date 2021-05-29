@@ -1,379 +1,2414 @@
-<!DOCTYPE html>
-<html lang="en">
-<HEAD>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <TITLE>japan</TITLE>
-  <link rel="stylesheet" href="css/japan.css">
-  <link rel="stylesheet" href="css/flickity.css" media="screen">
-  <link rel="stylesheet" href="css/fontawesome/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-    function initMap(){
-      map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 35.74704816478998, lng: 137.8925574671148},
-  zoom: 6,
-  mapId: 'fd207598b19ef58f',
-  MapTypeStyle:[
-      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-      {
-        featureType: "administrative.locality",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "poi",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "poi.park",
-        elementType: "geometry",
-        stylers: [{ color: "#263c3f" }],
-      },
-      {
-        featureType: "poi.park",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#6b9a76" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{ color: "#38414e" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#212a37" }],
-      },
-      {
-        featureType: "road",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#9ca5b3" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry",
-        stylers: [{ color: "#746855" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#1f2835" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#f3d19c" }],
-      },
-      {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [{ color: "#2f3948" }],
-      },
-      {
-        featureType: "transit.station",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{ color: "#17263c" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#515c6d" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.stroke",
-        stylers: [{ color: "#17263c" }],
-      },
-    ],
-});
+/*mobile view*/
+@media only screen and (max-width: 899px)
+{
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-image: url(../images/japan-background22.jpg);*/
+  background-color: #fff;
+   
+}
+
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.woff);
+}
+@font-face {
+  font-family: HelveticaOb;
+  src: url(fonts/Helvetica-Bold.woff);
+}
+@font-face {
+  font-family: arima;
+  src: url(fonts/ArimaMadurai-Bold.ttf);
+}
+@font-face {
+  font-family: Helvetica-M;
+  src: url(fonts/Helvetica-Neue-LT-65-Medium.ttf);
+}
+@font-face {
+  font-family: Helvetica-N;
+  src: url(fonts/Helvetica-Neue-LT-45-Light.ttf);
+}
+
+header{
+	height: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	margin-top: -7px;
+	background-color: #191919;
+	margin-bottom: 10px;
+}
+
+
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+font-family: Helvetica;
+margin-top:6px;
+}
+h1{ 
+	padding-bottom: 0px;
+	padding-left: 0em;
+	margin:0em;
+	margin-left: 0em;
+	display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 170%;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Helvetica-M;
+	font-weight: 100;
+
     }
-  </script>
-  
-</HEAD>
-<body>
-  <header class="header">
-    <div id="icon-h1">
-      <img id="icon1" alt="websites icon" src="images/icon2.png">
-      <h1><a href="index.html">Your next journey</a></h1>
-    </div>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <nav id="head-nav">
-      <ul class="main-ul">
-          <li class="dest-container">
-            <a onclick="myFunction()" id="a1" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
-          <i id="fa-l1" class="fa fa-angle-left" ></i>
-          <i id="fa-d1" class="fa fa-angle-down" ></i>
-            Destinations</a>
-            <ul class="destinations-ul">
-              <li><a href="japan.html">Japan</a></li>
-              <li><a href="thailand.html">Thailand</a></li>
-              <li><a href="china.html">China</a></li>
-              <li><a href="italy.html">Italy</a></li>
-            </ul>
-          </li>
-          <li class="exp-container">
-            <a id="a2" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
-            <i id="fa-l2" class="fa fa-angle-left" ></i>
-            <i id="fa-d2" class="fa fa-angle-down" ></i>
+ h1>a{
+  	text-decoration: none;
+  	color: #fff;
+  }
 
-            Experiences</a>
-            <ul class="experiences-ul">
-              <li><a href="boat-trips.html">Boat-trips</a></li>
-              <li><a href="mountain.html">Mountain biking</a></li>
-              <li><a href="diving.html">Diving</a></li>
-              <li><a href="honey.html">Honeymoons</a></li>    
-            </ul>
+#icon1{
+	margin-top: 0.5em;
+	margin-left: 15px;
+	display: inline-block;
+	width: 25px;
+	position: relative;
+	top:0.35em;
+	
+}
+#icon-h1{
+	margin: auto;
+	float:left;
+	width:300px;
+	padding-bottom: 5px;
+	position: relative;
+	bottom: 6px;
+}
 
-          </li>
-      </ul> 
-    </nav>
-  </header>
-<main>
-    <div id="header-h1-img">
-      <picture>
-        <source media="(max-width: 899px)"
-            srcset="images/tokyo.jpg">
-        <source media="(min-width: 900px)"
-            srcset="images/tokyo2.jpg">
-         <img alt="japan's header image" src="images/tokyo.jpg">
-      </picture>            
-        <h1>JAPAN</h1>
+/* HAM ICON STARTS */
+/* menu icon */
 
-    </div>
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 0px;
+  margin-right: 15px;
+  float: right;
+  clear:both;
+  position: relative;
+  bottom: 25px;
+  user-select: none;
 
-<div class="welcome"> 
-  <section id="main-p">
-    <h2>Welcome To Japan</h2>
-    <p>Flanking the eastern coast of the Asian mainland for more than 1,800 miles, Japan – land of contrasts, celebrated culture and electronic wizardry – is the ideal place to explore and celebrate. A trip to Japan means to experience a complete and utterly different culture and to surrender yourself to the unfamiliar. </p>
-  </section>
+}
 
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
 
-  <section class="useful-info-icons ">
-    <div class="useful-info-icon" id="first-info">
-     <img src="https://touristjourney.com/wp-content/uploads/2020/05/capital_city.svg" alt="Capital City Icon" loading="lazy">
-     <p> Capital City<br> <strong>Tokyo</strong></p>
-   </div>
-     <div class="useful-info-icon"> 
-      <img src="https://touristjourney.com/wp-content/uploads/2020/05/currency.svg" alt="Currency Icon" loading="lazy">
-      <p> Currency<br> <strong>Japenese yen</strong></p>
-    </div>
-    <div class="useful-info-icon"> <img src="https://touristjourney.com/wp-content/uploads/2020/05/language.svg" alt="Language Icon" loading="lazy"><p> Language<br> <strong>Japanese</strong></p></div>
-</section>
-</div>
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
 
-<section id="experiences-sect">
-  <h3>Experiences in Japan</h3> 
-  <!-- Flickity HTML init -->
-  <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
 
-    <!-- images from unsplash.com -->
-    <div class="carousel-cell">
-      <img src="images/temples.jpg" alt="image of a temple" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Temples & shrines</a>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/japanese-food.jpg" alt="japanese dish image" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Japanese food</a>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/japan-city.jpg" alt="tokyo at night"/>
-      <a class="more-info" href="">more info</a>
-      <a href="#">City life</a>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/japan-parks.jpg" alt="a park in japan" />
-      <a class="more-info"  href="">more info</a>
-      <a href="#">Parks & gardens</a>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/manga.jpg" alt="japanese anime character" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Manga culture</a>
-    </div>
-  </div>
-</section>
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
 
+/* menu btn */
 
-<section id="cities-sect">
-  <h3>Cities & Regions of Japan</h3> 
-  <p>From the capital city of Tokyo to the ancient capital of Kyoto, and from the bamboo forests to ancient temples, every area of Japan has something different to offer.</p>
-  <!-- Flickity HTML init -->
-  <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
+.header .menu-btn {
+  display: none;
+}
 
-    <!-- images from unsplash.com -->
-    <div class="carousel-cell cc">
-      <img src="images/tokyo-city.jpg" alt="tokyo city" />
-      <div class="carousel-p">
-        <h4>Tokyo</h4>
-        <p>Japan's buzzing capital, Tokyo is most vistors' top destination when visiting the country. From amazing shopping to notch dining to ancient traditions, Tokyo is the epicenter of Japan. No matter what type of experience you're looking for, there is a tour of Tokyo fit for your style.</p>
-        
-        
+.header .menu-btn:checked ~ #head-nav{
+  display: block
+}
 
-        <a href="#">Explore</a>
-      </div>
-      <div id="map"></div>
-    </div>
-    <div class="carousel-cell cc">
-      <img src="images/osaka.jpg" alt="osaka city" />
-      <div class="carousel-p">
-        <h4>Osaka</h4>
-        <p>Osaka is a gem of Japan that all visitors should add to their list. The nation's food capital with friendlier locals and more affordable shopping than other big cities, Osaka is worth checking out on your next visit.</p>
-        <a href="#">Explore</a>
-      </div>
-    </div>
-    <div class="carousel-cell cc">
-      <img src="images/kyoto.jpg" alt="kyoto city" />
-      <div class="carousel-p">
-        <h4>Kyoto</h4>
-        <p>Japan's ancient cultural capital is the place to visit for a true Japanese experience. Walking down Kyoto's streets will take you back in time to experience authentic, traditional Japan while also tasting the country's modernity.  Check out our Kyoto tours to see everything this unique city has to offer.</p>
-        <a href="#">Explore</a>
-      </div>
-    </div>
-    <div class="carousel-cell cc">
-      <img src="images/hakone.jpg" alt="hakone city"/>
-      <div class="carousel-p">
-        <h4>Hakone</h4>
-        <p>Take a break from bustling Tokyo and experience Japan's unique nature with a tour of nearby Hakone. This area is known for its relaxing hot springs and natural beauty, with stunning views of Mt Fuji across Lake Ashinoko.</p>
-        <a href="#">Explore</a>
-      </div>
-    </div>
-  </div>
-</section>
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
 
-<section class="popular-places">
-  <h3 id="popular-h3">Popular Places</h3> 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
 
-  <div class="grid">
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
 
-        <div class="pop-div D1">
-          <img class="popular-image img1" alt="Osaka Castle" src="images/osaka-castle.jpg">
-          <a href="#" class="popular-a a1">Osaka Castle</a>
-        </div>
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
 
-     <div class="pop-div D2">
-       <img class="popular-image img2" alt="Miyajima" src="images/miyajima.jpg">
-       <a href="#" class="popular-a a2">Miyajima</a>
-     </div>
-
-     <div class="pop-div D3">
-       <img class="popular-image img3" alt="Kanazawa" src="images/kanazawa.jpg">
-       <a href="#" class="popular-a a3">Kanazawa</a>
-     </div>
-
-     <div class="pop-div D4">
-       <img class="popular-image img4" alt="Hakuba" src="images/hakuba.jpg">
-       <a href="#" class="popular-a a4">Hakuba</a>
-     </div>
-
-     <div class="pop-div D5">
-       <img class="popular-image img5" alt="Mount Fuji" src="images/fuji.jpg">
-       <a href="#" class="popular-a a5">Mount Fuji</a>
-     </div>
-
-     <div class="pop-div D6">
-       <img class="popular-image img6" alt="Historic kyoto" src="images/historic-kayoto.jpg">
-       <a href="#" class="popular-a a6">Historic kyoto</a>
-     </div>
-
-      <div class="pop-div D7">
-       <img class="popular-image img7" alt="Imperial Tokyo" src="images/imp-tokyo.jpg">
-       <a href="#" class="popular-a a7">Imperial Tokyo</a>
-     </div>
-          <div class="pop-div D8">
-       <img class="popular-image img5" alt="Tokyo Tower" src="images/tokyo-tower.jpg">
-       <a href="#" class="popular-a a5">Tokyo Tower</a>
-     </div>
-
-     <div class="pop-div D9">
-       <img class="popular-image img6" alt="Todaiji Temple" src="images/todaiji-temple.jpg">
-       <a href="#" class="popular-a a9">Todaiji Temple</a>
-     </div>
-
-      <div class="pop-div D10">
-       <img class="popular-image img7" alt="Yokohama" src="images/yokohama.jpg">
-       <a href="#" class="popular-a a7">Yokohama</a>
-     </div>
-  </div>
- 
-
-</section>
-
-
-<section id="hotels-sect">
-  <h3>Hotels in Japan</h3> 
-  <p>Experience best services in our top picked hotels in japan.</p>
-  <!-- Flickity HTML init -->
-  <div class="carousel H js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
-
-    <!-- images from unsplash.com -->
-    <div class="carousel-cell first DH">
-      <img src="images/aman-h.jpg" alt="hotel room in aman tokyo" />
-        <a class="book-h" href="#">book now</a>
-        <a href="#"><h4>aman tokyo</h4></a>
-        <p>Tokyo | <i class="fas fa-star"></i><i class="fas fa-star"></i></p>  
-    </div>
-
-    <div class="carousel-cell DH DH2">
-      <img src="images/hyat-h2.jpg" alt="hotel room in hyatt centric ginza" />
-        <a class="book-h" href="#">book now</a>
-        <a href="#"><h4>hyatt centric ginza tokyo</h4></a>
-        <p>Tokyo | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-    </div>
-
-    <div class="carousel-cell DH">
-      <img src="images/noku-h.jpg" alt="hotel room in noku kyoto" />
-        <a class="book-h" href="#">book now</a>
-        <a href="#"><h4>noku kyoto</h4></a>
-        <p>Kyoto  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-    </div>
-
-    <div class="carousel-cell DH">
-      <img alt="hotel room in The Screen hotel" src="images/screen-h.jpg"/>
-        <a class="book-h" href="#">book now</a>
-        <a href="#"><h4>The Screen</h4></a>
-        <p>Kyoto  | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-    </div>
-
-    <div class="carousel-cell DH">
-      <img src="images/hosh-h.jpg" alt="hotel room in Hoshinoya Kyoto" />
-        <a class="book-h" href="#">book now</a>
-        <a href="#"><h4>Hoshinoya Kyoto</h4></a>
-        <p>Kyoto | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-    </div>
-
-  </div>
-</section>
-
-
-</main>
-
-    <footer>
-    <nav id="bottom-nav">
-      <a id="a3" class="foota" href="under-dev.html">About me</a>
-      <a id="a4" class="foota" href="under-dev.html">Contact me</a>
-    </nav>
+/* HAM ICON END */
 
 
 
-<script src="js/flickity.pkgd.min.js"></script>
-<script></script>
-  </footer>
 
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWh94_onQG_NuFQZ6HGHkfD_krz0FswAM&map_ids= fd207598b19ef58f&callback=initMap">
-</script>
+/* DROPDOWN MENU STARTS*/
+#head-nav{
+	margin-right: 15px;
+	display: none;
+	margin-top: 0px;
+	clear:both;
+	float:right;
+	height: 67px;
+	width:  100%;
+	position: absolute;
+	top: 29px;
+}
 
-</body>
-</html>
+
+.heada{
+	margin-top: 0px;
+	color: rgba(45, 44, 44,0.85);
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	font-size: 90%;
+}
+.main-ul{
+	clear:both;
+	list-style-type: none;
+	float: right;
+	text-align: center;
+	border-style: solid;
+	border-width: 0px;
+	border-color: rgba(45, 44, 44,0.5);
+	border-radius: 0px 0px 5px 5px;
+	width: 110px;
+	list-style: none;
+    padding-right: 0px;
+    padding: 0px;
+    margin-top:10px;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #fff;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 2;
+    background-color: #191919;
+
+
+    
+}
+.main-ul>li {
+
+width: 100%;
+}
+.main-ul>li>a{
+	color: #fff;
+	font-family: Helvetica-N;
+	letter-spacing: 1px;
+}
+.main-ul>li:last-child{
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-right: 2px;
+
+}
+.main-ul>li:last-child>a{
+	margin-right: 2px;
+	color: #fff
+}
+
+#fa-l1, #fa-l2{
+color: #fff;
+font-size:16px;
+}
+
+#fa-d1, #fa-d2{
+display: none;
+}
+
+#a1:hover , #a2:hover {
+	color: rgba(45, 44, 44,1);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+   	padding-bottom: 1px;
+   	border-color: rgba(45, 44, 44,0.4);
+
+}
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+
+.destinations-ul{
+	list-style-type: none;
+	list-style: none;
+    padding-left: 0px;
+	position: absolute;
+	right: 110px;
+	display: none;
+	background-color:  transparent;
+	border-width: 1px;
+	box-shadow: 0px 10px 10px #0a1516c9;
+	width: 130px;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgba(250,250,250,0.85);
+	top:2px;
+	z-index: 1;
+
+	
+
+}
+.destinations-ul li{
+	width:100%
+}
+.destinations-ul li a{
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width:100%;
+	color: rgba(45, 44, 44,1);
+	text-decoration: none;	
+}
+
+.main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
+{
+    border-style: solid;
+    background-color: rgba(45, 44, 44,0.85);
+    border-width: 0px 0px 0px 0px;
+	border-color: rgba(0,0,0,0.8);
+	color: #ffffff;
+}
+.main-ul> .dest-container>.destinations-ul>li:first-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:first-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 0px 0px 10px 10px;
+}
+.experiences-ul{
+	list-style-type: none;
+	list-style: none;
+    padding-left: 0px;
+	position: absolute;
+	right: 110px;
+	display: none;
+	background-color:  transparent;
+	border-width: 1px;
+	box-shadow: 0px 10px 10px #0a1516c9;
+	background-color: rgba(250,250,250,0.85);
+	width: 130px;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 10px;
+	z-index: 1;
+	
+}
+.experiences-ul li a {
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width:100%;
+	color: rgba(45, 44, 44,1);
+	text-decoration: none;
+}
+.experiences-ul li:first-child a{
+	padding-top: 3px;
+}
+.experiences-ul li:last-child a{
+ padding-bottom: 3px;
+}
+.dest-container:hover ul, .exp-container:hover ul{
+    display: inline-block;
+}
+/* DROPDOWN MENU ENDS*/
+#header-h1-img{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	padding: auto;
+	position: relative;
+	z-index: -1;
+	margin-top: 0px;
+}
+#header-h1-img >picture>img{
+	width:100%;
+	margin-top:-10px;
+	border-radius: 0px 0px 25px 25px;
+}
+#header-h1-img h1{
+font-family: HelveticaOb;
+color: #fff;
+font-size: 4.7em;
+font-weight: bold;
+letter-spacing: 5px;
+position: absolute;
+top: 40%;
+left: 50%;
+ transform: translate( -50%, -50% );
+text-shadow: 0px 1px 3px #333;
+z-index: 1;
+}
+.welcome{
+	background-image: url(../images/japan-background222.jpg);
+	background-size: cover;
+	margin-top: -40px;
+	position: relative;
+	z-index: -2;
+
+}
+#main-p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+
+}
+
+#main-p> h2 {
+	text-align: center;
+	font-family: arima;
+	font-size: 180%;
+	color: color: #212121;
+	padding-top: 45px;
+}
+#main-p> p 
+{
+margin:0px 40px 0px 40px;
+text-align: center;
+font-size: 1.05em;
+line-height: 25px;
+}
+/*info icons*/
+.useful-info-icons {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.useful-info-icons .useful-info-icon {
+    font-size: 70%;
+    line-height: 15px;
+    display: block;
+    margin-left: 40px;
+    text-transform: capitalize;
+
+}
+#first-info{
+margin-left:0px; 
+}
+.useful-info-icons .useful-info-icon img {
+    height: 20px;
+}
+.useful-info-icons .useful-info-icon p {
+    display: inline-block;
+    margin-left: 5px;
+}
+/*info icons ends*/
+
+h3{
+	text-align: center;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 150%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+}
+
+/* carousel starts*/
+.carousel{
+	margin-top:35px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 5px 0px 5px;
+	border-radius: 10px;
+}
+
+.carousel-cell{
+	width:100%;
+	text-align: center;
+	position: relative;
+	display: block;
+	width: 100%;
+
+}
+.carousel-cell> img{
+ width:85%;
+ border-radius: 10px;
+margin: 0px auto;
+	display: block;
+
+}
+.carousel-cell> .more-info{
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	width: 140px;
+	background-color: transparent;
+	color: rgba(250,250,250,1);
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color: rgba(250,250,250,0.7);
+	padding:10px 0px 10px 0px; 
+	transform: translate( -50%, -50% );
+	letter-spacing: 0px;
+    transition:all 0.4s;
+    text-shadow: -2px 2px 3px #222;
+}
+.carousel-cell> .more-info:hover{
+	letter-spacing: 3px;
+	background-color: rgba(45, 44, 44,0.6);
+	border-color: rgba(45, 44, 44,0.0);
+	border-radius: 5px;
+
+}
+.carousel-cell> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 110%;
+	text-transform: capitalize;
+	width: 75%;
+	margin: 0px auto;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 5px 5px;
+}
+.carousel-p{
+	width: 73%;
+	background-color: #f0f0f0;
+	margin: 0px auto;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 25px 15px 12px 15px;
+	margin-top: -4px;
+	margin-bottom: 18px;
+}
+.carousel-p> h4{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	font-size: 150%;
+	width: 100%;
+	margin: 0px auto;
+	padding-bottom: 0px;
+	padding-top: 0px;
+
+}
+.carousel-p>p{
+	text-align:left;
+	font-size: 0.96em;
+	line-height: 1.7em;
+}
+.carousel-p>a{
+	display: block;
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 100%;
+	width: 110px;
+	margin: 0px auto;
+	background-color: #fb5b21;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-radius: 8px;
+	transition: all 0.4s;
+	margin-bottom: 10px;
+	margin-top: 30px;
+
+} 
+.carousel-p>a:hover{
+	color: #fff;
+	background-color: #b73100;
+	letter-spacing: 3px;
+}
+#cities-sect>.carousel{
+	margin-top: 30px;
+}
+#cities-sect>.carousel>.flickity-button{
+	top:25%;
+} 
+/* carousel ends*/
+#experiences-sect{
+ border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 60px;
+  background-color: rgba(45, 44, 44,0.1);
+  margin-top: 0px;
+  padding-top: 1px;
+}
+#experiences-sect>.carousel>.flickity-button{
+	top:44%;
+}
+#experiences-sect>h3{
+	padding-bottom: 5px;
+}
+#cities-sect{
+	margin-top: 0px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+}
+#cities-sect>h3{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 23px;
+	font-family: arima;
+	font-size: 150%;
+	color: #212121;
+	letter-spacing:1px;
+
+}
+#cities-sect>p{
+margin:0px 20px 0px 40px;
+text-align: left;
+font-size: 1.05em;
+max-width: 90%;
+line-height: 25px;
+padding-bottom: 15px;
+}
+.popular-places{
+  padding-top: 1px;
+  border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 40px;
+  background-color: rgba(45, 44, 44,0.1);
+  display: block;
+}
+#popular-h3{
+	margin-bottom: 35px;
+	font-size: 150%;
+}
+.D1, .D4, .D7{
+	width: 100%;
+	 position: relative;
+    display: block;
+}
+.pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
+	display: block;
+	width:90%;
+	margin:0 auto;
+	border-radius:10px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.pop-div> .a1 , .pop-div> .a4, .pop-div> .a7{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 160%;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 5px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 200px;
+} 
+.pop-div> .a4{
+    top: 45%;
+    left: 50%;	
+}
+
+.D2, .D3, .D5, .D6{
+	width: 43%;
+	position: relative;
+    display: inline-block;
+    margin: 3% 0% 3% 5%;
+
+}
+.D3, .D6{
+	margin:3% 0% 3% 3%;
+}
+.D8,.D9,.D10{
+	display: none;
+}
+
+.pop-div> .img2, .pop-div> .img3, .pop-div> .img5, .pop-div> .img6{
+	width:100%;
+	display: block;
+	border-radius: 5px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}  
+.pop-div> .a2 , .pop-div> .a3, .pop-div> .a5, .pop-div> .a6{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 100%;
+	letter-spacing: 2px;
+	text-shadow: -2px 2px 4px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 120px;
+} 
+.pop-div> .a5{
+	letter-spacing: 2px;
+	font-size: 91%;
+}
+.pop-div> .a6{
+left: 50%;
+top:50%;	
+}
+.pop-div:hover img {
+	transform: scale(1.025);
+}  
+#hotels-sect{
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    padding-bottom: 60px;
+}
+#hotels-sect>h3{
+	padding-bottom: 10px;
+
+}
+#hotels-sect> .H>.flickity-button{
+	top:36%;
+} 
+.DH{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.DH>img{
+	display: block;
+}
+.DH>.book-h{
+	position: absolute;
+	left: 50%;
+	top: 62%;
+	width: 120px;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 3px;
+	text-shadow: -2px 2px 3px #222;
+	border-color: #fff;
+	padding:8px 0px 8px 0px; 
+	transform: translate( -50%, -50% );
+    transition: all 0.4s;
+}
+.DH> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+	font-size: 123%;
+	background-color: #fff;
+	width: 90%;
+	margin: 0px auto;
+	padding-bottom: 0px;
+	margin-top: -15px;
+	text-transform: capitalize;
+
+}
+.DH> .book-h:hover{
+	background-color: #fff;
+	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
+}
+#hotels-sect>p{
+text-align: center;
+font-size: 1.05em;
+max-width: 100%;
+margin-top: -10px;
+padding-bottom: 25px;}
+.fa-star{
+	color: #ffa500;
+}
+
+footer{
+    text-align:center;
+    margin-top:0px;
+padding-bottom: 20px;
+padding-top: 20px;
+background-color: #191919;
+
+}
+
+.foota{
+	font-weight:bold;
+	padding-left: 15px;
+	text-decoration: none;
+	font-size: 80%;
+	color: #fff;
+	margin-left: 13px;
+	letter-spacing: 1.5px;
+	transition: all 0.2s;
+	text-transform: uppercase;
+}
+.foota:hover{
+	position: relative;
+	
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+   	padding-bottom: 1px;
+   	border-color: #fff;
+}
+#a3{
+	margin-right:20px;
+	padding-left: 0px;
+}
+#a4{
+	margin-left:20px;
+	padding-left: 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*large screen view */
+@media only screen and (min-width: 900px) and (max-width: 1150px)
+{
+html { 
+  font-family: Helvetica;
+    color: #191919;
+  font-size: 1.00em;
+
+
+}
+header{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px 12px 0px 20px;
+	padding-bottom: 20px;
+	height: 36px;
+	background-color: #191919;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.woff);
+}
+@font-face {
+  font-family: HelveticaOb;
+  src: url(fonts/Helvetica-Bold.woff);
+}
+@font-face {
+  font-family: arima;
+  src: url(fonts/ArimaMadurai-Bold.ttf);
+}
+@font-face {
+  font-family: Helvetica-M;
+  src: url(fonts/Helvetica-Neue-LT-65-Medium.ttf);
+}
+body{
+  margin:0px 0px 0px 0px;
+  /*background-image: url('../images/field.jpg');
+  background-size: 1980px 1080px;
+  transition: background 4s;*/
+}
+
+
+#icon-h1{
+	float: left;
+	width:45%;
+	margin-top: -9px;
+	padding-top: 0px;
+	padding-left: 10px;
+	height: 55px;
+}
+h1{ 
+	margin:0px;
+	margin-bottom: 15px;
+	display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 230%;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    font-family: Helvetica-M;
+	font-weight: 100;
+	font-size: 225%;
+
+    }
+ h1>a{
+  	text-decoration: none;
+  	color: #fff;
+  	line-height: 20px;
+  }
+#icon1{
+	margin-top: 10px;
+	display: inline-block;
+	clear: left;
+	width: 36px;
+	position: relative;
+	top:9px;
+}
+  .header .menu-icon, .header .menu-btn  {
+    display: none;
+  }
+#head-nav{
+	padding-top: 0px;
+	line-height: 2em;
+	text-align: right;
+	width: 45%;
+	float: right;
+	margin: 0px;
+	margin-top: -14px;
+	margin-left: 10px;
+	height: 60px;
+	padding-left: 0px;
+
+}
+#fa-d1, #fa-d2, #fa-l1, #fa-l2{
+display: none;
+}
+.main-ul{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 32px;
+	margin-top: 14px;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+.main-ul li{
+	position: relative;
+	display: inline;
+}
+.dest-container{
+	position: relative;
+	padding: 8px 0px 10px 4px; 
+	margin-right: 50px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.dest-container>a{
+	color: #fff;
+	font-weight: 500;
+}
+.exp-container{
+	position: relative;
+	padding: 8px 5px 10px 5px;
+	margin-right: 5px;
+}
+.exp-container a{
+	position: relative;
+	right:0px;
+	color: #fff;
+	font-weight: 500;
+
+}
+.destinations-ul{
+	position: absolute;
+	display: none;
+	background-color:  rgba(250,250,250,8);
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	right: 3px;
+	top: 35px;
+	width: 72.5%;
+	text-align: center;
+	border-radius: 10px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+
+}
+.experiences-ul{
+	position: absolute;
+	display: none;
+	background-color:  rgba(250,250,250,8);
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	right: -8px;
+	top: 35px;
+	width: 96%;
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-bottom: 0px;
+	padding-left: 25px;
+}
+.experiences-ul li a {
+	position: relative;
+	width:147px;
+	right: 25px;
+	display: inline-block;
+	color: rgba(45, 44, 44,0.95);
+	text-decoration: none;
+
+}
+.destinations-ul li a{
+	position: relative;
+	width:121px;
+	right: 30px;
+	display: inline-block;
+	color: rgba(45, 44, 44,0.95);
+	text-decoration: none;	
+}
+.dest-container:hover ul, .exp-container:hover ul{
+    display: block;
+}
+.dest-container:hover #a1, .exp-container:hover #a2{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+   	padding-bottom: 1px;
+   	border-color: rgba(45, 44, 44,0.4);
+}
+.main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
+{
+    border-style: solid;
+    background-color: rgba(45, 44, 44,0.85);
+    border-width: 0px 0px 0px 0px;
+	border-color: rgba(0,0,0,0.8);
+	color: #ffffff;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:first-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:first-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 9px 9px 0px 0px;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 0px 0px 9px 9px;
+}
+.heada{
+	margin-top: 10px;
+	color: #2d2c2c;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 120%;
+}
+#header-h1-img{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	padding: auto;
+	position: relative;
+	z-index: -1;
+	margin-top: 10px;
+}
+#header-h1-img picture>img{
+	width:100%;
+	margin-top:-10px;
+	border-radius: 0px 0px 40px 40px;
+}
+#header-h1-img h1{
+font-family: HelveticaOb;
+color: #fff;
+font-size: 5.5em;
+font-weight: bold;
+letter-spacing: 5px;
+position: absolute;
+top: 40%;
+left: 50.4%;
+ transform: translate( -50%, -50% );
+text-shadow: 0px 1px 3px #333;
+z-index: 1;
+}
+.welcome{
+	background-image: url(../images/japan-background22.jpg);
+	margin-top: -70px;
+	position: relative;
+	z-index: -2;
+
+}
+#main-p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+ 	padding-left: 7.4%;
+ 	padding-right: 7.4%;
+}
+
+#main-p> h2 {
+	text-align: left;
+	font-family: arima;
+	font-size: 230%;
+	color: #212121;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 70px;
+}
+#main-p> p 
+{
+margin:-10px 0px 0px 0px;
+text-align: left;
+font-size: 1.05em;
+line-height: 25px;
+}
+
+
+/*info icons*/
+.useful-info-icons {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.useful-info-icons .useful-info-icon {
+    font-size: 100%;
+    line-height:30px;
+    display: block;
+    margin-left: 100px;
+    text-transform: capitalize;
+
+}
+#first-info{
+margin-left:0px; 
+}
+.useful-info-icons .useful-info-icon img {
+    height: 45px;
+}
+.useful-info-icons .useful-info-icon p {
+    display: inline-block;
+    margin-left: 5px;
+}
+/*info icons ends*/
+
+h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 7.4%;
+}
+
+/* carousel starts*/
+.carousel{
+	padding: 0px 0px 10px 0px;
+	margin: -6px 5px 0px 5px;
+	border-radius: 10px;
+	padding-left: 5.88%;
+ 	padding-right: 5.88%;
+}
+
+
+.carousel-cell{
+	width:50%;
+	text-align: center;
+	position: relative;
+	display: block;
+
+
+}
+.carousel-cell> img{
+ width:90%;
+ border-radius: 10px;
+ margin: 0px auto;
+ display: block;
+
+
+}
+.carousel-cell> .more-info{
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	width: 140px;
+	background-color: transparent;
+	color: rgba(250,250,250,1);
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color: rgba(250,250,250,0.7);
+	padding:10px 0px 10px 0px; 
+	transform: translate( -50%, -50% );
+	text-shadow: -2px 2px 3px #222;
+	letter-spacing: 0px;
+    transition:all 0.4s;
+}
+.carousel-cell> .more-info:hover{
+	letter-spacing: 3px;
+	background-color: rgba(45, 44, 44,0.6);
+	border-color: rgba(45, 44, 44,0.0);
+	border-radius: 5px;
+
+}
+.carousel-cell> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 110%;
+	text-transform: capitalize;
+	width: 75%;
+	margin: 0px auto;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 5px 5px;
+}
+.S{
+	padding-left: 7.1%;
+}
+.cc{
+width:100%;
+margin:10px 20px 0px 0px;
+background-color: #f0f0f0;
+position: relative;
+border-radius: 0px 10px 10px 0px;
+}
+.cc>img{
+width: 50%;
+float: left;
+border-radius: 10px 0px 0px 10px;
+}
+
+.carousel-p{
+	width: 45%;
+	background-color: #f0f0f0
+	margin: 0px auto;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 20px 15px 12px 15px;
+	margin-top: 0px;
+	border-color: rgba(45, 44, 44,0.3);
+	margin-bottom: 0px;
+	float: right;
+}
+.carousel-p> h4{
+	display: block;
+	text-align: left;
+	color: rgba(45, 44, 44,1);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	font-size: 150%;
+	width: 100%;
+	margin: 0px auto;
+	border-color: rgba(45, 44, 44,0.2);
+	/*background-color: rgba(243,239,230,0.9);*/
+	padding-bottom: 5px;
+	border-radius: 0px 0px 5px 5px;
+	padding-top: 7px;
+	margin-top:-15px;
+
+}
+.carousel-p>p{
+	text-align:left;
+	font-size: 0.96em;
+	line-height: 1.4em;
+	width: 90%;
+	margin-top: 0px;
+}
+.carousel-p>a{
+	display: block;
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: none;
+	font-size: 100%;
+	width: 115px;
+	margin: 0px auto;
+	background-color: #fb5b21;
+	border-width: 1px;
+	border-color: rgba(45, 44, 44,0.85);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 8px;
+	transition: all 0.4s;
+	margin-top: 20px;
+	float: left;
+	text-transform: capitalize;
+	position: absolute;
+	bottom: 3%;
+} 
+.carousel-p>a:hover{
+	color: #fff;
+	background-color: #b73100;
+	letter-spacing: 3px;
+}
+#cities-sect>.carousel{
+	margin-top: 30px;
+}
+#cities-sect>.carousel>.flickity-button{
+	top:50%;
+} 
+.flickity-page-dots{
+	padding-right: 7.4%;
+	width: 400px;
+}
+
+/* carousel ends*/
+
+
+
+#experiences-sect{
+ border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 60px;
+  background-color: rgba(45, 44, 44,0.1);
+  margin-top: 0px;
+  padding-top: 1px;
+}
+#experiences-sect>.carousel>.flickity-button{
+	top:44%;
+}
+#experiences-sect>h3{
+	padding-bottom: 5px;
+}
+#cities-sect{
+	margin-top: 0px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+}
+#cities-sect>h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 7.4%;
+}
+#cities-sect>p{
+padding-left: 7.4%;
+text-align: left;
+font-size: 1.05em;
+line-height: 25px;
+margin-top: -12px;
+
+}
+.popular-places{
+  padding-top: 1px;
+  border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 40px;
+  background-color: rgba(45, 44, 44,0.1);
+  display: block;
+  padding-left: 7.4%;
+  padding-right: 7.4%;
+}
+#popular-h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 0px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr ); 
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	justify-content: center;
+
+}
+.D1{
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+.D2{
+grid-column: 3/4;
+grid-row: 1/2;
+}
+.D3 {
+grid-column: 3/4;
+grid-row: 2/3;
+}
+.D4{
+grid-column: 4/5;
+grid-row: 1/2;
+}
+.D5{
+grid-column: 4/5;
+grid-row: 2/3;
+}
+.D6{
+grid-column: 3/5;
+grid-row: 3/5;
+}
+.D7{
+grid-column: 1/2;
+grid-row: 3/4;
+}
+.D8{
+grid-column: 2/3;
+grid-row: 3/4;
+}
+.D9{
+grid-column: 1/2;
+grid-row: 4/5;
+}
+.D10{
+grid-column: 2/3;
+grid-row: 4/5;
+}
+
+.pop-div{
+	position: relative;
+}
+.pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
+	display: block;
+	width:100%;
+	margin:0 auto;
+	border-radius:10px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.pop-div> .a1 , .pop-div> .a6{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 150%;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 5px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 200px;
+} 
+.pop-div> .a4{
+    top: 45%;
+    left: 50%;	
+}
+
+.pop-div> .img2, .pop-div> .img3, .pop-div> .img5, .pop-div> .img6{
+	width:100%;
+	display: block;
+	border-radius: 5px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}  
+.pop-div> .a2 , .pop-div> .a3,.pop-div> .a4, .pop-div> .a5, .pop-div> .a7,.pop-div> .a9{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 105%;
+	letter-spacing: 2px;
+	text-shadow: -2px 2px 4px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 120px;
+} 
+.pop-div> .a6{
+left: 50%;
+top:50%;	
+}
+.pop-div:hover img {
+	transform: scale(1.025);
+}
+#hotels-sect{
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    padding-bottom: 60px;
+}
+#hotels-sect>h3{
+	padding-bottom: 0px;
+
+}
+
+#hotels-sect> .H>.flickity-button{
+	top:36%;
+} 
+.DH{
+	width:33%;
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-top: 6px;
+
+
+}
+.DH> img{
+ width:90%;
+ border-radius: 10px;
+ margin: 0px auto;
+ display: block;
+
+
+}
+.DH>.book-h{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	width: 120px;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #fff;
+	padding:8px 0px 8px 0px; 
+	transform: translate( -50%, -50% );
+	text-shadow: -2px 2px 3px #222;
+    transition: all 0.4s;
+}
+.DH> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+	font-size: 123%;
+	background-color: #fff;
+	width: 100%;
+	margin: 0px auto;
+	padding-bottom: 0px;
+	margin-top: -15px;
+	text-transform: capitalize;
+
+}
+
+.DH> .book-h:hover{
+	background-color: #fff;
+	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
+}
+#hotels-sect>p{
+text-align: left;
+font-size: 1.05em;
+max-width: 100%;
+margin-top: -10px;
+padding-bottom: 25px;
+padding-left: 7.4%;
+}
+.fa-star{
+	color: #ffa500;
+}
+
+footer{
+    text-align:center;
+    margin-top:0px;
+padding-bottom: 20px;
+padding-top: 20px;
+background-color: #191919;
+
+}
+
+.foota{
+	font-weight:bold;
+	padding-left: 15px;
+	text-decoration: none;
+	font-size: 80%;
+	color: #fff;
+	margin-left: 13px;
+	letter-spacing: 1.5px;
+	transition: all 0.2s;
+	text-transform: uppercase;
+}
+.foota:hover{
+	position: relative;
+	
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+   	padding-bottom: 1px;
+   	border-color: #fff;
+}
+#a3{
+	margin-right:20px;
+	padding-left: 0px;
+}
+#a4{
+	margin-left:20px;
+	padding-left: 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*large screen view */
+@media only screen and (min-width: 1151px) 
+{
+html { 
+  font-family: Helvetica;
+  color: #191919;
+  font-size: 1.03em;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.woff);
+}
+@font-face {
+  font-family: HelveticaOb;
+  src: url(fonts/Helvetica-Bold.woff);
+}
+@font-face {
+  font-family: arima;
+  src: url(fonts/ArimaMadurai-Bold.ttf);
+}
+@font-face {
+  font-family: Helvetica-N;
+  src: url(fonts/Helvetica-Neue-LT-45-Light.ttf);
+}
+@font-face {
+  font-family: Helvetica-M;
+  src: url(fonts/Helvetica-Neue-LT-65-Medium.ttf);
+}
+body{
+  margin:0px 0px 0px 0px;
+  /*background-image: url('../images/field.jpg');
+  background-size: 1980px 1080px;
+  transition: background 4s;*/
+}
+header{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px 12px 0px 20px;
+	padding-bottom: 20px;
+	height: 45px;
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background-color: #191919;
+}
+#icon-h1{
+	float: left;
+	width:45%;
+	margin-top: -8px;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+h1{ 
+	font-family: Helvetica-M;
+	margin:0px;
+	margin-bottom: 15px;
+	display: inline-block;
+    color: #fff;
+    font-weight: 100;
+    font-size: 225%;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    margin-left: 5px;
+    }
+ h1>a{
+  	text-decoration: none;
+  	color: #fff;
+  }
+#icon1{
+	margin-top: 10px;
+	display: inline-block;
+	clear: left;
+	width: 40px;
+	position: relative;
+	top:11px;
+}
+  .header .menu-icon, .header .menu-btn  {
+    display: none;
+  }
+#head-nav{
+	padding-top: 0px;
+	line-height: 2em;
+	text-align: right;
+	width: 45%;
+	float: right;
+	margin: 0px;
+	margin-top: -8px;
+	margin-left: 10px;
+	height: 76px;
+	padding-left: 0px;
+
+}
+#fa-d1, #fa-d2, #fa-l1, #fa-l2{
+display: none;
+}
+.main-ul{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 32px;
+	margin-top: 14px;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+.main-ul li{
+	position: relative;
+	display: inline;
+}
+.dest-container{
+	position: relative;
+	padding: 8px 0px 10px 4px; 
+	margin-right: 50px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.dest-container a{
+	color: #fff;
+	font-weight: 500;
+}
+.exp-container{
+	position: relative;
+	padding: 8px 5px 10px 5px;
+	margin-right: 5px;
+}
+.exp-container a{
+	position: relative;
+	right:0px;
+	color: #fff;
+	font-weight: 500;
+}
+.destinations-ul{
+	position: absolute;
+	display: none;
+	background-color:  rgba(250,250,250,8);
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	right: 3px;
+	top: 35px;
+	width: 72.5%;
+	text-align: center;
+	border-radius:11px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+
+}
+.experiences-ul{
+	position: absolute;
+	display: none;
+	background-color:  rgba(250,250,250,8);
+	border-width: 1px;
+	box-shadow: 0px 10px 15px #0a1516c9;
+	right: -8px;
+	top: 35px;
+	width: 96%;
+	text-align: center;
+	border-radius: 11px;
+	text-decoration: none;
+	padding-bottom: 0px;
+	padding-left: 25px;
+}
+.experiences-ul li a {
+	position: relative;
+	width:150px;
+	right: 25px;
+	display: inline-block;
+	color: rgba(45, 44, 44,0.95);
+	text-decoration: none;
+
+}
+.destinations-ul li a{
+	position: relative;
+	width:124px;
+	right: 30px;
+	display: inline-block;
+	color: rgba(45, 44, 44,0.95);
+	text-decoration: none;	
+}
+.dest-container:hover ul, .exp-container:hover ul{
+    display: block;
+}
+.dest-container:hover #a1, .exp-container:hover #a2{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+   	padding-bottom: 1px;
+   	border-color: rgba(45, 44, 44,0.4);
+}
+.main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
+{
+    border-style: solid;
+    background-color: rgba(45, 44, 44,0.85);
+    border-width: 0px 0px 0px 0px;
+	border-color: rgba(0,0,0,0.8);
+	color: #ffffff;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:first-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:first-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.main-ul> .dest-container>.destinations-ul>li:last-child >a:hover , .main-ul> .exp-container>.experiences-ul>li:last-child>a:hover{
+	background-color: rgba(45, 44, 44,0.85);
+	color: #ffffff;
+	border-style: solid;
+	border-radius: 0px 0px 10px 10px;
+}
+.heada{
+	margin-top: 10px;
+	color: #2d2c2c;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 120%;
+}
+#header-h1-img{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	padding: auto;
+	position: relative;
+	z-index: -1;
+	margin-top: 10px;
+}
+#header-h1-img picture>img{
+	width:100%;
+	margin-top:-75px;
+	border-radius: 0px 0px 40px 40px;
+}
+#header-h1-img h1{
+font-family: HelveticaOb;
+color: #fff;
+font-size: 7em;
+font-weight: bold;
+letter-spacing: 5px;
+position: absolute;
+top: 40%;
+left: 50.4%;
+ transform: translate( -50%, -50% );
+text-shadow: 0px 1px 3px #333;
+z-index: 1;
+}
+.welcome{
+	background-image: url(../images/japan-background22.jpg);
+	margin-top: -70px;
+	position: relative;
+	z-index: -2;
+}
+#main-p{
+	margin-top: 5px;
+	margin-bottom: 15px;
+ 	padding-left: 7.4%;
+ 	padding-right: 7.4%;
+}
+
+#main-p> h2 {
+	text-align: left;
+	font-family: arima;
+	font-size: 230%;
+	color: #212121;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 70px;
+}
+#main-p> p 
+{
+margin:-10px 0px 0px 0px;
+text-align: left;
+font-size: 1.05em;
+line-height: 25px;
+}
+
+
+/*info icons*/
+.useful-info-icons {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.useful-info-icons .useful-info-icon {
+    font-size: 100%;
+    line-height:30px;
+    display: block;
+    margin-left: 100px;
+    text-transform: capitalize;
+
+}
+#first-info{
+margin-left:0px; 
+}
+.useful-info-icons .useful-info-icon img {
+    height: 45px;
+}
+.useful-info-icons .useful-info-icon p {
+    display: inline-block;
+    margin-left: 5px;
+}
+/*info icons ends*/
+
+h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 7.4%;
+}
+
+/* carousel starts*/
+.carousel{
+	padding: 0px 0px 10px 0px;
+	margin: -6px 5px 0px 5px;
+	border-radius: 10px;
+	padding-left: 5.88%;
+ 	padding-right: 5.88%;
+}
+
+
+.carousel-cell{
+	width:33%;
+	text-align: center;
+	position: relative;
+	display: block;
+
+
+}
+.carousel-cell> img{
+ width:90%;
+ border-radius: 10px;
+ margin: 0px auto;
+ display: block;
+
+
+}
+.carousel-cell> .more-info{
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	width: 140px;
+	background-color: transparent;
+	color: rgba(250,250,250,1);
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: -2px 2px 3px #222;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color: rgba(250,250,250,0.7);
+	padding:10px 0px 10px 0px; 
+	transform: translate( -50%, -50% );
+	letter-spacing: 0px;
+    transition:all 0.4s;
+}
+.carousel-cell> .more-info:hover{
+	letter-spacing: 3px;
+	background-color: rgba(45, 44, 44,0.6);
+	border-color: rgba(45, 44, 44,0.0);
+	border-radius: 5px;
+
+}
+.carousel-cell> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 110%;
+	text-transform: capitalize;
+	width: 75%;
+	margin: 0px auto;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 5px 5px;
+}
+.S{
+	padding-left: 7.1%;
+}
+.cc{
+width:100%;
+margin:10px 20px 0px 0px;
+background-color: #f0f0f0;
+position: relative;
+border-radius: 0px 10px 10px 0px;
+}
+.cc>img{
+width: 60%;
+float: left;
+border-radius: 10px 0px 0px 10px;
+}
+
+.carousel-p{
+	width: 35%;
+	background-color: #f0f0f0
+	margin: 0px auto;
+	padding-bottom: 2px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 20px 15px 12px 15px;
+	margin-top: 0px;
+	border-color: rgba(45, 44, 44,0.3);
+	margin-bottom: 0px;
+	float: right;
+}
+.carousel-p> h4{
+	display: block;
+	text-align: left;
+	color: rgba(45, 44, 44,1);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	font-size: 180%;
+	width: 100%;
+	margin: 0px auto;
+	border-color: rgba(45, 44, 44,0.2);
+	/*background-color: rgba(243,239,230,0.9);*/
+	padding-bottom: 5px;
+	padding-top: 30px;
+
+}
+.carousel-p>p{
+	text-align:left;
+	font-size: 0.96em;
+	line-height: 1.7em;
+	width: 90%;
+	margin-top: 30px;
+}
+.carousel-p>a{
+	display: block;
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: none;
+	font-size: 100%;
+	width: 115px;
+	margin: 0px auto;
+	background-color: #fb5b21;
+	border-width: 1px;
+	border-color: rgba(45, 44, 44,0.85);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 8px;
+	transition: all 0.4s;
+	margin-top: 20px;
+	float: left;
+	text-transform: capitalize;
+	position: absolute;
+	bottom: 8%;
+} 
+.carousel-p>a:hover{
+	color: #fff;
+	background-color: #b73100;
+	letter-spacing: 3px;
+}
+#cities-sect>.carousel{
+	margin-top: 30px;
+}
+#cities-sect>.carousel>.flickity-button{
+	top:9%;
+	width: 34px;
+	height: 34px;
+	box-shadow: 0px 1px 4px #333;
+} 
+#cities-sect>.carousel>.next{
+ left: 89.9%;
+}
+#cities-sect>.carousel>.previous{
+ left:86.6%;
+}
+/* carousel ends*/
+#experiences-sect{
+ border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 60px;
+  background-color: rgba(45, 44, 44,0.1);
+  margin-top: 0px;
+  padding-top: 1px;
+}
+#experiences-sect>.carousel>.flickity-button{
+	top:44%;
+}
+#experiences-sect>h3{
+	padding-bottom: 5px;
+}
+#cities-sect{
+	margin-top: 0px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+}
+#cities-sect>h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 7.4%;
+}
+#cities-sect>p{
+padding-left: 7.4%;
+text-align: left;
+font-size: 1.05em;
+line-height: 25px;
+margin-top: -12px;
+
+}
+#map{
+	text-align: center;
+	width: 80%;
+	height: 400px;
+	border:2px solid black;
+	display: none;
+	position: relative;
+	z-index: 2;
+	margin-left: 7.4%;
+	padding-right: 1px;
+}
+
+.popular-places{
+  padding-top: 1px;
+  border-bottom: 1px solid rgba(45, 44, 44,0.00);
+  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
+  padding-bottom: 40px;
+  background-color: rgba(45, 44, 44,0.1);
+  display: block;
+  padding-left: 7.4%;
+  padding-right: 7.4%;
+}
+#popular-h3{
+	text-align: left;
+	font-weight: bolder;
+	font-family: arima;
+	font-size: 200%;
+	color: color: #212121;
+	letter-spacing: 1px;
+	margin-top:35px;
+	padding-left: 0px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr ); 
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	justify-content: center;
+
+}
+.D1{
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+.D2{
+grid-column: 3/4;
+grid-row: 1/2;
+}
+.D3 {
+grid-column: 3/4;
+grid-row: 2/3;
+}
+.D4{
+grid-column: 4/5;
+grid-row: 1/2;
+}
+.D5{
+grid-column: 4/5;
+grid-row: 2/3;
+}
+.D6{
+grid-column: 3/5;
+grid-row: 3/5;
+}
+.D7{
+grid-column: 1/2;
+grid-row: 3/4;
+}
+.D8{
+grid-column: 2/3;
+grid-row: 3/4;
+}
+.D9{
+grid-column: 1/2;
+grid-row: 4/5;
+}
+.D10{
+grid-column: 2/3;
+grid-row: 4/5;
+}
+
+.pop-div{
+	position: relative;
+}
+.pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
+	display: block;
+	width:100%;
+	margin:0 auto;
+	border-radius:10px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.pop-div> .a1 , .pop-div> .a6{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 160%;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 5px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 200px;
+} 
+.pop-div> .a4{
+    top: 45%;
+    left: 50%;	
+}
+
+.pop-div> .img2, .pop-div> .img3, .pop-div> .img5, .pop-div> .img6{
+	width:100%;
+	display: block;
+	border-radius: 5px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}  
+.pop-div> .a2 , .pop-div> .a3,.pop-div> .a4, .pop-div> .a5, .pop-div> .a7,.pop-div> .a9{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+	font-weight: bold;
+	font-size: 120%;
+	letter-spacing: 2px;
+	text-shadow: -2px 2px 4px #222;
+	text-decoration: none;
+	width: 100%;
+	line-height: 120px;
+} 
+.pop-div> .a6{
+left: 50%;
+top:50%;	
+}
+.pop-div:hover img {
+	transform: scale(1.025);
+}
+#hotels-sect{
+	border-bottom: 1px solid #fff;
+    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    padding-bottom: 60px;
+}
+#hotels-sect>h3{
+	padding-bottom: 0px;
+
+}
+
+#hotels-sect> .H>.flickity-button{
+	top:36%;
+} 
+.DH{
+	width:25%;
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-top: 6px;
+
+
+}
+.DH> img{
+ width:90%;
+ border-radius: 10px;
+ margin: 0px auto;
+ display: block;
+
+
+}
+.DH>.book-h{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	width: 120px;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 100;
+	font-size: 95%;
+	border-style: solid;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #fff;
+	padding:8px 0px 8px 0px; 
+	transform: translate( -50%, -50% );
+    transition: all 0.4s;
+    text-shadow: -2px 2px 3px #222;
+}
+.DH> a{
+	display: block;
+	color: rgba(45, 44, 44,1);
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+	font-size: 123%;
+	background-color: #fff;
+	width: 100%;
+	margin: 0px auto;
+	padding-bottom: 0px;
+	margin-top: -15px;
+	text-transform: capitalize;
+
+}
+.DH> .book-h:hover{
+	background-color: #fff;
+	color:rgba(45, 44, 44,1);
+	text-shadow: -2px 2px 3px #fff;
+}
+#hotels-sect>p{
+text-align: left;
+font-size: 1.05em;
+max-width: 100%;
+margin-top: -10px;
+padding-bottom: 25px;
+padding-left: 7.4%;
+}
+.fa-star{
+	color: #ffa500;
+}
+
+footer{
+    text-align:center;
+    margin-top:0px;
+padding-bottom: 20px;
+padding-top: 20px;
+background-color: #191919;
+
+}
+
+.foota{
+	font-weight:bold;
+	padding-left: 15px;
+	text-decoration: none;
+	font-size: 80%;
+	color: #fff;
+	margin-left: 13px;
+	letter-spacing: 1.5px;
+	transition: all 0.2s;
+	text-transform: uppercase;
+}
+.foota:hover{
+	position: relative;
+	
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+   	padding-bottom: 1px;
+   	border-color: #fff;
+}
+#a3{
+	margin-right:20px;
+	padding-left: 0px;
+}
+#a4{
+	margin-left:20px;
+	padding-left: 0px;
+}
+}
