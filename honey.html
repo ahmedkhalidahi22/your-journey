@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <TITLE>honeymoon</TITLE>
+  <link rel="stylesheet" href="css/honey.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".your-class").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1});
+        });
+
+                $(document).on('ready', function () {
+            $(".cmnt-class").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+              });
+        });
+  </script>
+
+  <!-- 
+    
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/> -->
+  
+</HEAD>
+<body>
+  <header class="header">
+    <div id="icon-h1">
+      <img id="icon1" src="images/icon2.png">
+      <h1><a href="index.html">Your next journey</a></h1>
+    </div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav id="head-nav">
+      <ul class="main-ul">
+          <li class="dest-container">
+            <a onclick="myFunction()" id="a1" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+          <i id="fa-l1" class="fa fa-angle-left" ></i>
+          <i id="fa-d1" class="fa fa-angle-down" ></i>
+            Destinations</a>
+            <ul class="destinations-ul">
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+              <li><a href="china.html">China</a></li>
+              <li><a href="italy.html">Italy</a></li>
+            </ul>
+          </li>
+          <li class="exp-container">
+            <a id="a2" class="heada" style="pointer-events: none; cursor: default;" href="page.html">
+            <i id="fa-l2" class="fa fa-angle-left" ></i>
+            <i id="fa-d2" class="fa fa-angle-down" ></i>
+
+            Experiences</a>
+            <ul class="experiences-ul">
+              <li><a href="boat-trips.html">Boat-trips</a></li>
+              <li><a href="mountain.html">Mountain biking</a></li>
+              <li><a href="diving.html">Diving</a></li>
+              <li><a href="honey.html">Honeymoons</a></li>   
+            </ul>
+
+          </li>
+      </ul> 
+    </nav>
+  </header>
+<main>
+    <div id="header-h1-img">
+      <picture>
+        <source media="(max-width: 899px)"
+            srcset="images/honey/honey-main.jpg">
+        <source media="(min-width: 1151px)"
+            srcset="images/honey/honey-main2.jpg">       
+        <source media="(min-width: 900px)"
+            srcset="images/honey/honey-main1.jpg">
+         <img src="images/honey/honey-main.jpg">
+      </picture>            
+        <h1>honeymoon</h1>
+
+    </div>
+
+    <div class="welcome"> 
+      <section id="main-p">
+        <p>Spend an amazing and unforgettable honeymoon experience with your soulmate </p>
+      </section>
+
+      <div class="icons">
+
+        <div class="icn icon-1">
+         <i class="fas fa-plane-departure fa-3x"></i>
+         <p>TRAVELING</p>
+        </div>
+
+        <div class="icn icon-2">
+         <i class="fas fa-cloud-sun fa-3x"></i>
+         <p>RELAXING</p>
+        </div>
+
+      </div>
+    </div>
+
+<section id="first-sec">
+  <h3>Find your destination</h3> 
+  <p class="first-sec-p">Get ready for a great experience. You're about to take the trip of a lifetime!</p>
+
+
+ <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
+
+    <!-- images from unsplash.com -->
+    <div class="c-div div1">
+      <img alt="two chairs" class="c-img img1" src="images/honey/spain.jpg">
+      <a href="" class="c-a a1">SPAIN</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div2">
+      <img alt="village in italy" class="c-img img2" src="images/honey/italy.jpg">
+      <a href="" class="c-a a2">ITALY</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div3">
+      <img alt="oia oia island" class="c-img img3" src="images/honey/greece.jpg">
+      <a href="" class="c-a a3">GREECE</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div4">
+      <img alt="maldives" class="c-img img4" src="images/honey/maldives.jpg">
+      <a href="" class="c-a a4">MALDIVES</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div5">
+      <img alt="island in bali" class="c-img img5" src="images/honey/bali.jpg">
+      <a href="" class="c-a a5">BALI</a>
+    </div>
+     <div class="c-div div6">
+      <img alt="effiel tower" class="c-img img6" src="images/honey/france.jpg">
+      <a href="" class="c-a a6">FRANCE</a>
+      <div class="tint"></div>
+    </div>
+          <div class="c-div div7">
+      <img alt="two beach chairs in hawaii" class="c-img img7" src="images/honey/hawaii.jpg">
+      <a href="" class="c-a a7">HAWAII</a>
+    </div> 
+
+  
+  </div>
+
+
+ <div class="grid">
+
+    <div class="c-div div1">
+      <img alt="two chairs" class="c-img img1" src="images/honey/spain.jpg">
+      <a href="" class="c-a a1">SPAIN</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div2">
+      <img alt="village in italy" class="c-img img2" src="images/honey/italy.jpg">
+      <a href="" class="c-a a2">ITALY</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div3">
+      <img alt="oia oia island" class="c-img img3" src="images/honey/greece.jpg">
+      <a href="" class="c-a a3">GREECE</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div4">
+      <img alt="maldives" class="c-img img4" src="images/honey/maldives.jpg">
+      <a href="" class="c-a a4">MALDIVES</a>
+      <div class="tint"></div>
+    </div>
+    <div class="c-div div5">
+      <img alt="island in bali" class="c-img img5" src="images/honey/bali.jpg">
+      <a href="" class="c-a a5">BALI</a>
+      <div class="tint"></div>
+    </div>
+     <div class="c-div div6">
+      <img alt="effiel tower" class="c-img img6" src="images/honey/france.jpg">
+      <a href="" class="c-a a6">FRANCE</a>
+      <div class="tint"></div>
+    </div>
+          <div class="c-div div7">
+      <img alt="two beach chairs in hawaii" class="c-img img7" src="images/honey/hawaii.jpg">
+      <a href="" class="c-a a7">HAWAII</a>
+      <div class="tint"></div>
+    </div> 
+
+
+  </div>
+
+ <div class="divider"></div> 
+
+</section>
+
+
+<section id="second-sec">
+  <h3>Top experiences </h3> 
+  <p class="second-sec-p">From liveaboards to holidays that blend diving and topside adventure, family diving breaks to trips ideal for single travellers, we’ve got it covered.</p>
+  <div class="cards-cont">
+    
+     <div class="card crd1 crd-left">
+    <img src="images/honey/nepal.jpg" alt="old town in nepal" >
+    <div class="container">
+       <h4><b>Explore Forgotten City <br> Streets</b></h4>
+      <p id="tour-pp" class="tour-p">Liveaboards allow divers to explore areas beyond the reach of dive resorts, transporting you to some of the most remote and spectacular diving destinations on earth.</p>
+      <a id="p1" onclick="myFunction()" class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd2 crd-right">
+    <img src="images/honey/paradise.jpg" alt="paradise beach" >
+    <div class="container">
+       <h4><b>Find Seclusion On A Paradise Beach</b></h4>
+      <p class="tour-p">In the wake of long months spent planning your wedding, your honeymoon should enable you to relax and unwind.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd3 crd-left">
+    <img src="images/honey/balloon.jpg" alt="Avatar" >
+    <div class="container">
+    <h4><b>A Romantic Flight In An <br> Air Balloon</b></h4>
+          <p class="tour-p">The hot air balloon ride starts just before dawn and as you’re floating through the sky you will see the first hint of colour forming into the ski as the day begins to start.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+
+  <div class="card crd4 crd-right">
+    <img src="images/honey/spa.jpg" alt="Avatar" >
+    <div class="container">
+     <h4><b>Indulge In A Couples’ Spa <br> Treatment</b></h4>
+      <p class="tour-p">Sometimes, there are few things more romantic than a shared moment of pure indulgence, and couples’ spa sessions like those offered by many of Mauritius’ five-star resorts provide the very best in luxury pampering.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  </div>
+   
+  </div>
+
+<!-- WIDE SCREEN VERSION -->
+
+  <div class="cards-cont-wide">
+    
+     <div class="card crd1 crd-left">
+   <img src="images/honey/nepal1.jpg" alt="old town in nepal" >
+     </div>
+     <div class="container c1">
+      <h4><b>Explore Forgotten City Streets</b></h4>
+      <p id="tour-pp" class="tour-p">Liveaboards allow divers to explore areas beyond the reach of dive resorts, transporting you to some of the most remote and spectacular diving destinations on earth.</p>
+      <a id="p1" onclick="myFunction()" class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+
+  <div class="card crd2 crd-right">
+    <img src="images/honey/paradise1.jpg" alt="paradise beach" >
+    
+  </div>
+  <div class="container c2">
+      <h4><b>Find Seclusion On A Paradise Beach</b></h4>
+      <p class="tour-p">Single divers need not worry that they have to miss out on all the fun, or pay twice the price. There are many friendly dive resorts who keep single supplements to a minimum or allow you to share</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+
+  <div class="card crd3 crd-left">
+   <img src="images/honey/balloon1.jpg" alt="air ballons flighing" >
+  </div>
+    <div class="container c3">
+           <h4><b>A Romantic Flight In An Air Balloon</b></h4>
+          <p class="tour-p">The hot air balloon ride starts just before dawn and as you’re floating through the sky you will see the first hint of colour forming into the ski as the day begins to start.</p>
+          <a class="details-a" href="">DETAILS</a>
+          <a class="book-a" href="">BOOK NOW</a>
+    </div>
+  <div class="card crd4 crd-right">
+  <img src="images/honey/spa1.jpg" alt="Avatar" >
+  </div>
+  <div class="container c4">
+       <h4><b>Indulge In A Couples’ Spa Treatment</b></h4>
+      <p class="tour-p">Informed by our philosophy, we offer carefully selected dive resorts with characterful hotels, charming guesthouses and outstanding dive centres in the world’s finest diving destinations.</p>
+      <a class="details-a" href="">DETAILS</a>
+      <a class="book-a" href="">BOOK NOW</a>
+    </div>
+   
+  </div>
+ <div id="divider2" class="divider D1"></div> 
+</section>
+
+
+
+<section class="third-sec">
+  <h3>SERVICES</h3> 
+  <div class="icon-cards">
+   <div class="first-cards-set"> 
+     <div id="icn-div1" class="icn-card div1">
+      <i class="fas fa-spa fa-5x"></i>
+      <a href=""><h4>Relaxing SPA Day</h4></a>
+      <p>Relax, unwind and indulge with our day spa therapy packages to create your own unique experience.</p>
+   </div>
+  <div class="icn-card div1">
+      <i class="fas fa-hot-tub fa-5x"></i>
+      <a href=""><h4>Calming jacuzzi</h4></a>
+      <p>Enjoy your stay with us at Madison Spa Resort with a range of accommodation options</p>
+   </div> 
+ </div>
+
+  <div class="icn-card div1">
+      <i class="fas fa-umbrella-beach fa-5x"></i>
+      <a href=""><h4>Sunny beach</h4></a>
+      <p>Enjoy the most captivating views in hawaii's sunny beaches  </p>    
+   </div>
+ 
+   <div class="icn-card div1">
+      <i class="fas fa-utensils fa-5x"></i>
+      <a href=""><h4>Best dinning places</h4></a>
+      <p>Feast on great food and enjoy the relaxing ambience of our own in-house restaurant . </p>
+   </div>
+
+  </div>
+ <div id="divider3" class="divider"></div> 
+</section>
+
+
+
+<section id="fourth-sec">
+  <div class="sep-div">
+    <h4>HEAR FROM THEM</h4>
+    <i class="fas fa-quote-right fa-1x"></i>
+  </div>
+  <div class="cmnt-class">
+    <div class="cmnt-div cmnt1">
+      <p class="cmnt-p ">From the booking experience to the concierge service - I have been so impressed by the efficiency and support offered by the team.The package for our holiday was extremely competitive and I was shocked at the price for our multi-destination holiday</p>
+      <span class="cmnt-s1">SANDRA</span>
+      <span class="cmnt-s2">poland</span>
+    </div>
+
+    <div class="cmnt-div cmnt2">
+      <p class="cmnt-p ">Just booked our honeymoon for next year and it was such a smooth, easy process. Abbie was amazing and so helpful throughout the whole process.</p>
+      <span class="cmnt-s1">LUCY</span>
+      <span class="cmnt-s2">nigeria</span>
+    </div>
+
+    <div class="cmnt-div cmnt3">
+      <p class="cmnt-p ">Just booked my honeymoon to Jamaica with Abbie. Absolutely great experience! Polite and friendly, gave me a great range of options none of which exceeding my budget.</p>
+      <span class="cmnt-s1">EVE</span>
+      <span class="cmnt-s2">mexico</span>
+    </div>
+
+    <div class="cmnt-div cmnt4">
+      <p class="cmnt-p ">We had the most AMAZING time. It really was the hoilday of a lifetime, so special and everything ran like clock work. Cannot thank Abbie enough for putting it all together for us, honestly can't think of a single fault.</p>
+      <span class="cmnt-s1">LAUREN</span>
+      <span class="cmnt-s2">canada</span>
+    </div>
+  </div>
+
+</section>
+</main>
+
+<footer>
+  <nav id="bottom-nav">
+      <a id="a3" class="foota" href="about.html">About me</a>
+      <a id="a4" class="foota" href="contact.html">Contact me</a>
+  </nav>
+
+
+
+
+</footer>
+
+<script type="text/javascript">
+ function myFunction() {
+  var x = document.getElementById("tour-pp");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
+
+<script src="js/flickity.pkgd.min.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
