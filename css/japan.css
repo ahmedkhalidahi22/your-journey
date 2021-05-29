@@ -841,6 +841,15 @@ html {
 
 
 }
+	
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+	
 header{
 
 	display: block;
@@ -1636,7 +1645,14 @@ html {
   color: #191919;
   font-size: 1.03em;
 }
-
+	
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 @font-face {
   font-family: Helvetica;
   src: url(fonts/Helvetica.woff);
