@@ -349,22 +349,22 @@ display: none;
 }
 /* DROPDOWN MENU ENDS*/
 main{
-	margin-top: 8%;
+	margin-top: 5%;
 }
 h2{
 	color: white;
 	text-transform: uppercase;
-	font-size: 180%;
+	font-size: 160%;
 	  font-family:poppins-R;
 	letter-spacing: 1px;
 }
 .divider1 , .divider2{
 	display: block;
 	position: relative;
-	top: 46px;
+	top: 41px;
 	margin: 0px auto;
 	height: 1px;
-	width: 120px;
+	width: 130px;
 	background:red;
 	z-index: -1;
 	
@@ -393,10 +393,11 @@ p{
 }
 .my-img
 {
-	margin-top:60px;
+	margin-top:40px;
 }
 img{
-	width: 190px;
+	width: 30%;
+	max-width:190px;
 	border-radius: 50%;
 	box-shadow: 0px 0px 3px #fff;
 }
@@ -439,7 +440,8 @@ margin-top: 20px;
 }
 .text{
 display: block;
-width: 324px;
+width: 60%;
+max-width: 324px;
 margin: 0px auto;
 margin-top: 35px;
 }
@@ -1433,6 +1435,9 @@ background-color: #191919;
 }
 
 }
+
+
+
 
 
 
