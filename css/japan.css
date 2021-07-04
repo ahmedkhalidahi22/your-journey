@@ -381,7 +381,8 @@ text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background222.jpg);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right,#e5f4ff, #ffe6e2);
 	background-size: cover;
 	margin-top: -40px;
 	position: relative;
@@ -414,8 +415,7 @@ line-height: 25px;
     margin-top: 20px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1089,7 +1089,8 @@ text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background22.jpg);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right,#e5f4ff, #ffe6e2);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
@@ -1126,8 +1127,7 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1873,7 +1873,7 @@ display: none;
 }
 #header-h1-img picture>img{
 	width:100%;
-	margin-top:-75px;
+	margin-top:-10px;
 	border-radius: 0px 0px 40px 40px;
 }
 #header-h1-img h1{
@@ -1890,7 +1890,8 @@ text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background22.jpg);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right,#e5f4ff, #ffe6e2);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
@@ -1926,8 +1927,7 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
