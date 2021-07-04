@@ -358,12 +358,13 @@ input {
 }
 
 .container {
-  width:80%;
+  width:95%;
   max-width: 490px;
   margin: 70px auto 0px;
   background-color: #fff; 
   border-radius: 20px;
   padding-bottom: 0.5em;
+  margin-bottom: 2em;
 
 
 }
@@ -459,7 +460,6 @@ form ul li p {
   float: left;
 }
 form ul li p.right {
-  float: right;
 }
 form ul li .divider {
   margin: 0.5em 0 0.5em 0;
@@ -500,8 +500,6 @@ form small {
   width: 152%;
 }
 footer{
-   position:absolute;
-   bottom:0;
  display: block;
  width: 100%;
  text-align:center;
