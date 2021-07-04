@@ -254,7 +254,7 @@ display: none;
 	width:100%
 }
 .destinations-ul li a{
-	line-height: 25px;
+	line-height: 28px;
 	position: relative;
 	text-align: center;
 	display: inline-block;
@@ -294,7 +294,7 @@ display: none;
 	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
-	width: 115px;
+	width: 135px;
 	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
@@ -302,7 +302,7 @@ display: none;
 	
 }
 .experiences-ul li a {
-	line-height: 25px;
+	line-height: 28px;
 	position: relative;
 	text-align: center;
 	display: inline-block;
