@@ -377,11 +377,12 @@ position: absolute;
 top: 40%;
 left: 50%;
  transform: translate( -50%, -50% );
-text-shadow: -2px 4px 3px #333;
+text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background222.jpg);
+	/*background-image: url(../images/japan-background222.jpg);*/
+	background:linear-gradient(to right, #ffe7d5, #c5f2ff);
 	background-size: cover;
 	margin-top: -40px;
 	position: relative;
@@ -414,8 +415,7 @@ line-height: 25px;
     margin-top: 20px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+     box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -841,16 +841,6 @@ html {
 
 
 }
-	
-html , body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-	
 header{
 
 	display: block;
@@ -1087,11 +1077,12 @@ position: absolute;
 top: 40%;
 left: 50.4%;
  transform: translate( -50%, -50% );
-text-shadow: -2px 4px 3px #333;
+text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background22.jpg);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right, #ffe7d5, #c5f2ff);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
@@ -1128,8 +1119,7 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+     box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1646,16 +1636,7 @@ html {
   color: #191919;
   font-size: 1.03em;
 }
-	
-html , body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-	
+
 @font-face {
   font-family: Helvetica;
   src: url(fonts/Helvetica.woff);
@@ -1675,6 +1656,10 @@ html , body
 @font-face {
   font-family: Helvetica-M;
   src: url(fonts/Helvetica-Neue-LT-65-Medium.ttf);
+}
+@font-face {
+  font-family:poppins-M;
+  src: url(fonts/Poppins-Medium.ttf);
 }
 body{
   margin:0px 0px 0px 0px;
@@ -1889,11 +1874,12 @@ position: absolute;
 top: 40%;
 left: 50.4%;
  transform: translate( -50%, -50% );
-text-shadow: -2px 4px 3px #333;
+text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	background-image: url(../images/japan-background22.jpg);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right, #ffe7d5,#c5f2ff);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
@@ -1930,8 +1916,7 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -2192,7 +2177,6 @@ margin-top: -12px;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 	justify-content: center;
-
 }
 .D1{
 	grid-column: 1/3;
@@ -2300,6 +2284,9 @@ top:50%;
 }
 .pop-div:hover img {
 	transform: scale(1.025);
+}
+.pop-div> a{
+	text-shadow: 0px 1px 3px #333;
 }
 #hotels-sect{
 	border-bottom: 1px solid #fff;
