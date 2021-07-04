@@ -358,8 +358,8 @@ input {
 }
 
 .container {
-  max-width: 410px;
-  min-width: 224px;
+  width:80%;
+  max-width: 490px;
   margin: 70px auto 0px;
   background-color: #fff; 
   border-radius: 20px;
