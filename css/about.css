@@ -1380,13 +1380,15 @@ margin-top: 20px;
 }
 .text{
 display: block;
-width: 324px;
+width: 330px;
 margin: 0px auto;
 margin-top: 35px;
 }
 .text > p{
 	font-family: poppins-L;
-	line-height: 26px;
+	font-size: 1.05em;
+	line-height: 28px;
+	word-spacing: 2px;
 }
 
 
