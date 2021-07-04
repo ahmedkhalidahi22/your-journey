@@ -11,6 +11,9 @@ html,body{
 }
 body{
 	background-color: #242729;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
@@ -45,6 +48,7 @@ header{
 	padding-bottom: 20px;
 	background-color: #191919;
 	margin-bottom: 10px;
+	width: 100%;
 }
 h1{ 
 	padding-bottom: 0px;
@@ -453,9 +457,9 @@ margin-top: 35px;
 
 /*footer*/
 
+
 footer{
-   position:absolute;
-   bottom:0;
+	margin-top: auto;
  display: block;
  width: 100%;
  text-align:center;
@@ -466,6 +470,7 @@ background-color: #191919;
 }
 
 .foota{
+	
 	font-weight:bold;
 	padding-left: 15px;
 	text-decoration: none;
@@ -514,6 +519,9 @@ html,body{
 }
 body{
 	background-color: #242729;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
@@ -731,6 +739,7 @@ header{
 	padding-bottom: 20px;
 	height: 36px;
 	background-color: #191919;
+	width: 100%;
 }
 #icon-h1{
 	float: left;
@@ -782,6 +791,7 @@ h1{
 	margin-left: 10px;
 	height: 60px;
 	padding-left: 0px;
+	padding-right: 20px;
 
 }
 #fa-d1, #fa-d2, #fa-l1, #fa-l2{
@@ -1019,8 +1029,7 @@ margin-top: 35px;
 /*footer*/
 
 footer{
-   position:absolute;
-   bottom:0;
+margin-top: auto;
  display: block;
  width: 100%;
  text-align:center;
@@ -1080,6 +1089,9 @@ html,body{
 }
 body{
 	background-color: #242729;
+	   min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
@@ -1397,8 +1409,7 @@ margin-top: 35px;
 /*footer*/
 
 footer{
-   position:absolute;
-   bottom:0;
+margin-top: auto;
  display: block;
  width: 100%;
  text-align:center;
