@@ -65,6 +65,20 @@ margin-left: 0.3em;
 	transition: all 1.5s;
 }
 
+@keyframes spin{
+	25% {
+		transform: rotate(-90deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
 /*mobile view*/
 @media only screen and (max-width: 899px)
 {
@@ -975,20 +989,7 @@ body{
 
 }
 
-@keyframes spin{
-	25% {
-		transform: rotate(-90deg);
-	}
-	50% {
-		transform: rotate(0deg);
-	}
-	75% {
-		transform: rotate(90deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
-}
+
 h1{ 
 	padding-bottom: 8px;
 	padding-left: 5px;
