@@ -9,7 +9,7 @@ window.onload = function loading(){
     setTimeout( function() {
         loader.style.transform="translateY(-100%)";
         page.style.opacity=1
-    } , 450)
+    } , 10)
  
     slider.style.transform="translateY(-100%)";
 
