@@ -1,16 +1,4 @@
-/*mobile view*/
-@media only screen and (max-width: 899px)
-{
-html { 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: Helvetica;
-    scroll-behavior: smooth;
-    padding: 0px;
-    margin: 0px;
-}
+
 @font-face {
   font-family: Helvetica;
   src: url(fonts/Helvetica.woff);
@@ -34,6 +22,61 @@ html {
 @font-face {
   font-family:poppins-M;
   src: url(fonts/Poppins-Medium.ttf);
+}
+
+
+.loader{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: linear-gradient(141deg, #ffd9b8, #e9f6ff);
+	width:100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	transition: all 1.5s;
+	transform: translateY(0%);
+}
+.loader> .loading-icon{
+	width: 60px;
+	animation: spin 5s cubic-bezier(0.6,-0.01, 0.46, 1) infinite ;
+}
+.loader> .loading-h1{
+font-family: 'Lobster', cursive;
+font-size: 3.5em;
+text-transform: lowercase;
+margin-left: 0.3em;
+}
+.page{
+	opacity: 0;
+	transition: all 1.1s;
+}
+.slider{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #f2f5e8;
+	z-index: 15;
+	transform: translateY(100%);
+	transition: all 1.5s;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 899px)
+{
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Helvetica;
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
 }
 
 header{
@@ -929,6 +972,22 @@ body{
 	float: left;
 	width:45%;
 	margin-left: 20px;
+
+}
+
+@keyframes spin{
+	25% {
+		transform: rotate(-90deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 h1{ 
 	padding-bottom: 8px;
