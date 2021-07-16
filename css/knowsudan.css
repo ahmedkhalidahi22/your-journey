@@ -1243,6 +1243,7 @@ margin-top:150px;
     transition: all 0.3s;
     text-decoration: none;
     letter-spacing: 1px;
+	display: inline-block;
 }
 
 .main-btn:hover{
