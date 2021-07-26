@@ -1,3 +1,6 @@
+
+
+
 /*mobile view*/
 @media only screen and (max-width: 899px)
 {
@@ -27,6 +30,10 @@ font-family: Helvetica;
 @font-face {
   font-family: Helvetica-M;
   src: url(fonts/Helvetica-Neue-LT-65-Medium.ttf);
+}
+@font-face {
+  font-family: Helvetica-N;
+  src: url(fonts/Helvetica-Neue-LT-45-Light.ttf);
 }
 @font-face {
   font-family: Helvetica-L;
@@ -300,6 +307,7 @@ display: none;
 	width:100%;
 	color: rgba(45, 44, 44,1);
 	text-decoration: none;	
+	font-family: Helvetica;
 }
 
 .main-ul> .dest-container>.destinations-ul>li>a:hover , .main-ul> .exp-container>.experiences-ul>li>a:hover
@@ -349,6 +357,7 @@ display: none;
 	width:100%;
 	color: rgba(45, 44, 44,1);
 	text-decoration: none;
+	font-family: Helvetica;
 }
 .experiences-ul li:first-child a{
 	padding-top: 3px;
@@ -668,6 +677,7 @@ border:1px solid rgb(108 193 13);}
 	position: relative;
 	box-shadow: 0 0 7px 0 rgb(0 0 0 / 30%);
 	 border-radius: 0px 0px 10px 10px;
+	 max-width: 420px;
 
 }
 #icn-div1{
@@ -836,6 +846,8 @@ background-color: #191919;
 	margin-left:20px;
 	padding-left: 0px;
 }
+
+
 }
 
 
@@ -1615,6 +1627,8 @@ background-color: #191919;
 	margin-left:20px;
 	padding-left: 0px;
 }
+
+
 }
 
 
@@ -2416,4 +2430,6 @@ background-color: #191919;
 	margin-left:20px;
 	padding-left: 0px;
 }
+
 }
+
