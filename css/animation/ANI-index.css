@@ -1,0 +1,65 @@
+
+/* animations all */
+
+
+
+.exp-h2 , .p2{
+	/*experiences section h1 animation*/
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+.exp-h2.active , .p2.active{
+	/*experiences section h1 animation*/
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*mobile view*/
+
+@media only screen and (max-width: 899px)
+{
+
+
+}
+
+
+
+
+
+
+
+/*Big view*/
+@media only screen and (min-width: 900px)
+{
+
+    
+/* animations big screen */
+.target1{ 
+	/*destinations section grids animation*/
+
+	transform: translateY(30%);
+	opacity: 0;
+	transition: all 1.3s;
+
+}
+
+.targetEX{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+
+
+.targetEX.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+}
