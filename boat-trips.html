@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <TITLE>Boat trips</TITLE>
+  <link rel="stylesheet" href="css/animation/ANI-boats.css">
   <link rel="stylesheet" href="css/boat-trips.css">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
@@ -42,7 +43,7 @@
 </HEAD>
 <body>
   <header class="header">
-    <div id="icon-h1">
+    <div  id="icon-h1">
       <img alt="website's icon" id="icon1" src="images/icon2.png">
       <h1><a href="index.html">Your next journey</a></h1>
     </div>
@@ -90,11 +91,12 @@
             srcset="images/boat/boat-main2.jpg">
          <img alt="boat on sea" src="images/boat/boat-main.jpg">
       </picture>            
-        <h1>Boat trips</h1>
+        <h1 class="hero-h1">Boat trips</h1>
 
     </div>
 
     <div class="welcome"> 
+      <div class="welcome-animate">
       <section id="main-p">
         <p>Experience amazing sailing week! Sail, Party, Explore and Relax! </p>
       </section>
@@ -112,28 +114,31 @@
         </div>
 
       </div>
+
+      </div>
+
     </div>
 
 <section id="first-sec">
-  <h3>Find your course</h3> 
+  <h3 class="first-h3">Find your course</h3> 
   <p class="first-sec-p">The Boat Trip is a week of sailing in fleet of up to 20 yachts in the most beautiful places all over the world.</p>
 
 
  <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
 
     <!-- images from unsplash.com -->
-    <div class="c-div div1">
+    <div class="c-div div1 ">
       <img alt="lake in japan" class="c-img img1" src="images/boat/japan.jpg">
-      <a href="" class="c-a a1">JAPAN</a>
+      <a href="" class="c-a a1 flckty-a">JAPAN</a>
     </div>
-    <div class="c-div div2">
+    <div class="c-div div2 ">
       <img alt="lake in china" class="c-img img2" src="images/boat/china.jpg">
       <a href="" class="c-a a2">CHINA</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div3">
+    <div class="c-div div3 ">
       <img alt="sea in italy" class="c-img img3" src="images/boat/italy.jpg">
-      <a href="" class="c-a a3">ITALY</a>
+      <a href="" class="c-a a3 ">ITALY</a>
       <div class="tint"></div>
     </div>
     <div class="c-div div4">
@@ -143,7 +148,7 @@
     </div>
     <div class="c-div div5">
       <img alt="seashore in greece" class="c-img img5" src="images/boat/greece.jpg">
-      <a href="" class="c-a a5">GREECE</a>
+      <a href="" class="c-a a5 ">GREECE</a>
     </div>
      <div class="c-div div6">
       <img alt="lake in croatia" class="c-img img6" src="images/boat/croatia.jpg">
@@ -170,47 +175,47 @@
 
  <div class="grid">
 
-    <div class="c-div div1">
+    <div class="c-div div1 row1-anmt">
       <img alt="lake in japan"  class="c-img img1" src="images/boat/japan.jpg">
       <a href="" class="c-a a1">JAPAN</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div2">
+    <div class="c-div div2 row1-anmt">
       <img alt="lake in china" class="c-img img2" src="images/boat/china.jpg">
       <a href="" class="c-a a2">CHINA</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div3">
+    <div class="c-div div3 row1-anmt">
       <img alt="sea in italy"  class="c-img img3" src="images/boat/italy.jpg">
       <a href="" class="c-a a3">ITALY</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div4">
+    <div class="c-div div4 row1-anmt">
       <img alt="sea in thailand" class="c-img img4" src="images/boat/thailand.jpg">
       <a href="" class="c-a a4">THAILAND</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div5">
+    <div class="c-div div5 col-anmt">
       <img alt="seashore in greece" class="c-img img5" src="images/boat/greece.jpg">
       <a href="" class="c-a a5">GREECE</a>
       <div class="tint"></div>
     </div>
-     <div class="c-div div6">
+     <div class="c-div div6 row2-anmt">
       <img alt="lake in croatia" class="c-img img6" src="images/boat/croatia.jpg">
       <a href="" class="c-a a6">CROATIA</a>
       <div class="tint"></div>
     </div>
-          <div class="c-div div7">
+          <div class="c-div div7 row2-anmt">
       <img alt="boa on the caribbean sea" class="c-img img7" src="images/boat/caribbean.jpg">
       <a href="" class="c-a a7">CARIBBEAN</a>
       <div class="tint"></div>
     </div> 
-              <div class="c-div div8">
+              <div class="c-div div8 row2-anmt ">
       <img alt="ocean in turkey" class="c-img img7" src="images/boat/turkey.jpg">
       <a href="" class="c-a a7">TURKEY</a>
       <div class="tint"></div>
     </div> 
-              <div class="c-div div9">
+              <div class="c-div div9 row2-anmt">
       <img alt="sea in spain" class="c-img img7" src="images/boat/spain.jpg">
       <a href="" class="c-a a7">SPAIN</a>
       <div class="tint"></div>
@@ -225,11 +230,11 @@
 
 
 <section id="second-sec">
-  <h3>Choose your tour</h3> 
+  <h3 class="scnd-h3">Choose your tour</h3> 
   <p class="second-sec-p">The Boat Trip is a week of sailing in fleet of up to 20 yachts in the most beautiful places all over the world.</p>
   <div class="cards-cont">
     
-     <div class="card crd1 crd-left">
+     <div class="card crd1 crd-left C-TOP">
     <img src="images/boat/caribbean.jpg" alt="top view of a boat" >
     <div class="container">
       <h4><b>FULL DAY PRIVATE BOAT <br> TOUR </b></h4>
@@ -239,7 +244,7 @@
     </div>
   </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right C-TOP">
     <img src="images/boat/canal-tour.jpg" alt="boat going through canal" >
     <div class="container">
       <h4><b>COZY AND FUN CANAL <br> TOUR</b></h4>
@@ -249,7 +254,7 @@
     </div>
   </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left ct C-BTM">
     <img src="images/boat/brunch-tour.jpg" alt="small boat in ocean" >
     <div class="container">
       <h4><b>WEEKEND COMBO <br> BRUNCH  TOUR</b></h4>
@@ -259,7 +264,7 @@
     </div>
   </div>
 
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right C-BTM">
     <img src="images/boat/dinner-tour.jpg" alt="ship docked at shore" >
     <div class="container">
       <h4><b>SPECIAL EVENING DINNER <br> TOUR</b></h4>
@@ -275,40 +280,40 @@
 
   <div class="cards-cont-wide">
     
-     <div class="card crd1 crd-left">
+     <div class="card crd1 crd-left crd-row1">
    <img src="images/boat/caribbean2.jpg" alt="top view of a boat" >
      </div>
-     <div class="container c1">
+     <div class="container c1 crd-row1">
       <h4><b>FULL DAY PRIVATE BOAT TOUR </b></h4>
       <p id="tour-parag" class="tour-p">Whether you want to sail the canals with friends or family and have the boat to yourself. Or maybe you have something to celebrate with your business partner or colleagues.</p>
       <a id="p11" onclick="myFunction()" class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right crd-row2">
     <img src="images/boat/canal-tour2.jpg" alt="boat going through canal" >
     
   </div>
-  <div class="container c2">
+  <div class="container c2 crd-row2">
       <h4><b>COZY AND FUN CANAL TOUR</b></h4>
       <p class="tour-p">Welcome aboard! Get comfy and relax on the cushions of our well equipped and 100% electrical boat. Have a drink of your choice, try a dutch snack and enjoy . </p>
       <a class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left crd-row3">
    <img src="images/boat/brunch-tour2.jpg" alt="small boat in ocean"  >
   </div>
-    <div class="container c3">
+    <div class="container c3 crd-row3">
           <h4><b>WEEKEND COMBO BRUNCH TOUR</b></h4>
           <p class="tour-p">The perfect Amsterdam weekend starts here. What better way than to have a brunch on a boat? To have a sociable weekend brunch on a boat, while gliding through the famous canals of Amsterdam.</p>
           <a class="details-a" href="">DETAILS</a>
           <a class="book-a" href="">BOOK NOW</a>
     </div>
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right crd-row4">
   <img src="images/boat/dinner-tour2.jpg" alt="ship docked at shore">
   </div>
-  <div class="container c4">
+  <div class="container c4 crd-row4">
       <h4><b>SPECIAL EVENING DINNER TOUR</b></h4>
       <p class="tour-p">Our beautiful and safe electric boats are cozy, exclusive and comfortable. With a boat cover and large windows between warm blankets and comfy pillows, you have nothing to worry about. </p>
       <a class="details-a" href="">DETAILS</a>
@@ -322,8 +327,9 @@
 
 
 <section class="third-sec">
-  <h3>SERVICES</h3> 
+  <h3 class="third-h3">SERVICES</h3> 
   <div class="icon-cards">
+
    <div class="first-cards-set"> 
      <div id="icn-div1" class="icn-card div1">
       <i class="fas fa-users fa-5x"></i>
@@ -338,16 +344,18 @@
 
  </div>
 
-   <div class="icn-card div1">
-      <i class="fas fa-shower fa-5x"></i>
-      <a href=""><h4>Toilets & Shower Facilities</h4></a>
-      <p>Toilet and showers available onboard each boat</p>
-   </div>
-   <div class="icn-card div1">
-      <i class="fas fa-shield-alt fa-5x"></i>
-      <a href=""><h4>Full Safety Equipment</h4></a>
-      <p>Full safety equipment and lifejackets on-board every boat, every trip!</p>
-   </div>
+  <div class="second-cards-set"> 
+    <div class="icn-card div1">
+        <i class="fas fa-shower fa-5x"></i>
+        <a href=""><h4>Toilets & Shower Facilities</h4></a>
+        <p>Toilet and showers available onboard each boat</p>
+    </div>
+    <div class="icn-card div1">
+        <i class="fas fa-shield-alt fa-5x"></i>
+        <a href=""><h4>Full Safety Equipment</h4></a>
+        <p>Full safety equipment and lifejackets on-board every boat, every trip!</p>
+    </div>
+ </div>
 
   </div>
  <div id="divider3" class="divider"></div> 
@@ -357,7 +365,7 @@
 
 <section id="fourth-sec">
   <div class="sep-div">
-    <h4>HEAR FROM THEM</h4>
+    <h4 class="frth-h3">HEAR FROM THEM</h4>
     <i class="fas fa-quote-right fa-1x"></i>
   </div>
   <div class="cmnt-class">
@@ -405,7 +413,8 @@
     x.style.display = "none";
   }
 }</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/flickity.pkgd.min.js"></script>
+<script src="js/boat-trips.js"></script>
 </body>
 </html>
