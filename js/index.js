@@ -45,7 +45,7 @@ let target1 = document.querySelectorAll('.target1');
 let options = {
     root: null,
     rootMargin: '-80px',
-    threshold: 0.8
+    threshold: 0.3
   }
   
 
@@ -138,3 +138,4 @@ let options3 = {
 
 
 
+//   *****************   ANIMATION FUNCTION   *****************   // 
