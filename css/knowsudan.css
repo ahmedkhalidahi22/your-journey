@@ -295,6 +295,7 @@ h1{
 	width:  100%;
 	position: relative;
 	bottom:25px;
+	z-index: 10;
 
 }
 
@@ -371,7 +372,7 @@ display: none;
 	text-align: center;
 	border-radius: 10px;
 	background-color: rgba(250,250,250,0.25);
-	
+	z-index: 10;
 
 }
 .destinations-ul li{
@@ -422,8 +423,8 @@ display: none;
 	margin-top: 0px;
 	text-align: center;
 	border-radius: 10px;
-	background-color: rgba(250,250,250,0.25);
-	
+	background-color: rgb(244 244 236 / 91%);
+	z-index: 10;
 }
 .experiences-ul li a {
 	line-height: 28px;
@@ -463,7 +464,7 @@ margin-top:140px;
 .main-btn{
 	font-size: 110%;
 	color: #ffffff;
-	padding: 13px 15px 13px 15px;
+	padding: 14px 15px 13px 15px;
 	background:#db5a5a   ;
 	border-style: solid;
 	border-width: 1px;
@@ -474,7 +475,6 @@ margin-top:140px;
     letter-spacing: 1px;
 	display: inline-block;
 	font-weight: bold;
-
 }
 
 .main-btn:hover{
@@ -492,9 +492,11 @@ margin-top:140px;
   -o-background-size: cover;
   background-size: cover;
     position: relative;
+	z-index: 0;
 }
 .landing{
 	position: absolute;
+	z-index: -1;
 	width: 100%;
 	top: 41%;
 	left: 50%;
@@ -508,6 +510,7 @@ margin-top:140px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #2d2c2c;
+	position: relative;
 }
 span{
 	color: #db5a5a;
