@@ -207,6 +207,40 @@
 
 
 
+@media only screen and (max-width: 899px) 
+{
+
+
+.card{
+	transform: translateY(8%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.card.active{
+
+	transform: translateY(0%);
+	opacity: 1;
+
+}
+
+
+
+.icn-card{
+	transform: scale(1.03);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.icn-card.active{
+	transform: scale(1);
+	opacity: 1;
+}
+
+}
+
+
+
+
+
 
 @media only screen and (min-width: 900px) and (max-width: 1150px)
 { 
