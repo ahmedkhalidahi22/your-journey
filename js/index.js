@@ -59,7 +59,7 @@ if (smallScreen.matches){
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.15
+        threshold: 0.105
 
       }
       
@@ -93,7 +93,7 @@ if (smallScreen.matches){
       let options3 = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.15
+        threshold: 0.105
       }
       
     
