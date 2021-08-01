@@ -4,6 +4,10 @@ const h1 = document.getElementById('icon-h1')
 const nav = document.querySelector("#head-nav")
 const heroH1 = document.querySelector(".hero-h1")
 const welcome = document.querySelector(".welcome-animate")
+const body = document.querySelector("body")
+
+
+var smallScreen = window.matchMedia("(max-width: 899px)") // media query
 
 
 h1.style.opacity= 0;
@@ -13,9 +17,15 @@ nav.style.transform= "translateY(-30%)";
 heroH1.style.opacity= 0; 
 welcome.style.opacity= 0; 
 welcome.style.transform= "translateY(30%)";
-
+body.style.opacity= 0; 
 
 window.onload = function loading(){
+
+
+ // ******* BODY ANIMATION ********* //   
+
+tl.fromTo(  body , {opacity: 0} , {opacity: 1 , duration: (0.8)})   
+
 
 // ******* HERO SECTION ANIMATION ********* //   
 
@@ -168,7 +178,7 @@ observer.observe(parent3);
 
 
 
-// CARDS ANIMATION
+// CARDS ANIMATION//
 let card1 = document.querySelectorAll('.crd-row1')
 let card2 = document.querySelectorAll('.crd-row2')
 let card3 = document.querySelectorAll('.crd-row3')
@@ -180,62 +190,139 @@ let cardBtm = document.querySelectorAll('.C-BTM')
 let cardsARR = [ card1 ,card2 ,card3 ,card4 ]
 let minCardsARR = [ cardTop, cardBtm ]
 
+// ******* SMAll sceen animation ******** //
 
-let options3 = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.31
-  }
-  
+if (smallScreen.matches){
 
-  let callback3 = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting){
 
-            if (entry.target == card1[0]){
-                card1.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-            else if (entry.target == card2[0]){
-                card2.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-            else if (entry.target == card3[0]){
-                card3.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-            else if (entry.target == card4[0]){
-                card4.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-            else if (entry.target == cardTop[0]){
-                cardTop.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-            else if (entry.target == cardBtm[0]){
-                cardBtm.forEach(card=>{
-                    card.classList.add("active");
-                })
-            }
-        }
-  
-    });
-  };
+    // cards animation //
 
-  let observer3 = new IntersectionObserver(callback3, options3);
+    cards = document.querySelectorAll('.card')
 
-  cardsARR.forEach(card=> {
-    observer3.observe(card[0]);
-})
+    let options3 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    
+      let callback3 = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting){
 
-minCardsARR.forEach(card=> {
-    observer3.observe(card[0]);
-})
+                entry.target.classList.add("active");
+
+            }
+      
+        });
+      };
+    
+      let observer3 = new IntersectionObserver(callback3, options3);
+    
+      cards.forEach(card=> {
+        observer3.observe(card);
+    })
+    
+
+
+    // icon cards animation //
+
+
+
+    iconCards = document.querySelectorAll('.icn-card')
+
+
+    let options4 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.18
+      }
+      
+    
+      let callback4 = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting){
+    
+                entry.target.classList.add("active");
+    
+            }
+      
+        });
+      };
+    
+      let observer4 = new IntersectionObserver(callback4, options4);
+    
+      iconCards.forEach(icon=> {
+        observer4.observe(icon);
+    })
+    
+
+
+}
+
+else{
+    let options3 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.31
+      }
+      
+    
+      let callback3 = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting){
+    
+                if (entry.target == card1[0]){
+                    card1.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+                else if (entry.target == card2[0]){
+                    card2.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+                else if (entry.target == card3[0]){
+                    card3.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+                else if (entry.target == card4[0]){
+                    card4.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+                else if (entry.target == cardTop[0]){
+                    cardTop.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+                else if (entry.target == cardBtm[0]){
+                    cardBtm.forEach(card=>{
+                        card.classList.add("active");
+                    })
+                }
+            }
+      
+        });
+      };
+    
+      let observer3 = new IntersectionObserver(callback3, options3);
+    
+      cardsARR.forEach(card=> {
+        observer3.observe(card[0]);
+    })
+    
+    minCardsARR.forEach(card=> {
+        observer3.observe(card[0]);
+    })
+    
+}
+
+
+
+
+
+
 
 
 
@@ -327,4 +414,11 @@ let options5 = {
 
 
 } 
+
+
+
+
+
+
+
 
