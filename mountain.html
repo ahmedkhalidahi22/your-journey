@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <TITLE>Mountain Biking</TITLE>
   <link rel="stylesheet" href="css/mountain.css">
+  <link rel="stylesheet" href="css/animation/ANI-mountain.css">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +45,7 @@
   <header class="header">
     <div id="icon-h1">
       <img alt="website's icon" id="icon1" src="images/icon2.png">
-      <h1><a href="index.html">Your next journey</a></h1>
+      <h1><a href="index.html">Your journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -90,32 +91,34 @@
             srcset="images/mountain/bike-main1.jpg">
          <img alt="a bike in a field" src="images/mountain/bike-main.jpg">
       </picture>            
-        <h1>MOUNTAIN BIKING</h1>
+        <h1 class="hero-h1">MOUNTAIN BIKING</h1>
 
     </div>
 
     <div class="welcome"> 
-      <section id="main-p">
-        <p>Mountain biking provides a unique and unforgettable outdoors experience! </p>
-      </section>
+      <div class="welcome-animate">
+    
+        <section id="main-p">
+          <p>Mountain biking provides a unique and unforgettable outdoors experience! </p>
+        </section>
 
-      <div class="icons">
+        <div class="icons">
 
-        <div class="icn icon-1">
-         <i class="fas fa-bicycle fa-3x"></i>
-         <p>BIKING</p>
+          <div class="icn icon-1">
+          <i class="fas fa-bicycle fa-3x"></i>
+          <p>BIKING</p>
+          </div>
+
+          <div class="icn icon-2">
+          <i class="fas fa-hiking fa-3x"></i>
+          <p>HIKING</p>
+          </div>
         </div>
-
-        <div class="icn icon-2">
-         <i class="fas fa-hiking fa-3x"></i>
-         <p>HIKING</p>
-        </div>
-
       </div>
     </div>
 
 <section id="first-sec">
-  <h3>Find your trip</h3> 
+  <h3  class="first-h3" >Find your trip</h3> 
   <p class="first-sec-p">We have a range of guided mountain bike tours worldwide, if you love mountain biking and travelling, we will have the perfect adventure for you.</p>
 
 
@@ -124,7 +127,7 @@
     <!-- images from unsplash.com -->
     <div class="c-div div1">
       <img alt="bike in a mountain" class="c-img img1" src="images/mountain/scotland.jpg">
-      <a href="" class="c-a a1">SCOTLAND</a>
+      <a href="" class="c-a a1 flckty-a">SCOTLAND</a>
       <div class="tint"></div>
     </div>
     <div class="c-div div2">
@@ -162,37 +165,37 @@
 
  <div class="grid">
 
-    <div class="c-div div1">
+    <div class="c-div div1 row1-anmt left-c">
       <img alt="bike in a mountain" class="c-img img1" src="images/mountain/scotland.jpg">
       <a href="" class="c-a a1">SCOTLAND</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div2">
-      <img alt="bike in namibia" class="c-img img2" src="images/mountain/namibia.jpg">
+    <div class="c-div div2 row1-anmt right-c">
+      <img alt="bike in namibia " class="c-img img2" src="images/mountain/namibia.jpg">
       <a href="" class="c-a a2">NAMIBIA</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div3">
+    <div class="c-div div3 row1-anmt left-c">
       <img alt="bike in canadian mountains" class="c-img img3" src="images/mountain/canada.jpg">
       <a href="" class="c-a a3">CANADA</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div4">
+    <div class="c-div div4 row2-anmt right-c">
       <img alt="bike in morocco" class="c-img img4" src="images/mountain/morocco.jpg">
       <a href="" class="c-a a4">MOROCCO</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div5">
+    <div class="c-div div5 row2-anmt left-c">
       <img alt="bike on a cliff" class="c-img img5" src="images/mountain/chile.jpg">
       <a href="" class="c-a a5">CHILE</a>
       <div class="tint"></div>
     </div>
-     <div class="c-div div6">
+     <div class="c-div div6 row2-anmt right-c">
       <img alt="bike leaning against a bench" class="c-img img6" src="images/mountain/croatia.jpg">
       <a href="" class="c-a a6">CROATIA</a>
       <div class="tint"></div>
     </div>
-          <div class="c-div div7">
+          <div class="c-div div7 col-anmt">
       <img alt="bike besides a lake" class="c-img img7" src="images/mountain/zealand.jpg">
       <a href="" class="c-a a7">NEW ZEALAND</a>
       <div class="tint"></div>
@@ -207,11 +210,11 @@
 
 
 <section id="second-sec">
-  <h3>Bike tours</h3> 
+  <h3 class="scnd-h3">Bike tours</h3> 
   <p class="second-sec-p">From family tours on car-free bike paths to adrenaline-pumping tours of the most beautiful mountains in the country.</p>
   <div class="cards-cont">
-    
-     <div class="card crd1 crd-left">
+     
+     <div class="card crd1 crd-left C-TOP">
     <img alt="two bikers coming from a distance" src="images/mountain/one-day.jpg" >
     <div class="container">
        <h4><b>ONE DAY BIKE TOUR </b></h4>
@@ -221,7 +224,7 @@
     </div>
   </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right C-TOP">
     <img alt="three bikers at a mountain top" src="images/mountain/multi-day.jpg" >
     <div class="container">
        <h4><b>MULTI-DAY BIKE TOUR</b></h4>
@@ -231,7 +234,7 @@
     </div>
   </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left C-BTM">
     <img alt="bikers biking on a road" src="images/mountain/road.jpg" >
     <div class="container">
     <h4><b>ROAD BIKING TOUR</b></h4>
@@ -241,7 +244,7 @@
     </div>
   </div>
 
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right C-BTM">
     <img alt="a family biking together" src="images/mountain/family.jpg" >
     <div class="container">
      <h4><b>FAMILY BIKE TOUR</b></h4>
@@ -257,40 +260,40 @@
 
   <div class="cards-cont-wide">
     
-     <div class="card crd1 crd-left">
+     <div class="card crd1 crd-left crd-row1">
    <img alt="two bikers coming from a distance" src="images/mountain/one-day.jpg" >
      </div>
-     <div class="container c1">
+     <div class="container c1 crd-row1">
       <h4><b>ONE DAY BIKE TOUR </b></h4>
       <p id="tour-parag" class="tour-p">One Day Trip full of rolling hills and breathtaking landscape Can Be Full Day Or Half  Day with a Guide From Pienza, or Guided + Van Support For Groups 4 People and more in Siena Province</p>
       <a id="p11" onclick="myFunction()" class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right crd-row2">
     <img src="images/mountain/multi-day.jpg" alt="three bikers at a mountain top"   >
     
   </div>
-  <div class="container c2">
+  <div class="container c2 crd-row2">
       <h4><b>MULTI-DAY BIKE TOUR</b></h4>
       <p class="tour-p">Our Bike Tours are designed to accommodate riders from a variety of backgrounds. Some tours are intended specifically for more experienced riders.</p>
       <a class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left crd-row3">
    <img src="images/mountain/road.jpg" alt="bikers biking on a road"   >
   </div>
-    <div class="container c3">
+    <div class="container c3 crd-row3">
           <h4><b>ROAD BIKING TOUR</b></h4>
           <p class="tour-p">Whether you’re an avid cyclist or a recreational rider, the best way to experience a new place is on a bike. That’s because pedaling is much more immersive than driving—you’ll see, hear, and even smell additional things that you may miss</p>
           <a class="details-a" href="">DETAILS</a>
           <a class="book-a" href="">BOOK NOW</a>
     </div>
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right crd-row4">
   <img src="images/mountain/family.jpg" alt="a family biking together"   >
   </div>
-  <div class="container c4">
+  <div class="container c4 crd-row4">
       <h4><b>FAMILY BIKE TOUR</b></h4>
       <p class="tour-p">When it’s time for your family to take its next vacation, chances are you’re going to be looking for something with a little more excitement and a little less hassle.</p>
       <a class="details-a" href="">DETAILS</a>
@@ -304,7 +307,7 @@
 
 
 <section class="third-sec">
-  <h3>SERVICES</h3> 
+  <h3 class="third-h3">SERVICES</h3> 
   <div class="icon-cards">
    <div class="first-cards-set"> 
      <div id="icn-div1" class="icn-card div1">
@@ -318,7 +321,7 @@
       <p>profissional and well trained guides are always by your side</p>
    </div> 
  </div>
-
+ <div class="second-cards-set"> 
   <div class="icn-card div1">
       <i class="fas fa-utensils fa-5x"></i>
       <a href=""><h4>Free Drinks & Fresh Fruits</h4></a>
@@ -330,7 +333,7 @@
       <a href=""><h4>Full Safety Gear</h4></a>
       <p>Full safety equipment and lifejackets on-board every boat, every trip!</p>
    </div>
-
+  </div>
   </div>
  <div id="divider3" class="divider"></div> 
 </section>
@@ -339,7 +342,7 @@
 
 <section id="fourth-sec">
   <div class="sep-div">
-    <h4>HEAR FROM THEM</h4>
+    <h4 class="frth-h3">HEAR FROM THEM</h4>
     <i class="fas fa-quote-right fa-1x"></i>
   </div>
   <div class="cmnt-class">
@@ -391,8 +394,8 @@
     x.style.display = "none";
   }
 }</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/flickity.pkgd.min.js"></script>
-<script type="text/javascript"></script>
+<script src="js/all-ex.js"></script>
 </body>
 </html>
