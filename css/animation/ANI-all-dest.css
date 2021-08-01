@@ -1,0 +1,114 @@
+
+/* ------------------  Animations  ------------------- */
+
+/*   HERO animations   */
+
+.icon-ani{
+    opacity: 0;
+}
+.icon-text{
+    opacity: 0;
+}
+
+/*   1ST CAROUSEL animations   */
+
+/*title*/
+.first-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.first-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+/*carousel*/
+
+.carousel{
+    transform: translateY(20%);
+	opacity: 0;
+	transition: all 1s; 
+}
+.carousel.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+/*   2ND CAROUSEL animations   */
+
+/*title*/
+.second-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.second-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.second-p{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.second-p.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+
+
+/*   THIRD SECTION animations   */
+
+/*title*/
+.third-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.third-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+/*GRID*/
+
+.grid{
+	transform: translateY(12%);
+	opacity: 0;
+	transition: all 1s;
+}
+.grid.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+
+
+
+/*   fourth SECTION animations   */
+
+/*title*/
+.fourth-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.fourth-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.fourth-p{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.9s;
+}
+.fourth-p.active{
+	transform: translateX(0%);
+	opacity: 1;
+}

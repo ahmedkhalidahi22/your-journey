@@ -1,0 +1,280 @@
+
+/* ------------------  Animations  ------------------- */
+
+/*   grid animations   */
+
+.first-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+.first-sec-p{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+
+.first-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.first-sec-p.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.row1-anmt{
+	transform: translateY(-20%);
+	opacity: 0;
+	transition: all 0.7s;	
+}
+.row1-anmt.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+.row2-anmt{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 0.7s;	
+}
+.row2-anmt.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+.col-anmt{
+	transform: translateX(30%);
+	opacity: 0;
+	transition: all 0.7s;	
+}
+.col-anmt.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+/*Flickity*/
+
+.js-flickity{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1s;
+}
+.flckty-a{
+	opacity: 0;
+	transition: all 1.1s;
+}
+
+.js-flickity.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.flckty-a.active{
+	opacity: 1;
+}
+
+
+
+
+
+
+/*       cards animation      */
+
+/*title*/
+
+.scnd-h3{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+.second-sec-p{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+
+.scnd-h3.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.second-sec-p.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+/*cards*/
+
+/* big cards*/
+.crd-row1, .crd-row2, .crd-row3, .crd-row4{
+	transform: translateY(8%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+
+.crd-row1.active, .crd-row2.active, .crd-row3.active, .crd-row4.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+/* small cards*/
+.C-TOP, .C-BTM{
+	transform: translateY(8%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+
+.C-TOP.active , .C-BTM.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+
+/*    Icon-Cards animation    */
+
+/*title*/
+
+.third-h3{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1s;
+}
+.third-h3.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+/*icon-cards*/
+
+.first-cards-set, .second-cards-set{
+	transform: scale(1.03);
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+
+.first-cards-set.active, .second-cards-set.active{
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+
+
+/*    comments section animation    */
+
+/*title*/
+
+.frth-h3{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1s;
+}
+.frth-h3.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+.fa-quote-right{
+	transform: translateY(-30%);
+	opacity: 0;
+	transition: all 1.4s;
+}
+.fa-quote-right.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+/*comments*/
+
+.cmnt-class{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1s;
+}
+
+.cmnt-class.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 899px) 
+{
+
+
+.card{
+	transform: translateY(8%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.card.active{
+
+	transform: translateY(0%);
+	opacity: 1;
+
+}
+
+
+
+.icn-card{
+	transform: scale(1.03);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.icn-card.active{
+	transform: scale(1);
+	opacity: 1;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1150px)
+{ 
+
+/* ------------------  Animations  ------------------- */
+/* grid animations */
+
+
+.left-c{
+	transform: translateX(-20%);
+	opacity: 0;
+	transition: all 0.7s;	
+}
+.left-c.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.right-c{
+	transform: translateX(20%);
+	opacity: 0;
+	transition: all 0.7s;	
+}
+.right-c.active{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+
+.col-anmt{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 0.9s;	
+}
+.col-anmt.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+}
