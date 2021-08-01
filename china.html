@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <TITLE>China</TITLE>
   <link rel="stylesheet" href="css/china.css">
+  <link rel="stylesheet" href="css/animation/ANI-all-dest.css">
   <link rel="stylesheet" href="css/flickity.css" media="screen">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,7 @@
   <header class="header">
     <div id="icon-h1">
       <img id="icon1" alt="websites icon" src="images/icon2.png">
-      <h1><a href="index.html">Your next journey</a></h1>
+      <h1><a href="index.html">Your journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -58,7 +59,7 @@
             srcset="images/china/china-MMM2.jpg">
          <img alt="great wall of china" src="images/china/china-MMM1.jpg">
       </picture>            
-        <h1>CHINA</h1>
+        <h1 class="hero-h1">CHINA</h1>
 
     </div>
 
@@ -70,57 +71,62 @@
 
       <section class="useful-info-icons ">
         <div class="useful-info-icon" id="first-info">
-        <i class="fas fa-university fa-3x"></i>
-         <p> Capital City<br> <strong>Beijing</strong></p>
+        <i class="fas fa-university fa-3x icon-ani"></i>
+         <p class="icon-text"> Capital City<br> <strong>Beijing</strong></p>
        </div>
          <div class="useful-info-icon"> 
-          <i class="fas fa-dollar-sign fa-3x"></i>
-          <p> Currency<br> <strong>yuan</strong></p>
+          <i class="fas fa-dollar-sign fa-3x icon-ani"></i>
+          <p class="icon-text"> Currency<br> <strong>yuan</strong></p>
         </div>
-        <div class="useful-info-icon"> <i class="fas fa-language fa-3x"></i>
-          <p> Language<br> <strong>Mandarin</strong></p></div>
+        <div class="useful-info-icon"> <i class="fas fa-language fa-3x icon-ani"></i>
+          <p class="icon-text"> Language<br> <strong>Mandarin</strong></p></div>
       </section>
     </div>
 
 
 <section id="experiences-sect">
-  <h3>Experiences in China</h3> 
+  <h3 class="first-h3">Experiences in China</h3> 
   <!-- Flickity HTML init -->
   <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "groupCells": 1}'>
 
     <!-- images from unsplash.com -->
     <div class="carousel-cell">
       <img src="images/china/wall-china.jpg" alt="great wall of china" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Historical Sites</a>
+            <a href="#">Historical Sites</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img src="images/china/nature-china.jpg" alt="natural place" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Beautiful Nature</a>
+            <a href="#">Beautiful Nature</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img src="images/china/food-china.jpg" alt="chinese dish"/>
-      <a class="more-info" href="">more info</a>
-      <a href="#">Popular Food</a>
+            <a href="#">Popular Food</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img alt="panda hanging on a tree" src="images/china/zoo-china.jpg" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">parks and Zoos</a>
+            <a href="#">parks and Zoos</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img src="images/china/city-china.jpg" alt="old place in china" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">cities Tours</a>
+            <a href="#">cities Tours</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
   </div>
 </section>
 
 
 <section id="cities-sect">
-  <h3>Cities & Regions of China</h3> 
-  <p></p>
+  <h3 class="second-h3">Cities & Regions of China</h3> 
+  <p class="second-p">Get Known To Unknown Side Of The Asian Giant</p>
   <!-- Flickity HTML init -->
   <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true }'>
 
@@ -162,57 +168,67 @@
 </section>
 
 <section class="popular-places">
-  <h3 id="popular-h3">Popular Places</h3> 
+  <h3 id="popular-h3" class="third-h3">Popular Places</h3> 
 
   <div class="grid">
 
         <div class="pop-div D1">
           <img alt="wall of china" class="popular-image img1" src="images/china/china-wall.jpg">
           <a href="#" class="popular-a a1">Great Wall of China</a>
+          <div class="tint"></div>
         </div>
 
      <div class="pop-div D2">
        <img alt="forbidden city" class="popular-image img2" src="images/china/forbidden-city.jpg">
        <a href="#" class="popular-a a2">Forbidden City</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D3">
        <img alt="temple of heaven" class="popular-image img3" src="images/china/temple-of-heaven.jpg">
        <a href="#" class="popular-a a3">Temple of Heaven</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D4">
        <img alt="the Bund" class="popular-image img4" src="images/china/the-Bund.jpg">
        <a href="#" class="popular-a a4">The Bund</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D5">
        <img alt="Nanjing Road" class="popular-image img5" src="images/china/nanjing-road.jpg">
        <a href="#" class="popular-a a5">Nanjing Road</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D6">
        <img alt="Summer Palace " class="popular-image img6" src="images/china/Summer-Palace.jpg">
        <a href="#" class="popular-a a6">Summer Palace</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D7">
        <img alt="Shanghai Museum" class="popular-image img7" src="images/china/Shanghai-Museum.jpg">
        <a href="#" class="popular-a a7">Shanghai Museum</a>
+       <div class="tint"></div>
      </div>
           <div class="pop-div D8">
        <img alt="Palace Museum" class="popular-image img5" src="images/china/Palace-Museum.jpg">
        <a href="#" class="popular-a a5">Palace Museum</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D9">
        <img alt="Fenghuang" class="popular-image img6" src="images/china/Fenghuang.jpg">
        <a href="#" class="popular-a a9">Fenghuang</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D10">
        <img alt="mountain of Shidu" class="popular-image img7" src="images/china/mountain-Shidu.jpg">
        <a href="#" class="popular-a a7">Mountain of Shidu</a>
+       <div class="tint"></div>
      </div>
   </div>
  
@@ -221,8 +237,8 @@
 
 
 <section id="hotels-sect">
-  <h3>Hotels in China</h3> 
-  <p>Experience best services in our top picked hotels in China</p>
+  <h3  class="fourth-h3">Hotels in China</h3> 
+  <p class="fourth-p">Experience best services in our top picked hotels in China</p>
   <!-- Flickity HTML init -->
   <div class="carousel H js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
@@ -275,8 +291,10 @@
     </nav>
 
 
-
-<script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/all-des.js"></script>
+    
   </footer>
 
 </body>
