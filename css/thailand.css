@@ -597,7 +597,7 @@ margin: 0px auto;
 }
 #cities-sect>p{
 margin:0px 20px 0px 40px;
-text-align: center;
+text-align: left;
 font-size: 1.05em;
 max-width: 90%;
 line-height: 25px;
@@ -835,6 +835,12 @@ background-color: #191919;
 #a4{
 	margin-left:20px;
 	padding-left: 0px;
+}
+
+
+#header-h1-img >picture>img{
+	width: 100%;
+	height: auto;
 }
 }
 
@@ -1651,6 +1657,10 @@ background-color: #191919;
 #a4{
 	margin-left:20px;
 	padding-left: 0px;
+}
+#header-h1-img >picture>img{
+	width: 100%;
+	height: auto;
 }
 }
 
@@ -2473,5 +2483,9 @@ background-color: #191919;
 #a4{
 	margin-left:20px;
 	padding-left: 0px;
+}
+#header-h1-img >picture>img{
+	width: 100%;
+	height: auto;
 }
 }
