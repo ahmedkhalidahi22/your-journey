@@ -6,6 +6,7 @@
   <TITLE>Diving</TITLE>
   <link rel="stylesheet" href="css/diving.css">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/animation/ANI-diving.css">
   <link rel="stylesheet" href="css/flickity-boat.css" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -44,7 +45,7 @@
   <header class="header">
     <div id="icon-h1">
       <img id="icon1" src="images/icon2.png" alt="icon-1">
-      <h1><a href="index.html">Your next journey</a></h1>
+      <h1><a href="index.html">Your journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -90,11 +91,12 @@
             srcset="images/diving/diving-main1.jpg">
          <img src="images/diving/diving-main.jpg" alt="turtle under sea">
       </picture>            
-        <h1>DIVING</h1>
+        <h1 class="hero-h1">DIVING</h1>
 
     </div>
 
     <div class="welcome"> 
+      <div class="welcome-animate">
       <section id="main-p">
         <p>Take the plunge into the stunning waters. A luxury dive experience like no other. </p>
       </section>
@@ -110,12 +112,12 @@
          <i class="fas fa-anchor fa-3x"></i>
          <p>SAILING</p>
         </div>
-
+    </div>
       </div>
     </div>
 
 <section id="first-sec">
-  <h3>Choose your destination</h3> 
+  <h3 class="first-h3">Choose your destination</h3> 
   <p class="first-sec-p">From the tropics to the poles, we offer mesmerising diving locations for your next adventure. Explore by region or choose from one of our featured diving destinations.</p>
 
 
@@ -124,7 +126,7 @@
     <!-- images from unsplash.com -->
     <div class="c-div div1">
       <img class="c-img img1" src="images/diving/red-sea.jpg" alt="red sea">
-      <a href="" class="c-a a1">RED SEA</a>
+      <a href="" class="c-a a1 flckty-a">RED SEA</a>
       <div class="tint"></div>
     </div>
     <div class="c-div div2">
@@ -162,37 +164,37 @@
 
  <div class="grid">
 
-    <div class="c-div div1">
+    <div class="c-div div1 row1-anmt left-c">
       <img class="c-img img1" src="images/diving/red-sea.jpg" alt="red sea">
       <a href="" class="c-a a1">RED SEA</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div2">
+    <div class="c-div div2 row1-anmt right-c">
       <img class="c-img img2" src="images/diving/med.jpg" alt="mediterranean">
        <a href="" class="c-a a2">MEDITERRANEAN</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div3">
+    <div class="c-div div3 row1-anmt left-c">
       <img class="c-img img3" src="images/diving/caribbean.jpg" alt="caribbean">
       <a href="" class="c-a a3">CARIBBEAN</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div4">
+    <div class="c-div div4 row2-anmt right-c">
       <img class="c-img img4" src="images/diving/maldives.jpg" alt="maldives">
       <a href="" class="c-a a4">MALDIVES</a>
       <div class="tint"></div>
     </div>
-    <div class="c-div div5">
+    <div class="c-div div5 row2-anmt left-c">
       <img class="c-img img5" src="images/diving/atlantic.jpg" alt="atlantic">
       <a href="" class="c-a a5">ATLANTIC</a>
       <div class="tint"></div>
     </div>
-     <div class="c-div div6">
+     <div class="c-div div6 row2-anmt right-c">
       <img class="c-img img6" src="images/diving/pacific.jpg" alt="pacific">
       <a href="" class="c-a a6">PACIFIC</a>
       <div class="tint"></div>
     </div>
-          <div class="c-div div7">
+          <div class="c-div div7 col-anmt">
       <img class="c-img img7" src="images/diving/hawaii.jpg" alt="hawaii">
       <a href="" class="c-a a7">HAWAII</a>
       <div class="tint"></div>
@@ -207,11 +209,11 @@
 
 
 <section id="second-sec">
-  <h3>Diving experiences </h3> 
+  <h3 class="scnd-h3">Diving experiences </h3> 
   <p class="second-sec-p">From liveaboards to holidays that blend diving and topside adventure, family diving breaks to trips ideal for single travellers, we’ve got it covered.</p>
   <div class="cards-cont">
     
-     <div class="card crd1 crd-left">
+     <div class="card crd1 crd-left C-TOP">
     <img src="images/diving/aboard.jpg" alt="Avatar" >
     <div class="container">
        <h4><b>LIVEABOARD DIVING</b></h4>
@@ -221,7 +223,7 @@
     </div>
   </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right C-TOP">
     <img src="images/diving/single.jpg" alt="Avatar" >
     <div class="container">
        <h4><b>SINGLES DIVING</b></h4>
@@ -231,7 +233,7 @@
     </div>
   </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left C-BTM">
     <img src="images/diving/group.jpg" alt="Avatar" >
     <div class="container">
     <h4><b>GROUP DIVING</b></h4>
@@ -241,7 +243,7 @@
     </div>
   </div>
 
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right C-BTM">
     <img src="images/diving/resort.jpg" alt="Avatar" >
     <div class="container">
      <h4><b>RESORT-BASED DIVING</b></h4>
@@ -257,40 +259,40 @@
 
   <div class="cards-cont-wide">
     
-     <div class="card crd1 crd-left">
+     <div class="card crd1 crd-left crd-row1">
    <img src="images/diving/aboard1.jpg" alt="Avatar" >
      </div>
-     <div class="container c1">
+     <div class="container c1 crd-row1">
       <h4><b>LIVEABOARD DIVING</b></h4>
       <p id="tour-p" class="tour-p">Liveaboards allow divers to explore areas beyond the reach of dive resorts, transporting you to some of the most remote and spectacular diving destinations on earth.</p>
       <a id="p12" onclick="myFunction()" class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd2 crd-right">
+  <div class="card crd2 crd-right crd-row2">
     <img src="images/diving/single1.jpg" alt="Avatar" >
     
   </div>
-  <div class="container c2">
+  <div class="container c2 crd-row2">
       <h4><b>SINGLES DIVING</b></h4>
       <p class="tour-p">Single divers need not worry that they have to miss out on all the fun, or pay twice the price. There are many friendly dive resorts who keep single supplements to a minimum or allow you to share</p>
       <a class="details-a" href="">DETAILS</a>
       <a class="book-a" href="">BOOK NOW</a>
     </div>
 
-  <div class="card crd3 crd-left">
+  <div class="card crd3 crd-left crd-row3">
    <img src="images/diving/group1.jpg" alt="Avatar" >
   </div>
-    <div class="container c3">
+    <div class="container c3 crd-row3">
            <h4><b>GROUP DIVING</b></h4>
           <p class="tour-p">Group diving holidays are hugely rewarding, allowing you to dive with like-minded people, make friends, save pennies and experience superb diving.</p>
           <a class="details-a" href="">DETAILS</a>
           <a class="book-a" href="">BOOK NOW</a>
     </div>
-  <div class="card crd4 crd-right">
+  <div class="card crd4 crd-right crd-row4">
   <img src="images/diving/resort1.jpg" alt="Avatar" >
   </div>
-  <div class="container c4">
+  <div class="container c4 crd-row4">
        <h4><b>RESORT-BASED DIVING</b></h4>
       <p class="tour-p">Informed by our philosophy, we offer carefully selected dive resorts with characterful hotels, charming guesthouses and outstanding dive centres in the world’s finest diving destinations.</p>
       <a class="details-a" href="">DETAILS</a>
@@ -304,7 +306,7 @@
 
 
 <section class="third-sec">
-  <h3>SERVICES</h3> 
+  <h3 class="third-h3">SERVICES</h3> 
   <div class="icon-cards">
    <div class="first-cards-set"> 
      <div id="icn-div1" class="icn-card div1">
@@ -318,7 +320,7 @@
       <p>profissional and well trained guides are always by your side</p>
    </div> 
  </div>
-
+ <div class="second-cards-set"> 
   <div class="icn-card div1">
       <i class="fas fa-fish fa-5x"></i>
       <a href=""><h4>Sea food & Fresh drinks</h4></a>
@@ -332,6 +334,7 @@
    </div>
 
   </div>
+  </div>
  <div id="divider3" class="divider"></div> 
 </section>
 
@@ -339,7 +342,7 @@
 
 <section id="fourth-sec">
   <div class="sep-div">
-    <h4>HEAR FROM THEM</h4>
+    <h4 class="frth-h3">HEAR FROM THEM</h4>
     <i class="fas fa-quote-right fa-1x"></i>
   </div>
   <div class="cmnt-class">
@@ -392,7 +395,8 @@
   }
 }</script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/flickity.pkgd.min.js"></script>
-<script type="text/javascript"></script>
+<script src="js/all-ex.js"></script>
 </body>
 </html>
