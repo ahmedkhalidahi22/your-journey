@@ -482,12 +482,14 @@ form input {
   padding: 8px 5%;
   color: #555;
   font-size: 1em;
+  border-radius: 10px;
 }
 form textarea {
   border: 1px solid #ccc;
   padding: 6px 10px;
   width: 100%;
   color: #555;
+  border-radius: 10px;
 }
 form small {
   color: #4f6fad;
@@ -905,12 +907,14 @@ form input {
   padding: 6px 10px;
   color: #555;
   font-size: 1em;
+  border-radius: 10px;
 }
 form textarea {
   border: 1px solid #ccc;
   padding: 6px 10px;
   width: 100%;
   color: #555;
+  border-radius: 10px;
 }
 form small {
   color: #4f6fad;
