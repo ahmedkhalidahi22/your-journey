@@ -1,3 +1,4 @@
+
 const loader = document.querySelector('.loader')
 const page =document.querySelector('.page')
 const slider = document.querySelector('.slider')
@@ -6,6 +7,9 @@ const header = document.querySelector('header')
 const mainP = document.querySelector('.landing-p')
 const begins = document.querySelector('#begins')
 const mainBTN = document.querySelector('.main-btn')
+
+var smallScreen = window.matchMedia("(max-width: 899px)") // media query
+var mediumScreen = window.matchMedia("(min-width: 900px) and (max-width: 1200px)") // media query
 
 header.style.opacity= 0;
 header.style.transform= "translateY(-30%)";
@@ -20,6 +24,7 @@ mainBTN.style.opacity= 0;
 mainBTN.style.transform= "translateY(40%)";
 
 window.onload = function loading(){
+
     setTimeout( function() {
         loader.style.transform="translateY(-100%)";
         page.style.opacity=1
@@ -41,46 +46,166 @@ window.onload = function loading(){
 
 let parent1 = document.querySelector('.animate-1');
 let target1 = document.querySelectorAll('.target1');
+let firstH2= document.querySelector('.first-h2')
+let firstP = document.querySelector('.p1')
 
-let options = {
-    root: null,
-    rootMargin: '-80px',
-    threshold: 0.3
-  }
-  
 
-  let callback = (entries, observer) => {
-    entries.forEach(entry => {
+// ******* SMALL SCREEN ANIMATION STARTS  *********** //
 
-        if (entry.isIntersecting){
+if (smallScreen.matches){
 
-            setTimeout(function(){
-                target1.forEach(cell => {
-                   cell.style.opacity= 1
-                   cell.style.transform= " translateY(0%)"
-                })
+    // ** DEST SECTION ** //
 
-            },170)
-            observer.unobserve(parent1);
-        }
-  
-    });
-  };
+    let options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
 
-  let observer = new IntersectionObserver(callback, options);
+      }
+      
+    
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+    
+            if (entry.isIntersecting){
+    
+                setTimeout(function(){
 
-  observer.observe(parent1);
+                       entry.target.style.opacity= 1
+                       entry.target.style.transform= " translateY(0%)"
+    
+                },0)
+            }
+      
+        });
+      };
+    
+      let observer = new IntersectionObserver(callback, options);
+      target1.forEach(image=>{
+
+        observer.observe(image);
+      })
+
+      
+   // ** EXP SECTION ** //
+
+      let targetEX = document.querySelectorAll('.targetEX')
+      let options3 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      }
+      
+    
+      let callback3 = (entries, observer) => {
+        entries.forEach(entry => {
+            let x= 0
+            if (entry.isIntersecting){
+
+                setTimeout(function(){
+
+                    entry.target.classList.add('active')
+ 
+             },0)
+           
+            }
+        });
+      };
+    
+      let observer3 = new IntersectionObserver(callback3, options3);
+    
+      targetEX.forEach(imageEX=>{
+
+        observer3.observe(imageEX);
+      })
+
+}
+
+
+// ******* SMALL SCREEN ANIMATION ENDS *********** //
+
+
+else if (mediumScreen.matches){
+
+    let options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.29
+      }
+      
+    
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+    
+            if (entry.isIntersecting){
+    
+                setTimeout(function(){
+                    target1.forEach(cell => {
+                       cell.style.opacity= 1
+                       cell.style.transform= " translateY(0%)"
+                    })
+    
+                },170)
+                observer.unobserve(parent1);
+            }
+      
+        });
+      };
+    
+      let observer = new IntersectionObserver(callback, options);
+    
+      observer.observe(parent1);
+    
+
+
+}
+else{
+
+    let options = {
+        root: null,
+        rootMargin: '-80px',
+        threshold: 0.8
+      }
+      
+    
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+    
+            if (entry.isIntersecting){
+    
+                setTimeout(function(){
+                    target1.forEach(cell => {
+                       cell.style.opacity= 1
+                       cell.style.transform= " translateY(0%)"
+                    })
+    
+                },170)
+                observer.unobserve(parent1);
+            }
+      
+        });
+      };
+    
+      let observer = new IntersectionObserver(callback, options);
+    
+      observer.observe(parent1);
+    
+
+
+}
 
 
 
 // third section animation using second intersection observer
+
 let parent2 = document.querySelector('.m2')
-let target2 = document.querySelector('.exp-h2')
-let target3 = document.querySelector('.p2')
+let scndH2 = document.querySelector('.exp-h2')
+let scndP = document.querySelector('.p2')
+
 let options2 = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.9
+    threshold: 0.11
   }
   
 
@@ -88,9 +213,27 @@ let options2 = {
     entries.forEach(entry => {
 
         if (entry.isIntersecting){
-            console.log( "intersecting");
-            entry.target.classList.add("active");
-            observer.unobserve(target2);
+            if (entry.target== parent1){
+                
+                setTimeout(function(){
+                    firstH2.classList.add('active')
+                    firstP.classList.add('active')
+    
+                },0)
+
+            }
+            else if(entry.target== parent2){
+                setTimeout(function(){
+                    scndH2.classList.add('active')
+    
+                    setTimeout(function(){
+                        scndP.classList.add('active')   
+                    }, 200)
+                      
+    
+                },0)
+
+            }
         }
   
     });
@@ -98,8 +241,8 @@ let options2 = {
 
   let observer2 = new IntersectionObserver(callback2, options2);
 
-  observer2.observe(target2);
-  observer2.observe(target3);
+  observer2.observe(parent1);
+  observer2.observe(parent2);
 
   
 
@@ -109,7 +252,7 @@ let parent3 = document.querySelector('.animate-2')
 let options3 = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.4
   }
   
 
