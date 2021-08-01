@@ -2,6 +2,23 @@
 /* animations all */
 
 
+.first-h2 , .p1{
+
+	/*experiences section h1 animation*/
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1.3s;
+
+}
+
+
+
+.first-h2.active , .p1.active{
+		/*experiences section h1 animation*/
+		transform: translateY(0%);
+		opacity: 1;
+}
+
 
 .exp-h2 , .p2{
 	/*experiences section h1 animation*/
@@ -25,6 +42,28 @@
 
 @media only screen and (max-width: 899px)
 {
+
+/* animations big screen */
+.target1{ 
+	/*destinations section grids animation*/
+
+	transform: translateY(30%);
+	opacity: 0;
+	transition: all 1.3s;
+
+}
+
+.targetEX{
+	transform: translateY(20%);
+	opacity: 0;
+	transition: all 1.3s;
+}
+
+
+.targetEX.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
 
 
 }
