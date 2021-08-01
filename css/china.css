@@ -381,8 +381,8 @@ text-shadow: 0px 1px 3px #333;
 z-index: 1;
 }
 .welcome{
-	/*background-image: url(../images/japan-background222.jpg);*/
-	background: linear-gradient(to right, #ffeeee, #ddefbb);
+	/*background-image: url(../images/japan-background22.jpg);*/
+	background:linear-gradient(to right, #ffeeee, #ddefbb);
 	background-size: cover;
 	margin-top: -40px;
 	position: relative;
@@ -399,7 +399,7 @@ z-index: 1;
 	text-align: center;
 	font-family: arima;
 	font-size: 180%;
-	color: color: #212121;
+	color: #212121;
 	padding-top: 45px;
 }
 #main-p> p 
@@ -415,8 +415,6 @@ line-height: 25px;
     margin-top: 20px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -445,7 +443,7 @@ h3{
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 150%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 }
@@ -474,31 +472,26 @@ margin: 0px auto;
 
 }
 .carousel-cell> .more-info{
-	position: absolute;
-	left: 50%;
-	top: 46%;
-	width: 140px;
-	background-color: transparent;
-	color: rgba(250,250,250,1);
+	display: block;
+	margin: 22px auto;
+	width: 120px;
+	background-color: #ff6262;
+	color: rgb(255, 255, 255);
 	font-weight: 100;
 	font-size: 95%;
 	border-style: solid;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	border-width: 1px;
-	border-radius: 0px;
-	border-color: rgba(250,250,250,0.7);
-	padding:10px 0px 10px 0px; 
-	transform: translate( -50%, -50% );
+	border-radius: 12px;
+	margin-bottom:0;
+	padding:12px 0px 12px 0px; 
 	letter-spacing: 0px;
     transition:all 0.4s;
-    text-shadow: -2px 2px 3px #222;
 }
 .carousel-cell> .more-info:hover{
-	letter-spacing: 3px;
-	background-color: rgba(45, 44, 44,0.6);
-	border-color: rgba(45, 44, 44,0.0);
-	border-radius: 5px;
+
+	background-color: #da4040;
 
 }
 .carousel-cell> a{
@@ -507,17 +500,18 @@ margin: 0px auto;
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-decoration: none;
-	font-size: 110%;
+	font-size: 115%;
 	text-transform: capitalize;
 	width: 75%;
 	margin: 0px auto;
 	padding-top: 6px;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 5px 5px;
+	margin-top: 15px;
 }
 .carousel-p{
 	width: 73%;
-	background-color: #f0f0f0;
+	background: linear-gradient(228deg ,#ffeeee, #f2ffda);
 	margin: 0px auto;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 15px 15px;
@@ -552,7 +546,7 @@ margin: 0px auto;
 	font-size: 100%;
 	width: 110px;
 	margin: 0px auto;
-	background-color: #fb5b21;
+	background-color: #ff5b41;
 	padding-top: 9px;
 	padding-bottom: 9px;
 	border-radius: 8px;
@@ -564,7 +558,6 @@ margin: 0px auto;
 .carousel-p>a:hover{
 	color: #fff;
 	background-color: #b73100;
-	letter-spacing: 3px;
 }
 #cities-sect>.carousel{
 	margin-top: 30px;
@@ -574,10 +567,9 @@ margin: 0px auto;
 } 
 /* carousel ends*/
 #experiences-sect{
- border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 60px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom: 95px;
+  background-color: #fff;
   margin-top: 0px;
   padding-top: 1px;
 }
@@ -589,9 +581,9 @@ margin: 0px auto;
 }
 #cities-sect{
 	margin-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 1px 0px 0px rgb(0 0 0 / 7%);
 }
 #cities-sect>h3{
 	text-align: center;
@@ -613,11 +605,31 @@ padding-bottom: 15px;
 }
 .popular-places{
   padding-top: 1px;
-  border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 40px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom:60px;
+  background-color: transparent;
   display: block;
+}
+.tint{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.33);
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	border-radius: 7px;
+	transition: .25s ease-in-out;
+
+}
+.D1 >.tint , .D4 >.tint , .D7 >.tint{
+	width:87.5%;
+}
+.pop-div:hover .tint{
+	background: rgba(0, 0, 0, 0);
 }
 #popular-h3{
 	margin-bottom: 35px;
@@ -627,12 +639,19 @@ padding-bottom: 15px;
 	width: 100%;
 	 position: relative;
     display: block;
+	
+}
+.D1{
+	margin-bottom: 0.5%;
+}
+.D4{
+	margin-bottom: 0.4%;
 }
 .pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
 	display: block;
-	width:90%;
+	width:87.5%;
 	margin:0 auto;
-	border-radius:10px;
+	border-radius:5px;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -653,6 +672,7 @@ padding-bottom: 15px;
 	text-decoration: none;
 	width: 100%;
 	line-height: 200px;
+	z-index: 1;
 } 
 .pop-div> .a4{
     top: 45%;
@@ -663,11 +683,11 @@ padding-bottom: 15px;
 	width: 43%;
 	position: relative;
     display: inline-block;
-    margin: 3% 0% 3% 5%;
+    margin: 0.7% 0% 0.2% 6.6%;
 
 }
 .D3, .D6{
-	margin:3% 0% 3% 3%;
+	margin:0.7% 0% 0.2% 0.2%;
 }
 .D8,.D9,.D10{
 	display: none;
@@ -697,6 +717,7 @@ padding-bottom: 15px;
 	text-decoration: none;
 	width: 100%;
 	line-height: 120px;
+	z-index: 1;
 } 
 .pop-div> .a5{
 	letter-spacing: 2px;
@@ -707,12 +728,12 @@ left: 50%;
 top:50%;	
 }
 .pop-div:hover img {
-	transform: scale(1.025);
+	transform: scale(1.010);
 }  
 #hotels-sect{
 	border-bottom: 1px solid #fff;
     box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 #hotels-sect>h3{
 	padding-bottom: 10px;
@@ -743,11 +764,11 @@ top:50%;
 	text-transform: uppercase;
 	border-width: 1px;
 	border-radius: 3px;
+	text-shadow: -2px 2px 3px #222;
 	border-color: #fff;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
     transition: all 0.4s;
-    text-shadow: -2px 2px 3px #222;
 }
 .DH> a{
 	display: block;
@@ -840,7 +861,15 @@ html {
     color: #191919;
   font-size: 1.00em;
 
+}
 
+html , body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 header{
 
@@ -1083,7 +1112,7 @@ z-index: 1;
 }
 .welcome{
 	/*background-image: url(../images/japan-background22.jpg);*/
-	background: linear-gradient(to right, #ffeeee, #ddefbb);
+	background:linear-gradient(to right, #ffeeee, #ddefbb);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
@@ -1120,8 +1149,6 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1150,7 +1177,7 @@ h3{
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 7.4%;
@@ -1183,31 +1210,26 @@ h3{
 
 }
 .carousel-cell> .more-info{
-	position: absolute;
-	left: 50%;
-	top: 46%;
-	width: 140px;
-	background-color: transparent;
-	color: rgba(250,250,250,1);
+	display: block;
+	margin: 22px auto;
+	width: 120px;
+	background-color: #ff6262;
+	color: rgb(255, 255, 255);
 	font-weight: 100;
 	font-size: 95%;
 	border-style: solid;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	border-width: 1px;
-	border-radius: 0px;
-	border-color: rgba(250,250,250,0.7);
-	padding:10px 0px 10px 0px; 
-	transform: translate( -50%, -50% );
+	border-radius: 12px;
+	margin-bottom:0;
+	padding:12px 0px 12px 0px; 
 	letter-spacing: 0px;
     transition:all 0.4s;
-    text-shadow: -2px 2px 3px #222;
 }
 .carousel-cell> .more-info:hover{
-	letter-spacing: 3px;
-	background-color: rgba(45, 44, 44,0.6);
-	border-color: rgba(45, 44, 44,0.0);
-	border-radius: 5px;
+
+	background-color: #da4040;
 
 }
 .carousel-cell> a{
@@ -1230,7 +1252,7 @@ h3{
 .cc{
 width:100%;
 margin:10px 20px 0px 0px;
-background-color: #f0f0f0;
+background: linear-gradient(228deg ,#ffeeee, #f2ffda);
 position: relative;
 border-radius: 0px 10px 10px 0px;
 }
@@ -1242,7 +1264,7 @@ border-radius: 10px 0px 0px 10px;
 
 .carousel-p{
 	width: 45%;
-	background-color: #f0f0f0
+	background: transparent;
 	margin: 0px auto;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 15px 15px;
@@ -1284,9 +1306,9 @@ border-radius: 10px 0px 0px 10px;
 	letter-spacing: 2px;
 	text-decoration: none;
 	font-size: 100%;
-	width: 115px;
+	width: 110px;
 	margin: 0px auto;
-	background-color: #fb5b21;
+	background-color: #ff5b41;
 	border-width: 1px;
 	border-color: rgba(45, 44, 44,0.85);
 	padding-top: 8px;
@@ -1302,7 +1324,7 @@ border-radius: 10px 0px 0px 10px;
 .carousel-p>a:hover{
 	color: #fff;
 	background-color: #b73100;
-	letter-spacing: 3px;
+
 }
 #cities-sect>.carousel{
 	margin-top: 30px;
@@ -1320,10 +1342,9 @@ border-radius: 10px 0px 0px 10px;
 
 
 #experiences-sect{
- border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 60px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom: 100px;
+  background-color: #fff;
   margin-top: 0px;
   padding-top: 1px;
 }
@@ -1335,16 +1356,16 @@ border-radius: 10px 0px 0px 10px;
 }
 #cities-sect{
 	margin-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 1px 0px 0px rgb(0 0 0 / 7%);
 }
 #cities-sect>h3{
 	text-align: left;
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 7.4%;
@@ -1359,10 +1380,9 @@ margin-top: -12px;
 }
 .popular-places{
   padding-top: 1px;
-  border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 40px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom: 60px;
+  background-color: transparent;
   display: block;
   padding-left: 7.4%;
   padding-right: 7.4%;
@@ -1372,7 +1392,7 @@ margin-top: -12px;
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 0px;
@@ -1380,8 +1400,8 @@ margin-top: -12px;
 .grid{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr ); 
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
+	grid-column-gap: 0.35em;
+	grid-row-gap: 0.3em;
 	justify-content: center;
 
 }
@@ -1429,11 +1449,29 @@ grid-row: 4/5;
 .pop-div{
 	position: relative;
 }
+.tint{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.33);
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	border-radius: 7px;
+	transition: .25s ease-in-out;
+
+}
+.pop-div:hover .tint{
+	background: rgba(0, 0, 0, 0);
+}
 .pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
 	display: block;
 	width:100%;
 	margin:0 auto;
-	border-radius:10px;
+	border-radius:5px;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -1454,6 +1492,7 @@ grid-row: 4/5;
 	text-decoration: none;
 	width: 100%;
 	line-height: 200px;
+	z-index: 1;
 } 
 .pop-div> .a4{
     top: 45%;
@@ -1484,18 +1523,20 @@ grid-row: 4/5;
 	text-decoration: none;
 	width: 100%;
 	line-height: 120px;
+	z-index: 1;
 } 
 .pop-div> .a6{
 left: 50%;
 top:50%;	
 }
 .pop-div:hover img {
-	transform: scale(1.025);
+	transform: scale(1.010);
+}
+.D1:hover img , .D6:hover img{
+	transform: scale(1.005);
 }
 #hotels-sect{
-	border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 #hotels-sect>h3{
 	padding-bottom: 0px;
@@ -1539,8 +1580,8 @@ top:50%;
 	border-color: #fff;
 	padding:8px 0px 8px 0px; 
 	transform: translate( -50%, -50% );
+	text-shadow: -2px 2px 3px #222;
     transition: all 0.4s;
-    text-shadow: -2px 2px 3px #222;
 }
 .DH> a{
 	display: block;
@@ -1568,7 +1609,7 @@ text-align: left;
 font-size: 1.05em;
 max-width: 100%;
 margin-top: -10px;
-padding-bottom: 25px;
+padding-bottom: 40px;
 padding-left: 7.4%;
 }
 .fa-star{
@@ -1637,6 +1678,14 @@ html {
   font-family: Helvetica;
   color: #191919;
   font-size: 1.03em;
+}
+html , body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 @font-face {
@@ -1877,11 +1926,10 @@ z-index: 1;
 }
 .welcome{
 	/*background-image: url(../images/japan-background22.jpg);*/
-	  background: linear-gradient(to right, #ffeeee, #ddefbb);
+	background:linear-gradient(to right, #ffeeee, #ddefbb);
 	margin-top: -70px;
 	position: relative;
 	z-index: -2;
-
 }
 #main-p{
 	margin-top: 5px;
@@ -1914,7 +1962,6 @@ line-height: 25px;
     margin-top: 40px;
     margin-bottom: 0px;
     padding-bottom: 25px;
-    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 50%);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1929,7 +1976,7 @@ line-height: 25px;
 #first-info{
 margin-left:0px; 
 }
-.useful-info-icons .useful-info-icon i {
+.useful-info-icons .useful-info-icon img {
     height: 45px;
 }
 .useful-info-icons .useful-info-icon p {
@@ -1943,7 +1990,7 @@ h3{
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color:  #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 7.4%;
@@ -1976,32 +2023,26 @@ h3{
 
 }
 .carousel-cell> .more-info{
-	position: absolute;
-	left: 50%;
-	top: 46%;
-	width: 140px;
-	background-color: transparent;
-	color: rgba(250,250,250,1);
+	display: block;
+	margin: 22px auto;
+	width: 120px;
+	background-color: #ff6262;
+	color: rgb(255, 255, 255);
 	font-weight: 100;
 	font-size: 95%;
 	border-style: solid;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	border-width: 1px;
-	border-radius: 0px;
-	border-color: rgba(250,250,250,0.7);
-	padding:10px 0px 10px 0px; 
-	transform: translate( -50%, -50% );
+	border-radius: 12px;
+	margin-bottom:0;
+	padding:12px 0px 12px 0px; 
 	letter-spacing: 0px;
     transition:all 0.4s;
-    text-shadow: -2px 2px 3px #222;
 }
 .carousel-cell> .more-info:hover{
-	letter-spacing: 3px;
-	background-color: rgba(45, 44, 44,0.6);
-	border-color: rgba(45, 44, 44,0.0);
-	border-radius: 5px;
 
+	background-color: #da4040;
 }
 .carousel-cell> a{
 	display: block;
@@ -2009,10 +2050,10 @@ h3{
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-decoration: none;
-	font-size: 110%;
+	font-size: 120%;
 	text-transform: capitalize;
 	width: 75%;
-	margin: 0px auto;
+	margin: 20px auto;
 	padding-top: 6px;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 5px 5px;
@@ -2023,7 +2064,7 @@ h3{
 .cc{
 width:100%;
 margin:10px 20px 0px 0px;
-background-color: #f0f0f0;
+background: linear-gradient(228deg ,#ffeeee, #f2ffda);
 position: relative;
 border-radius: 0px 10px 10px 0px;
 }
@@ -2035,7 +2076,7 @@ border-radius: 10px 0px 0px 10px;
 
 .carousel-p{
 	width: 35%;
-	background-color: #f0f0f0
+	background: transparent;
 	margin: 0px auto;
 	padding-bottom: 2px;
 	border-radius: 0px 0px 15px 15px;
@@ -2077,11 +2118,11 @@ border-radius: 10px 0px 0px 10px;
 	font-size: 100%;
 	width: 115px;
 	margin: 0px auto;
-	background-color: #fb5b21;
+	background-color: #ff5b41;
 	border-width: 1px;
 	border-color: rgba(45, 44, 44,0.85);
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-radius: 8px;
 	transition: all 0.4s;
 	margin-top: 20px;
@@ -2093,7 +2134,6 @@ border-radius: 10px 0px 0px 10px;
 .carousel-p>a:hover{
 	color: #fff;
 	background-color: #b73100;
-	letter-spacing: 3px;
 }
 #cities-sect>.carousel{
 	margin-top: 30px;
@@ -2112,10 +2152,9 @@ border-radius: 10px 0px 0px 10px;
 }
 /* carousel ends*/
 #experiences-sect{
- border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 60px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom: 100px;
+  background-color: #fff;
   margin-top: 0px;
   padding-top: 1px;
 }
@@ -2127,16 +2166,16 @@ border-radius: 10px 0px 0px 10px;
 }
 #cities-sect{
 	margin-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
+    box-shadow: 0 1px 0px 0px rgb(0 0 0 / 7%);
 }
 #cities-sect>h3{
 	text-align: left;
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 7.4%;
@@ -2149,12 +2188,23 @@ line-height: 25px;
 margin-top: -12px;
 
 }
+#map{
+	text-align: center;
+	width: 80%;
+	height: 400px;
+	border:2px solid black;
+	display: none;
+	position: relative;
+	z-index: 2;
+	margin-left: 7.4%;
+	padding-right: 1px;
+}
+
 .popular-places{
   padding-top: 1px;
-  border-bottom: 1px solid rgba(45, 44, 44,0.00);
-  box-shadow: 0 5px 4px -4px rgb(0 0 0 / 29%);
-  padding-bottom: 40px;
-  background-color: rgba(45, 44, 44,0.1);
+  box-shadow: 0 1px 0px 0px rgb(0 0 0 / 8%);
+  padding-bottom:70px;
+  background-color: transparent;
   display: block;
   padding-left: 7.4%;
   padding-right: 7.4%;
@@ -2164,7 +2214,7 @@ margin-top: -12px;
 	font-weight: bolder;
 	font-family: arima;
 	font-size: 200%;
-	color: color: #212121;
+	color: #212121;
 	letter-spacing: 1px;
 	margin-top:35px;
 	padding-left: 0px;
@@ -2172,8 +2222,8 @@ margin-top: -12px;
 .grid{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr ); 
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
+	grid-column-gap: 0.35em;
+	grid-row-gap: 0.3em;
 	justify-content: center;
 
 }
@@ -2221,15 +2271,33 @@ grid-row: 4/5;
 .pop-div{
 	position: relative;
 }
+.tint{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.33);
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	border-radius: 7px;
+	transition: .25s ease-in-out;
+
+}
+.pop-div:hover .tint{
+	background: rgba(0, 0, 0, 0);
+}
 .pop-div> .img1 , .pop-div> .img4, .pop-div> .img7{
 	display: block;
 	width:100%;
 	margin:0 auto;
-	border-radius:10px;
+	border-radius:5px;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .25s ease-in-out;
 
 }
 .pop-div> .a1 , .pop-div> .a6{
@@ -2246,6 +2314,7 @@ grid-row: 4/5;
 	text-decoration: none;
 	width: 100%;
 	line-height: 200px;
+	z-index: 1;
 } 
 .pop-div> .a4{
     top: 45%;
@@ -2276,18 +2345,20 @@ grid-row: 4/5;
 	text-decoration: none;
 	width: 100%;
 	line-height: 120px;
+	z-index: 1;
 } 
 .pop-div> .a6{
 left: 50%;
 top:50%;	
 }
 .pop-div:hover img {
-	transform: scale(1.025);
+	transform: scale(1.010);
+}
+.D1:hover img , .D6:hover img{
+	transform: scale(1.005);
 }
 #hotels-sect{
-	border-bottom: 1px solid #fff;
-    box-shadow: 0 5px 4px -5px rgb(0 0 0 / 50%);
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 #hotels-sect>h3{
 	padding-bottom: 0px;
@@ -2317,7 +2388,7 @@ top:50%;
 .DH>.book-h{
 	position: absolute;
 	left: 50%;
-	top: 51%;
+	top: 55%;
 	width: 120px;
 	background-color: transparent;
 	color: #fff;
@@ -2359,8 +2430,9 @@ text-align: left;
 font-size: 1.05em;
 max-width: 100%;
 margin-top: -10px;
-padding-bottom: 25px;
+padding-bottom: 40px;
 padding-left: 7.4%;
+
 }
 .fa-star{
 	color: #ffa500;
