@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <TITLE>Thailand</TITLE>
   <link rel="stylesheet" href="css/thailand.css">
+  <link rel="stylesheet" href="css/animation/ANI-all-dest.css">
   <link rel="stylesheet" href="css/flickity.css" media="screen">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,7 @@
   <header class="header">
     <div id="icon-h1">
       <img alt="websites icon" id="icon1" src="images/icon2.png">
-      <h1><a href="index.html">Your next journey</a></h1>
+      <h1><a href="index.html">Your journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -58,7 +59,7 @@
             srcset="images/thai-main2.jpg">
          <img alt="an island in thailand" src="images/main.jpg">
       </picture>            
-        <h1>Thailand</h1>
+        <h1 class="hero-h1">Thailand</h1>
 
     </div>
 
@@ -70,56 +71,62 @@
 
       <section class="useful-info-icons ">
         <div class="useful-info-icon" id="first-info">
-         <i class="fas fa-university fa-3x"></i>
-         <p> Capital City<br> <strong>Bangkok</strong></p>
+         <i class="fas fa-university fa-3x icon-ani"></i>
+         <p class="icon-text"> Capital City<br> <strong>Bangkok</strong></p>
        </div>
          <div class="useful-info-icon"> 
-          <i class="fas fa-dollar-sign fa-3x"></i>
-          <p> Currency<br> <strong>Thai baht</strong></p>
+          <i class="fas fa-dollar-sign fa-3x icon-ani"></i>
+          <p class="icon-text"> Currency<br> <strong>Thai baht</strong></p>
         </div>
-        <div class="useful-info-icon"> <i class="fas fa-language fa-3x"></i><p> Language<br> <strong>Thai</strong></p></div>
+        <div class="useful-info-icon"> <i class="fas fa-language fa-3x icon-ani"></i>
+          <p class="icon-text"> Language<br> <strong>Thai</strong></p></div>
       </section>
     </div>
 
 
 <section id="experiences-sect">
-  <h3>Experiences in Thailand</h3> 
+  <h3 class="first-h3">Experiences in Thailand</h3> 
   <!-- Flickity HTML init -->
   <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
     <!-- images from unsplash.com -->
-    <div class="carousel-cell">
+    <div class="carousel-cell crsl1">
       <img alt="a market in thailand" src="images/thai-markets.jpg"  />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Markets</a>
+            <a href="#">Markets</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img alt="a temple in thailand" src="images/thai-tempels.jpg"  />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Temples and Monuments</a>
+            <a href="#">Temples and Monuments</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img alt="a beach in thailand" src="images/thai-beach.jpg" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Beaches</a>
+            <a href="#">Beaches</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img alt="a park in thailand" src="images/thai-parks.jpg" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">National parks</a>
+            <a href="#">National parks</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
     <div class="carousel-cell">
       <img alt="two boats in a shour" src="images/thai-island.jpg" />
-      <a class="more-info" href="">more info</a>
-      <a href="#">Island Tours</a>
+            <a href="#">Island Tours</a>
+            <a class="more-info" href="">more info</a>
+
     </div>
   </div>
 </section>
 
 
 <section id="cities-sect">
-  <h3>Cities & Regions of Thailand</h3> 
-  <p>Southeast Asian kingdom with palaces, Buddhist temples, beach resorts & capital city Bangkok.</p>
+  <h3 class="second-h3">Cities & Regions of Thailand</h3> 
+  <p class="second-p">Southeast Asian kingdom with palaces, Buddhist temples, beach resorts & capital city Bangkok.</p>
   <!-- Flickity HTML init -->
   <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
@@ -161,57 +168,67 @@
 </section>
 
 <section class="popular-places">
-  <h3 id="popular-h3">Popular Places</h3> 
+  <h3 id="popular-h3" class="third-h3">Popular Places</h3> 
 
   <div class="grid">
 
         <div class="pop-div D1">
           <img alt="the grand-palace" class="popular-image img1" src="images/grand-palace.jpg">
           <a href="#" class="popular-a a1">The Grand Palace</a>
+          <div class="tint"></div>
         </div>
 
      <div class="pop-div D2">
        <img alt="Khaosan road" class="popular-image img2" src="images/k-road.jpg">
        <a href="#" class="popular-a a2">Khaosan Road</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D3">
        <img alt="Khao sok park" class="popular-image img3" src="images/khao-park.jpg">
        <a href="#" class="popular-a a3">Khao Sok Park</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D4">
        <img alt="Damnoen market" class="popular-image img4" src="images/damn-market.jpg">
        <a href="#" class="popular-a a4">Damnoen Market</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D5">
        <img alt="doi Inthanon park" class="popular-image img5" src="images/doi-park.jpg">
        <a href="#" class="popular-a a5">Doi Inthanon Park</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D6">
        <img alt="Ko poda" class="popular-image img6" src="images/ko-poda.jpg">
        <a href="#" class="popular-a a6">Ko Poda</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D7">
        <img alt="the Big Buddha" class="popular-image img7" src="images/big-buddha.jpg">
        <a href="#" class="popular-a a7">The Big Buddha</a>
+       <div class="tint"></div>
      </div>
           <div class="pop-div D8">
        <img alt="khao yai" class="popular-image img5" src="images/khao-yai.jpg">
        <a href="#" class="popular-a a5">Khao Yai</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D9">
        <img alt="karbi island" class="popular-image img6" src="images/krabi.jpg">
        <a href="#" class="popular-a a9">Krabi</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D10">
        <img alt="a farm in Mae Hong son" class="popular-image img7" src="images/Mae-Hong.jpg">
        <a href="#" class="popular-a a7">Mae Hong Son</a>
+       <div class="tint"></div>
      </div>
   </div>
  
@@ -220,8 +237,8 @@
 
 
 <section id="hotels-sect">
-  <h3>Hotels in Thailand</h3> 
-  <p>Experience best services in our top picked hotels in Thailand.</p>
+  <h3  class="fourth-h3">Hotels in Thailand</h3> 
+  <p  class="fourth-p">Experience best services in our top picked hotels in Thailand.</p>
   <!-- Flickity HTML init -->
   <div class="carousel H js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
@@ -274,8 +291,10 @@
     </nav>
 
 
-
-<script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/all-des.js"></script>
+    
   </footer>
 </body>
 </html>
