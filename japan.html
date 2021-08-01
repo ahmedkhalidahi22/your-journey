@@ -5,105 +5,17 @@
   <meta charset="UTF-8">
   <TITLE>japan</TITLE>
   <link rel="stylesheet" href="css/japan.css">
+  <link rel="stylesheet" href="css/animation/ANI-all-dest.css">
   <link rel="stylesheet" href="css/flickity.css" media="screen">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-    function initMap(){
-      map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 35.74704816478998, lng: 137.8925574671148},
-  zoom: 6,
-  mapId: 'fd207598b19ef58f',
-  MapTypeStyle:[
-      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-      {
-        featureType: "administrative.locality",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "poi",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "poi.park",
-        elementType: "geometry",
-        stylers: [{ color: "#263c3f" }],
-      },
-      {
-        featureType: "poi.park",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#6b9a76" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{ color: "#38414e" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#212a37" }],
-      },
-      {
-        featureType: "road",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#9ca5b3" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry",
-        stylers: [{ color: "#746855" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#1f2835" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#f3d19c" }],
-      },
-      {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [{ color: "#2f3948" }],
-      },
-      {
-        featureType: "transit.station",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{ color: "#17263c" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#515c6d" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.stroke",
-        stylers: [{ color: "#17263c" }],
-      },
-    ],
-});
-    }
-  </script>
-  
+
 </HEAD>
 <body>
   <header class="header">
     <div id="icon-h1">
       <img id="icon1" alt="websites icon" src="images/icon2.png">
-      <h1><a href="index.html">Your next journey</a></h1>
+      <h1><a href="index.html">Your journey</a></h1>
     </div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -147,7 +59,7 @@
             srcset="images/tokyo2.jpg">
          <img alt="japan's header image" src="images/tokyo.jpg">
       </picture>            
-        <h1>JAPAN</h1>
+        <h1 class="hero-h1">JAPAN</h1>
 
     </div>
 
@@ -160,55 +72,60 @@
 
   <section class="useful-info-icons ">
     <div class="useful-info-icon" id="first-info">
-     <i class="fas fa-university fa-3x"></i>
-     <p> Capital City<br> <strong>Tokyo</strong></p>
+     <i class="fas fa-university fa-3x icon-ani"></i>
+     <p class="icon-text"> Capital City<br> <strong>Tokyo</strong></p>
    </div>
      <div class="useful-info-icon"> 
-      <i class="fas fa-dollar-sign fa-3x"></i>
-      <p> Currency<br> <strong>Japenese yen</strong></p>
+      <i class="fas fa-dollar-sign fa-3x icon-ani"></i>
+      <p class="icon-text" > Currency<br> <strong>Japenese yen</strong></p>
     </div>
-    <div class="useful-info-icon"> <i class="fas fa-language fa-3x"></i><p> Language<br> <strong>Japanese</strong></p></div>
+    <div class="useful-info-icon"> <i class="fas fa-language fa-3x icon-ani"></i><p class="icon-text"> Language<br> <strong>Japanese</strong></p></div>
 </section>
 </div>
 
 <section id="experiences-sect">
-  <h3>Experiences in Japan</h3> 
+  <h3 class="first-h3">Experiences in Japan</h3> 
   <!-- Flickity HTML init -->
-  <div class="carousel js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
+  <div class="carousel js-flickity crsl1"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
     <!-- images from unsplash.com -->
     <div class="carousel-cell">
       <img src="images/temples.jpg" alt="image of a temple" />
-      <a class="more-info" href="">more info</a>
       <a href="#">Temples & shrines</a>
+      <a class="more-info" href="">more info</a>
+      
     </div>
     <div class="carousel-cell">
       <img src="images/japanese-food.jpg" alt="japanese dish image" />
-      <a class="more-info" href="">more info</a>
       <a href="#">Japanese food</a>
+      <a class="more-info" href="">more info</a>
+      
     </div>
     <div class="carousel-cell">
       <img src="images/japan-city.jpg" alt="tokyo at night"/>
-      <a class="more-info" href="">more info</a>
       <a href="#">City life</a>
+      <a class="more-info" href="">more info</a>
+      
     </div>
     <div class="carousel-cell">
       <img src="images/japan-parks.jpg" alt="a park in japan" />
-      <a class="more-info"  href="">more info</a>
       <a href="#">Parks & gardens</a>
+      <a class="more-info"  href="">more info</a>
+      
     </div>
     <div class="carousel-cell">
       <img src="images/manga.jpg" alt="japanese anime character" />
-      <a class="more-info" href="">more info</a>
       <a href="#">Manga culture</a>
+      <a class="more-info" href="">more info</a>
+      
     </div>
   </div>
 </section>
 
 
 <section id="cities-sect">
-  <h3>Cities & Regions of Japan</h3> 
-  <p>From the capital city of Tokyo to the ancient capital of Kyoto, and from the bamboo forests to ancient temples, every area of Japan has something different to offer.</p>
+  <h3 class="second-h3">Cities & Regions of Japan</h3> 
+  <p class="second-p">From the capital city of Tokyo to the ancient capital of Kyoto, and from the bamboo forests to ancient temples, every area of Japan has something different to offer.</p>
   <!-- Flickity HTML init -->
   <div class="carousel S js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
@@ -253,57 +170,67 @@
 </section>
 
 <section class="popular-places">
-  <h3 id="popular-h3">Popular Places</h3> 
+  <h3 id="popular-h3" class="third-h3">Popular Places</h3> 
 
   <div class="grid">
 
         <div class="pop-div D1">
           <img class="popular-image img1" alt="Osaka Castle" src="images/osaka-castle.jpg">
           <a href="#" class="popular-a a1">Osaka Castle</a>
+          <div class="tint"></div>
         </div>
 
      <div class="pop-div D2">
        <img class="popular-image img2" alt="Miyajima" src="images/miyajima.jpg">
        <a href="#" class="popular-a a2">Miyajima</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D3">
        <img class="popular-image img3" alt="Kanazawa" src="images/kanazawa.jpg">
        <a href="#" class="popular-a a3">Kanazawa</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D4">
        <img class="popular-image img4" alt="Hakuba" src="images/hakuba.jpg">
        <a href="#" class="popular-a a4">Hakuba</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D5">
        <img class="popular-image img5" alt="Mount Fuji" src="images/fuji.jpg">
        <a href="#" class="popular-a a5">Mount Fuji</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D6">
        <img class="popular-image img6" alt="Historic kyoto" src="images/historic-kayoto.jpg">
        <a href="#" class="popular-a a6">Historic kyoto</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D7">
        <img class="popular-image img7" alt="Imperial Tokyo" src="images/imp-tokyo.jpg">
        <a href="#" class="popular-a a7">Imperial Tokyo</a>
+       <div class="tint"></div>
      </div>
           <div class="pop-div D8">
        <img class="popular-image img5" alt="Tokyo Tower" src="images/tokyo-tower.jpg">
        <a href="#" class="popular-a a5">Tokyo Tower</a>
+       <div class="tint"></div>
      </div>
 
      <div class="pop-div D9">
        <img class="popular-image img6" alt="Todaiji Temple" src="images/todaiji-temple.jpg">
        <a href="#" class="popular-a a9">Todaiji Temple</a>
+       <div class="tint"></div>
      </div>
 
       <div class="pop-div D10">
        <img class="popular-image img7" alt="Yokohama" src="images/yokohama.jpg">
        <a href="#" class="popular-a a7">Yokohama</a>
+       <div class="tint"></div>
      </div>
   </div>
  
@@ -312,8 +239,8 @@
 
 
 <section id="hotels-sect">
-  <h3>Hotels in Japan</h3> 
-  <p>Experience best services in our top picked hotels in japan.</p>
+  <h3 class="fourth-h3">Hotels in Japan</h3> 
+  <p class="fourth-p">Experience best services in our top picked hotels in japan.</p>
   <!-- Flickity HTML init -->
   <div class="carousel H js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true , "imagesLoaded": true}'>
 
@@ -368,7 +295,9 @@
 
 
 <script src="js/flickity.pkgd.min.js"></script>
-<script></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/all-des.js"></script>
+
   </footer>
 
 
