@@ -364,6 +364,7 @@ display: none;
 }
 #header-h1-img >picture>img{
 	width:100%;
+	height:auto;
 	margin-top:-10px;
 	border-radius: 0px 0px 25px 25px;
 }
@@ -1911,6 +1912,7 @@ display: none;
 }
 #header-h1-img picture>img{
 	width:100%;
+	height:auto;
 	margin-top:-10px;
 	border-radius: 0px 0px 40px 40px;
 }
