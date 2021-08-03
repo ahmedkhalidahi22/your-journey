@@ -729,6 +729,8 @@ h1{
 	margin: 0px;
 	margin-top: 23px;
 	margin-left: 44px;
+	position: relative;
+	z-index: 10;
 
 }
 #fa-d1, #fa-d2, #fa-l1, #fa-l2{
@@ -755,7 +757,6 @@ display: none;
 .destinations-ul{
 	position: absolute;
 	display: none;
-	background-color:  transparent;
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
 	right: 3px;
@@ -765,6 +766,7 @@ display: none;
 	border-radius: 10px;
 	padding-bottom: 0px;
 	padding-left: 30px;
+	background-color: rgb(244 244 236 / 91%);
 
 }
 .experiences-ul{
@@ -781,6 +783,7 @@ display: none;
 	text-decoration: none;
 	padding-bottom: 0px;
 	padding-left: 30px;
+	background-color: rgb(244 244 236 / 91%);
 }
 .experiences-ul li a {
 	position: relative;
@@ -849,6 +852,7 @@ display: none;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 .landing{
 	position: absolute;
@@ -856,6 +860,7 @@ display: none;
 	top: 45%;
 	left: 50%;
 	transform: translate( -50%, -40% );
+	z-index: -1;
 }
 .landing-p{
 	text-align: center;
@@ -1141,6 +1146,8 @@ h1{
 	margin: 0px;
 	margin-top: 23px;
 	margin-left: 44px;
+	position: relative;
+	z-index: 10;
 
 }
 #fa-d1, #fa-d2, #fa-l1, #fa-l2{
@@ -1167,7 +1174,7 @@ display: none;
 .destinations-ul{
 	position: absolute;
 	display: none;
-	background-color:  transparent;
+
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
 	right: 3px;
@@ -1177,12 +1184,13 @@ display: none;
 	border-radius: 10px;
 	padding-bottom: 0px;
 	padding-left: 30px;
+	background-color: rgb(244 244 236 / 91%);
 
 }
 .experiences-ul{
 	position: absolute;
 	display: none;
-	background-color:  transparent;
+
 	border-width: 1px;
 	box-shadow: 0px 10px 15px #0a1516c9;
 	right: 4px;
@@ -1193,6 +1201,7 @@ display: none;
 	text-decoration: none;
 	padding-bottom: 0px;
 	padding-left: 30px;
+	background-color: rgb(244 244 236 / 91%);
 }
 .experiences-ul li a {
 	position: relative;
@@ -1261,6 +1270,7 @@ display: none;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 0;
 }
 .landing{
 position: absolute;
@@ -1268,6 +1278,7 @@ width: 100%;
 top: 45%;
 left: 50%;
 transform: translate( -50%, -40% );
+z-index: -5;
 }
 .landing-p{
 	text-align: center;
