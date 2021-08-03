@@ -1436,3 +1436,13 @@ background-color: #191919;}
 
 
 /* COOL COLOR FOR EXPLORE BTN (  #bf4646  ) */
+
+
+h2::after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    background: #db5a5a;
+    width: 4em;
+}
