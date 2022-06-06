@@ -505,7 +505,7 @@ margin-top:140px;
 .landing-p{
 	text-align: center;
 	font-size: 300%;
-	font-family:poppins;
+	font-family:poppins !important;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -865,7 +865,7 @@ display: none;
 .landing-p{
 	text-align: center;
 	font-size: 350%;
-	font-family:poppins;
+	font-family:poppins !important;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1283,7 +1283,7 @@ z-index: -5;
 .landing-p{
 	text-align: center;
 	font-size: 390%;
-	font-family:poppins;
+	font-family:poppins !important;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
